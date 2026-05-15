@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Horizons – Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #071520;
+      --surface: #0d2030;
+      --border: #1e3a4f;
+      --accent: #2eb8a6;
+      --text: #b0c8d4;
+      --heading: #e8f4f8;
+      --muted: #6a8fa0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    body.rtl { direction: rtl; text-align: right; }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 20px 16px;
+      text-align: center;
+    }
+    header h1 { color: var(--accent); font-size: 22px; margin-bottom: 4px; }
+    header p  { color: var(--muted); font-size: 13px; }
+
+    .lang-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+      padding: 12px 16px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+    .lang-bar button {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .lang-bar button:hover,
+    .lang-bar button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .section { margin-bottom: 32px; }
+    .section h2 {
+      color: var(--heading);
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section p  { margin-bottom: 10px; }
+    .section ul { padding-left: 20px; margin-bottom: 10px; }
+    body.rtl .section ul { padding-left: 0; padding-right: 20px; }
+    .section li { margin-bottom: 6px; }
+
+    .highlight {
+      background: rgba(46,184,166,.08);
+      border: 1px solid rgba(46,184,166,.25);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    .highlight strong { color: var(--accent); }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 24px 16px;
+      border-top: 1px solid var(--border);
+    }
+    a { color: var(--accent); }
+
+    .lang-section { display: none; }
+    .lang-section.visible { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Blue Horizons</h1>
+  <p id="header-sub">Privacy Policy · Last updated: May 2026</p>
+</header>
+
+<div class="lang-bar">
+  <button onclick="setLang('en')"  data-lang="en">🇬🇧 English</button>
+  <button onclick="setLang('pt')"  data-lang="pt">🇧🇷 Português</button>
+  <button onclick="setLang('es')"  data-lang="es">🇪🇸 Español</button>
+  <button onclick="setLang('fr')"  data-lang="fr">🇫🇷 Français</button>
+  <button onclick="setLang('de')"  data-lang="de">🇩🇪 Deutsch</button>
+  <button onclick="setLang('it')"  data-lang="it">🇮🇹 Italiano</button>
+  <button onclick="setLang('ar')"  data-lang="ar">🇸🇦 العربية</button>
+  <button onclick="setLang('hi')"  data-lang="hi">🇮🇳 हिन्दी</button>
+  <button onclick="setLang('ja')"  data-lang="ja">🇯🇵 日本語</button>
+  <button onclick="setLang('nl')"  data-lang="nl">🇳🇱 Nederlands</button>
+  <button onclick="setLang('no')"  data-lang="no">🇳🇴 Norsk</button>
+  <button onclick="setLang('ru')"  data-lang="ru">🇷🇺 Русский</button>
+  <button onclick="setLang('sv')"  data-lang="sv">🇸🇪 Svenska</button>
+  <button onclick="setLang('tr')"  data-lang="tr">🇹🇷 Türkçe</button>
+  <button onclick="setLang('zh')"  data-lang="zh">🇨🇳 中文</button>
+</div>
+
+<main>
+
+<!-- ═══════════════════════════════ ENGLISH ═══════════════════════════════ -->
+<div class="lang-section" id="lang-en">
+  <div class="section">
+    <div class="highlight">
+      <strong>Summary:</strong> Blue Horizons stores your data locally on your device. We do not sell your personal information. We use anonymised analytics and crash reports to improve the app. Health Connect data never leaves your device.
+    </div>
+  </div>
+  <div class="section"><h2>1. Who We Are</h2>
+    <p>Blue Horizons is developed by an independent developer team, not a medical or clinical organisation. We are not licensed therapists, physicians, or sleep specialists.</p>
+  </div>
+  <div class="section"><h2>2. What Data We Collect</h2>
+    <ul>
+      <li><strong>Profile data</strong> — name, age, gender (entered voluntarily during onboarding)</li>
+      <li><strong>Wellness data</strong> — mood check-ins, journal entries, habit logs, sleep schedule preferences</li>
+      <li><strong>Health Connect data</strong> — sleep and activity data read from Android Health Connect (only if you grant permission)</li>
+      <li><strong>Analytics</strong> — anonymised app usage events via Firebase Analytics (e.g. screens visited, features used)</li>
+      <li><strong>Crash reports</strong> — anonymised crash and error data via Firebase Crashlytics</li>
+      <li><strong>Performance data</strong> — anonymised app performance traces via Firebase Performance Monitoring</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. How We Use Your Data</h2>
+    <ul>
+      <li>To provide and personalise the app's features</li>
+      <li>To display your mood history, habit trends, and journal entries</li>
+      <li>To send sleep and wake reminders (only if you enable notifications)</li>
+      <li>To fix bugs and improve performance via anonymised crash and analytics data</li>
+    </ul>
+  </div>
+  <div class="section"><h2>4. Where Your Data Is Stored</h2>
+    <p>All personal data (profile, mood logs, journal, habits) is stored <strong>locally on your device</strong> using encrypted storage. It is never uploaded to our servers.</p>
+    <p>Analytics and crash data are sent to Google Firebase infrastructure using anonymised identifiers.</p>
+  </div>
+  <div class="section"><h2>5. Health Connect</h2>
+    <p>If you grant Health Connect permission, the app reads sleep and activity data solely to display it within your personal habit and sleep views. This data:</p>
+    <ul>
+      <li>Is never transmitted to our servers or any third party</li>
+      <li>Is never used for advertising or profiling</li>
+      <li>Is processed entirely on-device</li>
+    </ul>
+    <p>You can revoke Health Connect permissions at any time via Android Settings → Health Connect → App permissions.</p>
+  </div>
+  <div class="section"><h2>6. Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, rent, or share your personal data with third parties. The only data that leaves your device is anonymised analytics and crash reports sent to Google Firebase, which are governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+  </div>
+  <div class="section"><h2>7. In-App Purchases</h2>
+    <p>Premium features are purchased through Google Play. We do not process or store any payment information. All billing is handled by Google and governed by the <a href="https://play.google.com/about/play-terms/" target="_blank">Google Play Terms of Service</a>.</p>
+  </div>
+  <div class="section"><h2>8. Not a Medical Service</h2>
+    <div class="highlight">
+      <strong>Important:</strong> Blue Horizons is a personal wellness companion, not a medical app. Nothing in the app constitutes medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional for medical or mental health concerns.
+    </div>
+  </div>
+  <div class="section"><h2>9. Children's Privacy</h2>
+    <p>This app is not directed at children under 13. We do not knowingly collect personal data from children under 13. If you believe a child has provided us with personal data, please contact us and we will delete it.</p>
+  </div>
+  <div class="section"><h2>10. Your Rights</h2>
+    <ul>
+      <li><strong>Access &amp; deletion</strong> — all your personal data is on your device; uninstalling the app deletes it</li>
+      <li><strong>Health Connect</strong> — revoke permissions at any time via Android Settings</li>
+      <li><strong>Analytics opt-out</strong> — you can opt out of Firebase Analytics via your device's Google account settings</li>
+    </ul>
+  </div>
+  <div class="section"><h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top reflects the most recent revision. Continued use of the app after changes are posted constitutes acceptance.</p>
+  </div>
+  <div class="section"><h2>12. Contact</h2>
+    <p>Questions or requests regarding your privacy: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ══════════════════════════ PORTUGUESE (BR) ════════════════════════════ -->
+<div class="lang-section" id="lang-pt">
+  <div class="section">
+    <div class="highlight">
+      <strong>Resumo:</strong> O Blue Horizons armazena seus dados localmente no seu dispositivo. Não vendemos suas informações pessoais. Usamos análises anônimas e relatórios de falhas para melhorar o app. Dados do Health Connect nunca saem do seu dispositivo.
+    </div>
+  </div>
+  <div class="section"><h2>1. Quem Somos</h2>
+    <p>O Blue Horizons é desenvolvido por uma equipe independente de desenvolvedores, não por uma organização médica ou clínica. Não somos terapeutas, médicos ou especialistas em sono licenciados.</p>
+  </div>
+  <div class="section"><h2>2. Dados que Coletamos</h2>
+    <ul>
+      <li><strong>Dados de perfil</strong> — nome, idade, gênero (inseridos voluntariamente durante o cadastro)</li>
+      <li><strong>Dados de bem-estar</strong> — registros de humor, entradas de diário, logs de hábitos, preferências de horário de sono</li>
+      <li><strong>Dados do Health Connect</strong> — dados de sono e atividade lidos do Android Health Connect (somente com sua permissão)</li>
+      <li><strong>Análises</strong> — eventos de uso anônimos via Firebase Analytics</li>
+      <li><strong>Relatórios de falhas</strong> — dados anônimos de erros via Firebase Crashlytics</li>
+      <li><strong>Dados de desempenho</strong> — rastreamentos anônimos de desempenho via Firebase Performance Monitoring</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. Como Usamos Seus Dados</h2>
+    <ul>
+      <li>Para fornecer e personalizar os recursos do app</li>
+      <li>Para exibir seu histórico de humor, tendências de hábitos e entradas de diário</li>
+      <li>Para enviar lembretes de sono e despertar (somente se você ativar notificações)</li>
+      <li>Para corrigir erros e melhorar o desempenho por meio de dados anônimos</li>
+    </ul>
+  </div>
+  <div class="section"><h2>4. Onde Seus Dados São Armazenados</h2>
+    <p>Todos os dados pessoais (perfil, registros de humor, diário, hábitos) são armazenados <strong>localmente no seu dispositivo</strong> com armazenamento criptografado. Nunca são enviados para nossos servidores.</p>
+    <p>Dados de análise e falhas são enviados para a infraestrutura do Google Firebase usando identificadores anônimos.</p>
+  </div>
+  <div class="section"><h2>5. Health Connect</h2>
+    <p>Se você conceder permissão ao Health Connect, o app lê dados de sono e atividade apenas para exibi-los nas suas visualizações pessoais de hábitos e sono. Esses dados:</p>
+    <ul>
+      <li>Nunca são transmitidos para nossos servidores ou terceiros</li>
+      <li>Nunca são usados para publicidade ou criação de perfis</li>
+      <li>São processados inteiramente no dispositivo</li>
+    </ul>
+    <p>Você pode revogar as permissões do Health Connect a qualquer momento em Configurações do Android → Health Connect → Permissões de apps.</p>
+  </div>
+  <div class="section"><h2>6. Compartilhamento de Dados</h2>
+    <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros. Os únicos dados que saem do seu dispositivo são análises anônimas e relatórios de falhas enviados ao Google Firebase, regidos pela <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a>.</p>
+  </div>
+  <div class="section"><h2>7. Compras no App</h2>
+    <p>Recursos premium são adquiridos pelo Google Play. Não processamos nem armazenamos informações de pagamento. Toda a cobrança é gerenciada pelo Google.</p>
+  </div>
+  <div class="section"><h2>8. Não É um Serviço Médico</h2>
+    <div class="highlight">
+      <strong>Importante:</strong> O Blue Horizons é um companheiro de bem-estar pessoal, não um app médico. Nada no app constitui conselho, diagnóstico ou tratamento médico. Consulte sempre um profissional de saúde qualificado para questões médicas ou de saúde mental.
+    </div>
+  </div>
+  <div class="section"><h2>9. Privacidade de Crianças</h2>
+    <p>Este app não é destinado a crianças menores de 13 anos. Não coletamos intencionalmente dados pessoais de crianças menores de 13 anos.</p>
+  </div>
+  <div class="section"><h2>10. Seus Direitos</h2>
+    <ul>
+      <li><strong>Acesso e exclusão</strong> — todos os seus dados pessoais estão no seu dispositivo; desinstalar o app os exclui</li>
+      <li><strong>Health Connect</strong> — revogue permissões a qualquer momento nas Configurações do Android</li>
+      <li><strong>Opt-out de análises</strong> — você pode desativar o Firebase Analytics nas configurações da sua conta Google</li>
+    </ul>
+  </div>
+  <div class="section"><h2>11. Alterações nesta Política</h2>
+    <p>Podemos atualizar esta Política de Privacidade periodicamente. A data de "Última atualização" no topo reflete a revisão mais recente.</p>
+  </div>
+  <div class="section"><h2>12. Contato</h2>
+    <p>Dúvidas ou solicitações sobre sua privacidade: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════ SPANISH ═════════════════════════════════ -->
+<div class="lang-section" id="lang-es">
+  <div class="section">
+    <div class="highlight">
+      <strong>Resumen:</strong> Blue Horizons almacena tus datos localmente en tu dispositivo. No vendemos tu información personal. Usamos análisis anónimos e informes de fallos para mejorar la app. Los datos de Health Connect nunca salen de tu dispositivo.
+    </div>
+  </div>
+  <div class="section"><h2>1. Quiénes Somos</h2>
+    <p>Blue Horizons es desarrollado por un equipo independiente de desarrolladores, no por una organización médica o clínica. No somos terapeutas, médicos ni especialistas en sueño con licencia.</p>
+  </div>
+  <div class="section"><h2>2. Datos que Recopilamos</h2>
+    <ul>
+      <li><strong>Datos de perfil</strong> — nombre, edad, género (introducidos voluntariamente)</li>
+      <li><strong>Datos de bienestar</strong> — registros de estado de ánimo, entradas de diario, registros de hábitos, preferencias de horario de sueño</li>
+      <li><strong>Datos de Health Connect</strong> — datos de sueño y actividad leídos de Android Health Connect (solo con tu permiso)</li>
+      <li><strong>Análisis</strong> — eventos de uso anónimos a través de Firebase Analytics</li>
+      <li><strong>Informes de fallos</strong> — datos anónimos de errores a través de Firebase Crashlytics</li>
+      <li><strong>Datos de rendimiento</strong> — trazas anónimas de rendimiento a través de Firebase Performance Monitoring</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. Cómo Usamos tus Datos</h2>
+    <ul>
+      <li>Para proporcionar y personalizar las funciones de la app</li>
+      <li>Para mostrar tu historial de estado de ánimo, tendencias de hábitos y entradas de diario</li>
+      <li>Para enviar recordatorios de sueño y despertar (solo si activas las notificaciones)</li>
+      <li>Para corregir errores y mejorar el rendimiento mediante datos anónimos</li>
+    </ul>
+  </div>
+  <div class="section"><h2>4. Dónde se Almacenan tus Datos</h2>
+    <p>Todos los datos personales se almacenan <strong>localmente en tu dispositivo</strong> con almacenamiento cifrado. Nunca se cargan en nuestros servidores.</p>
+  </div>
+  <div class="section"><h2>5. Health Connect</h2>
+    <p>Si concedes permiso a Health Connect, la app lee datos de sueño y actividad únicamente para mostrarlos dentro de tus vistas personales. Estos datos:</p>
+    <ul>
+      <li>Nunca se transmiten a nuestros servidores ni a terceros</li>
+      <li>Nunca se usan para publicidad o perfilado</li>
+      <li>Se procesan completamente en el dispositivo</li>
+    </ul>
+  </div>
+  <div class="section"><h2>6. Compartición de Datos</h2>
+    <p>No vendemos, alquilamos ni compartimos tus datos personales con terceros. Los únicos datos que salen de tu dispositivo son análisis anónimos y reportes de fallos enviados a Google Firebase.</p>
+  </div>
+  <div class="section"><h2>7. Compras en la App</h2>
+    <p>Las funciones premium se adquieren a través de Google Play. No procesamos ni almacenamos información de pago.</p>
+  </div>
+  <div class="section"><h2>8. No Es un Servicio Médico</h2>
+    <div class="highlight">
+      <strong>Importante:</strong> Blue Horizons es un compañero de bienestar personal, no una app médica. Nada en la app constituye consejo, diagnóstico o tratamiento médico. Consulta siempre a un profesional de salud cualificado.
+    </div>
+  </div>
+  <div class="section"><h2>9. Privacidad de Menores</h2>
+    <p>Esta app no está dirigida a menores de 13 años. No recopilamos intencionalmente datos personales de menores de 13 años.</p>
+  </div>
+  <div class="section"><h2>10. Tus Derechos</h2>
+    <ul>
+      <li><strong>Acceso y eliminación</strong> — desinstalar la app elimina todos tus datos del dispositivo</li>
+      <li><strong>Health Connect</strong> — revoca permisos en cualquier momento desde Configuración de Android</li>
+    </ul>
+  </div>
+  <div class="section"><h2>11. Contacto</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ FRENCH ═════════════════════════════════ -->
+<div class="lang-section" id="lang-fr">
+  <div class="section">
+    <div class="highlight">
+      <strong>Résumé :</strong> Blue Horizons stocke vos données localement sur votre appareil. Nous ne vendons pas vos informations personnelles. Nous utilisons des analyses anonymisées pour améliorer l'application. Les données Health Connect ne quittent jamais votre appareil.
+    </div>
+  </div>
+  <div class="section"><h2>1. Qui Sommes-Nous</h2>
+    <p>Blue Horizons est développé par une équipe indépendante de développeurs, et non par une organisation médicale ou clinique. Nous ne sommes pas des thérapeutes, médecins ou spécialistes du sommeil agréés.</p>
+  </div>
+  <div class="section"><h2>2. Données Collectées</h2>
+    <ul>
+      <li><strong>Données de profil</strong> — nom, âge, genre (saisis volontairement)</li>
+      <li><strong>Données de bien-être</strong> — humeurs, entrées de journal, suivi des habitudes, préférences de sommeil</li>
+      <li><strong>Données Health Connect</strong> — sommeil et activité lus depuis Android Health Connect (uniquement avec votre permission)</li>
+      <li><strong>Analyses</strong> — événements d'utilisation anonymisés via Firebase Analytics</li>
+      <li><strong>Rapports de plantage</strong> — données anonymisées via Firebase Crashlytics</li>
+      <li><strong>Performances</strong> — traces anonymisées via Firebase Performance Monitoring</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. Utilisation des Données</h2>
+    <ul>
+      <li>Pour fournir et personnaliser les fonctionnalités de l'application</li>
+      <li>Pour afficher votre historique d'humeur, tendances des habitudes et entrées de journal</li>
+      <li>Pour envoyer des rappels de sommeil et de réveil</li>
+      <li>Pour corriger les bogues et améliorer les performances</li>
+    </ul>
+  </div>
+  <div class="section"><h2>4. Stockage des Données</h2>
+    <p>Toutes les données personnelles sont stockées <strong>localement sur votre appareil</strong> dans un stockage chiffré. Elles ne sont jamais téléchargées sur nos serveurs.</p>
+  </div>
+  <div class="section"><h2>5. Health Connect</h2>
+    <p>Les données Health Connect sont traitées entièrement sur l'appareil et ne sont jamais transmises à nos serveurs ni à des tiers, ni utilisées à des fins publicitaires.</p>
+  </div>
+  <div class="section"><h2>6. Partage des Données</h2>
+    <p>Nous ne vendons, louons ni partageons vos données personnelles avec des tiers. Seules les analyses et les rapports de plantage anonymisés sont envoyés à Google Firebase.</p>
+  </div>
+  <div class="section"><h2>7. Achats Intégrés</h2>
+    <p>Les fonctionnalités premium sont achetées via Google Play. Nous ne traitons ni ne stockons aucune information de paiement.</p>
+  </div>
+  <div class="section"><h2>8. Pas un Service Médical</h2>
+    <div class="highlight">
+      <strong>Important :</strong> Blue Horizons est un compagnon de bien-être personnel, pas une application médicale. Rien dans l'application ne constitue un conseil, un diagnostic ou un traitement médical. Consultez toujours un professionnel de santé qualifié.
+    </div>
+  </div>
+  <div class="section"><h2>9. Protection des Mineurs</h2>
+    <p>Cette application n'est pas destinée aux enfants de moins de 13 ans.</p>
+  </div>
+  <div class="section"><h2>10. Contact</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ GERMAN ═════════════════════════════════ -->
+<div class="lang-section" id="lang-de">
+  <div class="section">
+    <div class="highlight">
+      <strong>Zusammenfassung:</strong> Blue Horizons speichert Ihre Daten lokal auf Ihrem Gerät. Wir verkaufen Ihre persönlichen Daten nicht. Wir verwenden anonymisierte Analysen zur Verbesserung der App. Health Connect-Daten verlassen Ihr Gerät niemals.
+    </div>
+  </div>
+  <div class="section"><h2>1. Wer Wir Sind</h2>
+    <p>Blue Horizons wird von einem unabhängigen Entwicklerteam entwickelt – nicht von einer medizinischen oder klinischen Organisation. Wir sind keine zugelassenen Therapeuten, Ärzte oder Schlafspezialisten.</p>
+  </div>
+  <div class="section"><h2>2. Erhobene Daten</h2>
+    <ul>
+      <li><strong>Profildaten</strong> — Name, Alter, Geschlecht (freiwillig angegeben)</li>
+      <li><strong>Wellnessdaten</strong> — Stimmungseinträge, Tagebucheinträge, Gewohnheitsprotokolle, Schlafzeitpräferenzen</li>
+      <li><strong>Health Connect-Daten</strong> — Schlaf- und Aktivitätsdaten aus Android Health Connect (nur mit Ihrer Erlaubnis)</li>
+      <li><strong>Analysen</strong> — anonymisierte Nutzungsdaten über Firebase Analytics</li>
+      <li><strong>Absturzberichte</strong> — anonymisierte Fehlerberichte über Firebase Crashlytics</li>
+      <li><strong>Leistungsdaten</strong> — anonymisierte Performance-Traces über Firebase Performance Monitoring</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. Datenverwendung</h2>
+    <ul>
+      <li>Zur Bereitstellung und Personalisierung der App-Funktionen</li>
+      <li>Zur Anzeige Ihrer Stimmungshistorie, Gewohnheitstrends und Tagebucheinträge</li>
+      <li>Zum Senden von Schlaf- und Aufwacherinnerungen</li>
+      <li>Zur Fehlerbehebung und Leistungsverbesserung</li>
+    </ul>
+  </div>
+  <div class="section"><h2>4. Datenspeicherung</h2>
+    <p>Alle persönlichen Daten werden <strong>lokal auf Ihrem Gerät</strong> in verschlüsseltem Speicher abgelegt. Sie werden niemals auf unsere Server hochgeladen.</p>
+  </div>
+  <div class="section"><h2>5. Health Connect</h2>
+    <p>Health Connect-Daten werden ausschließlich auf dem Gerät verarbeitet und niemals an unsere Server oder Dritte übertragen oder für Werbezwecke verwendet.</p>
+  </div>
+  <div class="section"><h2>6. Datenweitergabe</h2>
+    <p>Wir verkaufen, vermieten oder teilen Ihre persönlichen Daten nicht mit Dritten. Nur anonymisierte Analyse- und Absturzberichte werden an Google Firebase gesendet.</p>
+  </div>
+  <div class="section"><h2>7. In-App-Käufe</h2>
+    <p>Premium-Funktionen werden über Google Play erworben. Wir verarbeiten oder speichern keine Zahlungsinformationen.</p>
+  </div>
+  <div class="section"><h2>8. Kein Medizinischer Dienst</h2>
+    <div class="highlight">
+      <strong>Wichtig:</strong> Blue Horizons ist ein persönlicher Wellness-Begleiter, keine medizinische App. Nichts in der App stellt medizinischen Rat, Diagnose oder Behandlung dar. Konsultieren Sie immer einen qualifizierten Arzt.
+    </div>
+  </div>
+  <div class="section"><h2>9. Kinderschutz</h2>
+    <p>Diese App richtet sich nicht an Kinder unter 13 Jahren.</p>
+  </div>
+  <div class="section"><h2>10. Kontakt</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════ ITALIAN ═════════════════════════════════ -->
+<div class="lang-section" id="lang-it">
+  <div class="section">
+    <div class="highlight">
+      <strong>Sintesi:</strong> Blue Horizons archivia i tuoi dati localmente sul tuo dispositivo. Non vendiamo le tue informazioni personali. Utilizziamo analisi anonime per migliorare l'app. I dati di Health Connect non lasciano mai il tuo dispositivo.
+    </div>
+  </div>
+  <div class="section"><h2>1. Chi Siamo</h2>
+    <p>Blue Horizons è sviluppato da un team di sviluppatori indipendenti, non da un'organizzazione medica o clinica. Non siamo terapisti, medici o specialisti del sonno abilitati.</p>
+  </div>
+  <div class="section"><h2>2. Dati Raccolti</h2>
+    <ul>
+      <li><strong>Dati del profilo</strong> — nome, età, genere (inseriti volontariamente)</li>
+      <li><strong>Dati sul benessere</strong> — registrazioni dell'umore, voci del diario, log delle abitudini, preferenze di orario del sonno</li>
+      <li><strong>Dati Health Connect</strong> — dati di sonno e attività letti da Android Health Connect (solo con il tuo permesso)</li>
+      <li><strong>Analisi</strong> — eventi di utilizzo anonimi tramite Firebase Analytics</li>
+      <li><strong>Segnalazioni di crash</strong> — dati di errore anonimi tramite Firebase Crashlytics</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. Utilizzo dei Dati</h2>
+    <ul>
+      <li>Per fornire e personalizzare le funzionalità dell'app</li>
+      <li>Per mostrare la cronologia dell'umore, le tendenze delle abitudini e le voci del diario</li>
+      <li>Per inviare promemoria di sonno e sveglia</li>
+      <li>Per correggere bug e migliorare le prestazioni</li>
+    </ul>
+  </div>
+  <div class="section"><h2>4. Archiviazione dei Dati</h2>
+    <p>Tutti i dati personali sono archiviati <strong>localmente sul tuo dispositivo</strong> con archiviazione crittografata. Non vengono mai caricati sui nostri server.</p>
+  </div>
+  <div class="section"><h2>5. Health Connect</h2>
+    <p>I dati di Health Connect vengono elaborati interamente sul dispositivo e non vengono mai trasmessi ai nostri server o a terze parti, né utilizzati per pubblicità.</p>
+  </div>
+  <div class="section"><h2>6. Condivisione dei Dati</h2>
+    <p>Non vendiamo, affittiamo né condividiamo i tuoi dati personali con terze parti. Solo analisi e segnalazioni di crash anonime vengono inviate a Google Firebase.</p>
+  </div>
+  <div class="section"><h2>7. Acquisti In-App</h2>
+    <p>Le funzionalità premium si acquistano tramite Google Play. Non elaboriamo né archiviamo informazioni di pagamento.</p>
+  </div>
+  <div class="section"><h2>8. Non È un Servizio Medico</h2>
+    <div class="highlight">
+      <strong>Importante:</strong> Blue Horizons è un compagno di benessere personale, non un'app medica. Nulla nell'app costituisce consulenza, diagnosi o trattamento medico. Consulta sempre un professionista sanitario qualificato.
+    </div>
+  </div>
+  <div class="section"><h2>9. Privacy dei Minori</h2>
+    <p>Questa app non è destinata a minori di 13 anni.</p>
+  </div>
+  <div class="section"><h2>10. Contatto</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ ARABIC ═════════════════════════════════ -->
+<div class="lang-section" id="lang-ar">
+  <div class="section">
+    <div class="highlight">
+      <strong>ملخص:</strong> يخزّن Blue Horizons بياناتك محليًا على جهازك. لا نبيع معلوماتك الشخصية. نستخدم تحليلات مجهولة الهوية لتحسين التطبيق. لا تغادر بيانات Health Connect جهازك أبدًا.
+    </div>
+  </div>
+  <div class="section"><h2>١. من نحن</h2>
+    <p>يُطوَّر Blue Horizons من قِبَل فريق مطورين مستقل، وليس من قِبَل مؤسسة طبية أو سريرية. نحن لسنا معالجين نفسيين أو أطباء أو متخصصين في النوم معتمدين.</p>
+  </div>
+  <div class="section"><h2>٢. البيانات التي نجمعها</h2>
+    <ul>
+      <li><strong>بيانات الملف الشخصي</strong> — الاسم والعمر والجنس (مُدخَلة طوعًا)</li>
+      <li><strong>بيانات العافية</strong> — سجلات المزاج ومدخلات اليوميات وسجلات العادات وتفضيلات جدول النوم</li>
+      <li><strong>بيانات Health Connect</strong> — بيانات النوم والنشاط من Android Health Connect (بإذنك فقط)</li>
+      <li><strong>التحليلات</strong> — أحداث استخدام مجهولة الهوية عبر Firebase Analytics</li>
+      <li><strong>تقارير الأعطال</strong> — بيانات أخطاء مجهولة الهوية عبر Firebase Crashlytics</li>
+    </ul>
+  </div>
+  <div class="section"><h2>٣. كيف نستخدم بياناتك</h2>
+    <ul>
+      <li>لتوفير ميزات التطبيق وتخصيصها</li>
+      <li>لعرض سجل مزاجك واتجاهات عاداتك ومدخلات يومياتك</li>
+      <li>لإرسال تذكيرات النوم والاستيقاظ</li>
+      <li>لإصلاح الأخطاء وتحسين الأداء</li>
+    </ul>
+  </div>
+  <div class="section"><h2>٤. مكان تخزين بياناتك</h2>
+    <p>تُخزَّن جميع البيانات الشخصية <strong>محليًا على جهازك</strong> في تخزين مشفّر. لا يتم تحميلها على خوادمنا مطلقًا.</p>
+  </div>
+  <div class="section"><h2>٥. Health Connect</h2>
+    <p>تُعالَج بيانات Health Connect كليًا على الجهاز ولا تُرسَل أبدًا إلى خوادمنا أو أي طرف ثالث، ولا تُستخدَم لأغراض إعلانية.</p>
+  </div>
+  <div class="section"><h2>٦. مشاركة البيانات</h2>
+    <p>لا نبيع بياناتك الشخصية ولا نؤجّرها ولا نشاركها مع أطراف ثالثة. البيانات الوحيدة التي تغادر جهازك هي التحليلات وتقارير الأعطال المجهولة المرسلة إلى Google Firebase.</p>
+  </div>
+  <div class="section"><h2>٧. المشتريات داخل التطبيق</h2>
+    <p>تُشترى الميزات المميزة عبر Google Play. لا نعالج معلومات الدفع ولا نخزّنها.</p>
+  </div>
+  <div class="section"><h2>٨. ليس خدمة طبية</h2>
+    <div class="highlight">
+      <strong>مهم:</strong> Blue Horizons هو رفيق عافية شخصي وليس تطبيقًا طبيًا. لا يُمثّل أي شيء في التطبيق نصيحة طبية أو تشخيصًا أو علاجًا. استشر دائمًا متخصصًا صحيًا مؤهلًا.
+    </div>
+  </div>
+  <div class="section"><h2>٩. خصوصية الأطفال</h2>
+    <p>هذا التطبيق غير موجَّه للأطفال دون سن ١٣ عامًا.</p>
+  </div>
+  <div class="section"><h2>١٠. التواصل</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ HINDI ══════════════════════════════════ -->
+<div class="lang-section" id="lang-hi">
+  <div class="section">
+    <div class="highlight">
+      <strong>सारांश:</strong> Blue Horizons आपका डेटा आपके डिवाइस पर स्थानीय रूप से संग्रहीत करता है। हम आपकी व्यक्तिगत जानकारी नहीं बेचते। हम ऐप को बेहतर बनाने के लिए अनामित विश्लेषण का उपयोग करते हैं। Health Connect डेटा कभी भी आपके डिवाइस से बाहर नहीं जाता।
+    </div>
+  </div>
+  <div class="section"><h2>1. हम कौन हैं</h2>
+    <p>Blue Horizons एक स्वतंत्र डेवलपर टीम द्वारा विकसित किया गया है, किसी चिकित्सा या क्लिनिकल संस्था द्वारा नहीं। हम लाइसेंस प्राप्त चिकित्सक, मनोचिकित्सक या नींद विशेषज्ञ नहीं हैं।</p>
+  </div>
+  <div class="section"><h2>2. हम क्या डेटा एकत्र करते हैं</h2>
+    <ul>
+      <li><strong>प्रोफ़ाइल डेटा</strong> — नाम, आयु, लिंग (स्वेच्छा से दर्ज किया गया)</li>
+      <li><strong>वेलनेस डेटा</strong> — मूड लॉग, डायरी प्रविष्टियाँ, आदत लॉग, नींद शेड्यूल प्राथमिकताएँ</li>
+      <li><strong>Health Connect डेटा</strong> — Android Health Connect से नींद और गतिविधि डेटा (केवल आपकी अनुमति से)</li>
+      <li><strong>विश्लेषण</strong> — Firebase Analytics के माध्यम से अनामित उपयोग इवेंट</li>
+      <li><strong>क्रैश रिपोर्ट</strong> — Firebase Crashlytics के माध्यम से अनामित त्रुटि डेटा</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. डेटा संग्रहण</h2>
+    <p>सभी व्यक्तिगत डेटा <strong>आपके डिवाइस पर स्थानीय रूप से</strong> एन्क्रिप्टेड स्टोरेज में संग्रहीत किया जाता है। इसे कभी भी हमारे सर्वर पर अपलोड नहीं किया जाता।</p>
+  </div>
+  <div class="section"><h2>4. Health Connect</h2>
+    <p>Health Connect डेटा केवल डिवाइस पर प्रोसेस किया जाता है और कभी भी हमारे सर्वर या किसी तृतीय पक्ष को नहीं भेजा जाता।</p>
+  </div>
+  <div class="section"><h2>5. चिकित्सा सेवा नहीं</h2>
+    <div class="highlight">
+      <strong>महत्वपूर्ण:</strong> Blue Horizons एक व्यक्तिगत वेलनेस साथी है, चिकित्सा ऐप नहीं। ऐप में कुछ भी चिकित्सा सलाह, निदान या उपचार नहीं है। किसी भी स्वास्थ्य चिंता के लिए हमेशा एक योग्य स्वास्थ्य पेशेवर से परामर्श करें।
+    </div>
+  </div>
+  <div class="section"><h2>6. संपर्क</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════ JAPANESE ════════════════════════════════ -->
+<div class="lang-section" id="lang-ja">
+  <div class="section">
+    <div class="highlight">
+      <strong>概要：</strong>Blue Horizonsはデータをお客様のデバイスにローカルで保存します。個人情報を販売することはありません。匿名化された分析データを使用してアプリを改善します。Health Connectのデータがデバイスの外に出ることはありません。
+    </div>
+  </div>
+  <div class="section"><h2>1. 私たちについて</h2>
+    <p>Blue Horizonsは独立した開発者チームによって開発されており、医療機関や臨床機関ではありません。私たちは資格を持つ療法士、医師、または睡眠専門家ではありません。</p>
+  </div>
+  <div class="section"><h2>2. 収集するデータ</h2>
+    <ul>
+      <li><strong>プロフィールデータ</strong> — 氏名、年齢、性別（オンボーディング時に任意で入力）</li>
+      <li><strong>ウェルネスデータ</strong> — 気分の記録、日記の入力、習慣のログ、睡眠スケジュールの設定</li>
+      <li><strong>Health Connectデータ</strong> — Android Health Connectからの睡眠・活動データ（許可した場合のみ）</li>
+      <li><strong>分析データ</strong> — Firebase Analyticsを通じた匿名化された使用状況イベント</li>
+      <li><strong>クラッシュレポート</strong> — Firebase Crashlyticsを通じた匿名化されたエラーデータ</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. データの保存場所</h2>
+    <p>すべての個人データは暗号化されたストレージを使用して<strong>お客様のデバイスにローカルで</strong>保存されます。サーバーにアップロードされることはありません。</p>
+  </div>
+  <div class="section"><h2>4. Health Connect</h2>
+    <p>Health Connectのデータはすべてデバイス上で処理され、当社のサーバーや第三者に送信されることはなく、広告目的にも使用されません。</p>
+  </div>
+  <div class="section"><h2>5. 医療サービスではありません</h2>
+    <div class="highlight">
+      <strong>重要：</strong>Blue Horizonsは個人向けウェルネスアプリであり、医療アプリではありません。アプリ内のいかなる内容も医療アドバイス、診断、治療を構成するものではありません。医療や精神的な健康に関する懸念については、必ず資格を持つ医療専門家に相談してください。
+    </div>
+  </div>
+  <div class="section"><h2>6. お問い合わせ</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════ DUTCH ═══════════════════════════════════ -->
+<div class="lang-section" id="lang-nl">
+  <div class="section">
+    <div class="highlight">
+      <strong>Samenvatting:</strong> Blue Horizons slaat uw gegevens lokaal op uw apparaat op. Wij verkopen uw persoonlijke gegevens niet. Wij gebruiken geanonimiseerde analyses om de app te verbeteren. Health Connect-gegevens verlaten uw apparaat nooit.
+    </div>
+  </div>
+  <div class="section"><h2>1. Wie Wij Zijn</h2>
+    <p>Blue Horizons wordt ontwikkeld door een onafhankelijk ontwikkelteam, niet door een medische of klinische organisatie. Wij zijn geen erkende therapeuten, artsen of slaapspecialisten.</p>
+  </div>
+  <div class="section"><h2>2. Gegevens die Wij Verzamelen</h2>
+    <ul>
+      <li><strong>Profielgegevens</strong> — naam, leeftijd, geslacht (vrijwillig ingevoerd)</li>
+      <li><strong>Welzijnsgegevens</strong> — stemmingsregistraties, dagboekentries, gewoontelogboeken, slaapschemavoorkeuren</li>
+      <li><strong>Health Connect-gegevens</strong> — slaap- en activiteitsgegevens van Android Health Connect (alleen met uw toestemming)</li>
+      <li><strong>Analyses</strong> — geanonimiseerde gebruiksgebeurtenissen via Firebase Analytics</li>
+      <li><strong>Crashrapporten</strong> — geanonimiseerde foutgegevens via Firebase Crashlytics</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. Gegevensopslag</h2>
+    <p>Alle persoonlijke gegevens worden <strong>lokaal op uw apparaat</strong> opgeslagen in versleutelde opslag. Ze worden nooit naar onze servers geüpload.</p>
+  </div>
+  <div class="section"><h2>4. Health Connect</h2>
+    <p>Health Connect-gegevens worden volledig op het apparaat verwerkt en nooit verzonden naar onze servers of derden.</p>
+  </div>
+  <div class="section"><h2>5. Geen Medische Dienst</h2>
+    <div class="highlight">
+      <strong>Belangrijk:</strong> Blue Horizons is een persoonlijke welzijnsapp, geen medische app. Niets in de app vormt medisch advies, diagnose of behandeling. Raadpleeg altijd een gekwalificeerde zorgverlener voor medische of geestelijke gezondheidsvragen.
+    </div>
+  </div>
+  <div class="section"><h2>6. Contact</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════ NORWEGIAN ═══════════════════════════════ -->
+<div class="lang-section" id="lang-no">
+  <div class="section">
+    <div class="highlight">
+      <strong>Sammendrag:</strong> Blue Horizons lagrer dataene dine lokalt på enheten din. Vi selger ikke dine personlige opplysninger. Vi bruker anonymisert analyse for å forbedre appen. Health Connect-data forlater aldri enheten din.
+    </div>
+  </div>
+  <div class="section"><h2>1. Hvem Vi Er</h2>
+    <p>Blue Horizons er utviklet av et uavhengig utviklerteam, ikke av en medisinsk eller klinisk organisasjon. Vi er ikke lisensierte terapeuter, leger eller søvnspesialister.</p>
+  </div>
+  <div class="section"><h2>2. Data Vi Samler Inn</h2>
+    <ul>
+      <li><strong>Profildata</strong> — navn, alder, kjønn (frivillig oppgitt)</li>
+      <li><strong>Velværedata</strong> — humørregistreringer, dagbokoppføringer, vanelogger, søvnplanpreferanser</li>
+      <li><strong>Health Connect-data</strong> — søvn- og aktivitetsdata fra Android Health Connect (kun med din tillatelse)</li>
+      <li><strong>Analyser</strong> — anonymiserte brukshendelser via Firebase Analytics</li>
+      <li><strong>Krasjrapporter</strong> — anonymiserte feildata via Firebase Crashlytics</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. Datalagring</h2>
+    <p>Alle personlige data lagres <strong>lokalt på enheten din</strong> i kryptert lagring. De lastes aldri opp til serverne våre.</p>
+  </div>
+  <div class="section"><h2>4. Health Connect</h2>
+    <p>Health Connect-data behandles utelukkende på enheten og sendes aldri til serverne våre eller tredjeparter.</p>
+  </div>
+  <div class="section"><h2>5. Ikke en Medisinsk Tjeneste</h2>
+    <div class="highlight">
+      <strong>Viktig:</strong> Blue Horizons er en personlig velværeapp, ikke en medisinsk app. Ingenting i appen utgjør medisinsk rådgivning, diagnose eller behandling. Rådfør deg alltid med en kvalifisert helsepersonell.
+    </div>
+  </div>
+  <div class="section"><h2>6. Kontakt</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════ RUSSIAN ═════════════════════════════════ -->
+<div class="lang-section" id="lang-ru">
+  <div class="section">
+    <div class="highlight">
+      <strong>Краткое изложение:</strong> Blue Horizons хранит ваши данные локально на вашем устройстве. Мы не продаём вашу личную информацию. Мы используем анонимизированную аналитику для улучшения приложения. Данные Health Connect никогда не покидают ваше устройство.
+    </div>
+  </div>
+  <div class="section"><h2>1. О Нас</h2>
+    <p>Blue Horizons разработан независимой командой разработчиков, а не медицинской или клинической организацией. Мы не являемся лицензированными терапевтами, врачами или специалистами по сну.</p>
+  </div>
+  <div class="section"><h2>2. Данные, которые Мы Собираем</h2>
+    <ul>
+      <li><strong>Данные профиля</strong> — имя, возраст, пол (введённые добровольно)</li>
+      <li><strong>Данные о самочувствии</strong> — записи о настроении, записи в дневнике, журналы привычек, предпочтения расписания сна</li>
+      <li><strong>Данные Health Connect</strong> — данные о сне и активности из Android Health Connect (только с вашего разрешения)</li>
+      <li><strong>Аналитика</strong> — анонимизированные события использования через Firebase Analytics</li>
+      <li><strong>Отчёты об ошибках</strong> — анонимизированные данные об ошибках через Firebase Crashlytics</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. Хранение Данных</h2>
+    <p>Все личные данные хранятся <strong>локально на вашем устройстве</strong> в зашифрованном хранилище. Они никогда не загружаются на наши серверы.</p>
+  </div>
+  <div class="section"><h2>4. Health Connect</h2>
+    <p>Данные Health Connect обрабатываются исключительно на устройстве и никогда не передаются на наши серверы или третьим лицам.</p>
+  </div>
+  <div class="section"><h2>5. Не Является Медицинской Службой</h2>
+    <div class="highlight">
+      <strong>Важно:</strong> Blue Horizons — это персональный помощник по здоровому образу жизни, а не медицинское приложение. Ничто в приложении не является медицинским советом, диагнозом или лечением. Всегда консультируйтесь с квалифицированным медицинским специалистом.
+    </div>
+  </div>
+  <div class="section"><h2>6. Контакт</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════ SWEDISH ═════════════════════════════════ -->
+<div class="lang-section" id="lang-sv">
+  <div class="section">
+    <div class="highlight">
+      <strong>Sammanfattning:</strong> Blue Horizons lagrar dina data lokalt på din enhet. Vi säljer inte dina personuppgifter. Vi använder anonymiserad analys för att förbättra appen. Health Connect-data lämnar aldrig din enhet.
+    </div>
+  </div>
+  <div class="section"><h2>1. Vilka Vi Är</h2>
+    <p>Blue Horizons utvecklas av ett oberoende utvecklarteam, inte av en medicinsk eller klinisk organisation. Vi är inte licensierade terapeuter, läkare eller sömnspecialister.</p>
+  </div>
+  <div class="section"><h2>2. Data Vi Samlar In</h2>
+    <ul>
+      <li><strong>Profildata</strong> — namn, ålder, kön (frivilligt angivet)</li>
+      <li><strong>Välmåendedata</strong> — humörregistreringar, dagboksposter, vanologgar, sömnschemapreferenser</li>
+      <li><strong>Health Connect-data</strong> — sömn- och aktivitetsdata från Android Health Connect (endast med ditt tillstånd)</li>
+      <li><strong>Analys</strong> — anonymiserade användningshändelser via Firebase Analytics</li>
+      <li><strong>Kraschrapporter</strong> — anonymiserade feldata via Firebase Crashlytics</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. Datalagring</h2>
+    <p>Alla personuppgifter lagras <strong>lokalt på din enhet</strong> i krypterad lagring. De laddas aldrig upp till våra servrar.</p>
+  </div>
+  <div class="section"><h2>4. Health Connect</h2>
+    <p>Health Connect-data bearbetas helt på enheten och skickas aldrig till våra servrar eller tredje parter.</p>
+  </div>
+  <div class="section"><h2>5. Ingen Medicinsk Tjänst</h2>
+    <div class="highlight">
+      <strong>Viktigt:</strong> Blue Horizons är en personlig välmåendeapp, inte en medicinsk app. Ingenting i appen utgör medicinsk rådgivning, diagnos eller behandling. Rådfråga alltid en kvalificerad vårdgivare.
+    </div>
+  </div>
+  <div class="section"><h2>6. Kontakt</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════ TURKISH ═════════════════════════════════ -->
+<div class="lang-section" id="lang-tr">
+  <div class="section">
+    <div class="highlight">
+      <strong>Özet:</strong> Blue Horizons verilerinizi cihazınızda yerel olarak saklar. Kişisel bilgilerinizi satmıyoruz. Uygulamayı geliştirmek için anonimleştirilmiş analitik kullanıyoruz. Health Connect verileri cihazınızı asla terk etmez.
+    </div>
+  </div>
+  <div class="section"><h2>1. Biz Kimiz</h2>
+    <p>Blue Horizons, bir tıbbi veya klinik kuruluş tarafından değil, bağımsız bir geliştirici ekibi tarafından geliştirilmiştir. Lisanslı terapist, doktor veya uyku uzmanı değiliz.</p>
+  </div>
+  <div class="section"><h2>2. Topladığımız Veriler</h2>
+    <ul>
+      <li><strong>Profil verileri</strong> — ad, yaş, cinsiyet (gönüllü olarak girilmiş)</li>
+      <li><strong>Sağlık verileri</strong> — ruh hali kayıtları, günlük girişleri, alışkanlık günlükleri, uyku programı tercihleri</li>
+      <li><strong>Health Connect verileri</strong> — Android Health Connect'ten uyku ve aktivite verileri (yalnızca izninizle)</li>
+      <li><strong>Analitik</strong> — Firebase Analytics aracılığıyla anonimleştirilmiş kullanım olayları</li>
+      <li><strong>Kilitlenme raporları</strong> — Firebase Crashlytics aracılığıyla anonimleştirilmiş hata verileri</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. Veri Depolama</h2>
+    <p>Tüm kişisel veriler, şifreli depolama kullanılarak <strong>cihazınızda yerel olarak</strong> saklanır. Sunucularımıza hiçbir zaman yüklenmez.</p>
+  </div>
+  <div class="section"><h2>4. Health Connect</h2>
+    <p>Health Connect verileri tamamen cihazda işlenir ve hiçbir zaman sunucularımıza veya üçüncü taraflara iletilmez.</p>
+  </div>
+  <div class="section"><h2>5. Tıbbi Hizmet Değildir</h2>
+    <div class="highlight">
+      <strong>Önemli:</strong> Blue Horizons kişisel bir sağlık uygulamasıdır, tıbbi uygulama değildir. Uygulamadaki hiçbir şey tıbbi tavsiye, teşhis veya tedavi oluşturmaz. Tıbbi veya ruh sağlığı endişeleriniz için her zaman nitelikli bir sağlık uzmanına danışın.
+    </div>
+  </div>
+  <div class="section"><h2>6. İletişim</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+<!-- ══════════════════════════ CHINESE ═══════════════════════════════════ -->
+<div class="lang-section" id="lang-zh">
+  <div class="section">
+    <div class="highlight">
+      <strong>摘要：</strong>Blue Horizons 将您的数据本地存储在您的设备上。我们不出售您的个人信息。我们使用匿名分析来改进应用程序。Health Connect 数据永远不会离开您的设备。
+    </div>
+  </div>
+  <div class="section"><h2>1. 关于我们</h2>
+    <p>Blue Horizons 由独立开发团队开发，而非医疗或临床机构。我们不是持有执照的治疗师、医生或睡眠专家。</p>
+  </div>
+  <div class="section"><h2>2. 我们收集的数据</h2>
+    <ul>
+      <li><strong>个人资料数据</strong> — 姓名、年龄、性别（在入门引导时自愿填写）</li>
+      <li><strong>健康数据</strong> — 情绪记录、日记条目、习惯日志、睡眠时间表偏好</li>
+      <li><strong>Health Connect 数据</strong> — 来自 Android Health Connect 的睡眠和活动数据（仅在您授权时）</li>
+      <li><strong>分析数据</strong> — 通过 Firebase Analytics 收集的匿名使用事件</li>
+      <li><strong>崩溃报告</strong> — 通过 Firebase Crashlytics 收集的匿名错误数据</li>
+    </ul>
+  </div>
+  <div class="section"><h2>3. 数据存储</h2>
+    <p>所有个人数据均使用加密存储<strong>本地存储在您的设备上</strong>，永远不会上传到我们的服务器。</p>
+  </div>
+  <div class="section"><h2>4. Health Connect</h2>
+    <p>Health Connect 数据完全在设备上处理，绝不传输到我们的服务器或任何第三方，也不用于广告目的。</p>
+  </div>
+  <div class="section"><h2>5. 非医疗服务</h2>
+    <div class="highlight">
+      <strong>重要提示：</strong>Blue Horizons 是个人健康伴侣应用，而非医疗应用。应用中的任何内容均不构成医疗建议、诊断或治疗。对于任何健康问题，请务必咨询合格的医疗专业人员。
+    </div>
+  </div>
+  <div class="section"><h2>6. 联系我们</h2>
+    <p><a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <p>Blue Horizons · <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a> · Last updated May 2026</p>
+</footer>
+
+<script>
+  const LANGS = ['en','pt','es','fr','de','it','ar','hi','ja','nl','no','ru','sv','tr','zh'];
+
+  function setLang(code) {
+    LANGS.forEach(l => {
+      document.getElementById('lang-' + l).classList.remove('visible');
+      document.querySelector('[data-lang="' + l + '"]').classList.remove('active');
+    });
+    document.getElementById('lang-' + code).classList.add('visible');
+    document.querySelector('[data-lang="' + code + '"]').classList.add('active');
+    document.documentElement.lang = code;
+    document.body.classList.toggle('rtl', code === 'ar');
+  }
+
+  function detectLang() {
+    const nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    if (nav.startsWith('pt')) return 'pt';
+    if (nav.startsWith('es')) return 'es';
+    if (nav.startsWith('fr')) return 'fr';
+    if (nav.startsWith('de')) return 'de';
+    if (nav.startsWith('it')) return 'it';
+    if (nav.startsWith('ar')) return 'ar';
+    if (nav.startsWith('hi')) return 'hi';
+    if (nav.startsWith('ja')) return 'ja';
+    if (nav.startsWith('nl')) return 'nl';
+    if (nav.startsWith('no')) return 'no';
+    if (nav.startsWith('ru')) return 'ru';
+    if (nav.startsWith('sv')) return 'sv';
+    if (nav.startsWith('tr')) return 'tr';
+    if (nav.startsWith('zh')) return 'zh';
+    return 'en';
+  }
+
+  setLang(detectLang());
+</script>
+</body>
+</html>
