@@ -1,524 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blue Horizons – Terms of Use</title>
-  <style>
-    :root {
-      --bg: #071520;
-      --surface: #0d2030;
-      --border: #1e3a4f;
-      --accent: #2eb8a6;
-      --text: #b0c8d4;
-      --heading: #e8f4f8;
-      --muted: #6a8fa0;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-size: 15px;
-      line-height: 1.7;
-    }
-    body.rtl { direction: rtl; text-align: right; }
-    header {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 24px 20px 16px;
-      text-align: center;
-    }
-    header h1 { color: var(--accent); font-size: 22px; margin-bottom: 4px; }
-    header p { color: var(--muted); font-size: 13px; }
-    .lang-bar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 6px;
-      padding: 12px 16px;
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    .lang-bar button {
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      border-radius: 20px;
-      padding: 4px 12px;
-      font-size: 12px;
-      cursor: pointer;
-      transition: all .2s;
-    }
-    .lang-bar button:hover,
-    .lang-bar button.active {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #fff;
-    }
-    main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
-    .doc-title {
-      color: var(--accent);
-      font-size: 18px;
-      font-weight: 800;
-      margin-bottom: 6px;
-      letter-spacing: .02em;
-    }
-    .updated { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
-    .section { margin-bottom: 32px; }
-    .section h2 {
-      color: var(--heading);
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 10px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid var(--border);
-    }
-    .section p { margin-bottom: 10px; }
-    .highlight {
-      background: rgba(46,184,166,.08);
-      border: 1px solid rgba(46,184,166,.25);
-      border-radius: 10px;
-      padding: 14px 18px;
-      margin-bottom: 12px;
-      font-size: 14px;
-    }
-    .highlight strong { color: var(--accent); }
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 12px;
-      padding: 24px 16px;
-      border-top: 1px solid var(--border);
-    }
-    a { color: var(--accent); }
-    .lang-section { display: none; }
-    .lang-section.visible { display: block; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blue Horizons – Terms of Use</title>
+<style>:root{--bg:#071520;--surface:#0d2030;--border:#1e3a4f;--accent:#2eb8a6;--text:#b0c8d4;--heading:#e8f4f8;--muted:#6a8fa0}*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:15px;line-height:1.7}body.rtl{direction:rtl;text-align:right}header{background:var(--surface);border-bottom:1px solid var(--border);padding:24px 20px 16px;text-align:center}header h1{color:var(--accent);font-size:22px;margin-bottom:4px}header p{color:var(--muted);font-size:13px}.lang-bar{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;padding:12px 16px;background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}.lang-bar button{background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:20px;padding:4px 12px;font-size:12px;cursor:pointer;transition:all .2s}.lang-bar button:hover,.lang-bar button.active{background:var(--accent);border-color:var(--accent);color:#fff}main{max-width:760px;margin:0 auto;padding:32px 20px 64px}.doc-title{color:var(--accent);font-size:18px;font-weight:800;margin-bottom:6px;letter-spacing:.02em}.updated{color:var(--muted);font-size:13px;margin-bottom:24px}.section{margin-bottom:32px}.section h2{color:var(--heading);font-size:16px;font-weight:700;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)}.section p{margin-bottom:10px}.section ul{padding-left:20px;margin-bottom:10px}body.rtl .section ul{padding-left:0;padding-right:20px}.section li{margin-bottom:6px}.highlight{background:rgba(46,184,166,.08);border:1px solid rgba(46,184,166,.25);border-radius:10px;padding:14px 18px;margin-bottom:12px;font-size:14px}.highlight strong{color:var(--accent)}footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 16px;border-top:1px solid var(--border)}a{color:var(--accent)}.lang-section{display:none}.lang-section.visible{display:block}</style>
 </head>
 <body>
 <header>
-  <h1>Blue Horizons</h1>
-  <p id="header-sub">Terms of Use · Last updated: May 2026</p>
+<h1>Blue Horizons</h1>
+<p id="header-sub">Terms of Use · Last updated: May 2026</p>
 </header>
 <div class="lang-bar">
-  <button onclick="setLang('en')" data-lang="en">🇬🇧 English</button>
-  <button onclick="setLang('pt')" data-lang="pt">🇧🇷 Português</button>
-  <button onclick="setLang('es')" data-lang="es">🇪🇸 Español</button>
-  <button onclick="setLang('fr')" data-lang="fr">🇫🇷 Français</button>
-  <button onclick="setLang('de')" data-lang="de">🇩🇪 Deutsch</button>
-  <button onclick="setLang('it')" data-lang="it">🇮🇹 Italiano</button>
-  <button onclick="setLang('ar')" data-lang="ar">🇸🇦 العربية</button>
-  <button onclick="setLang('hi')" data-lang="hi">🇮🇳 हिन्दी</button>
-  <button onclick="setLang('ja')" data-lang="ja">🇯🇵 日本語</button>
-  <button onclick="setLang('nl')" data-lang="nl">🇳🇱 Nederlands</button>
-  <button onclick="setLang('no')" data-lang="no">🇳🇴 Norsk</button>
-  <button onclick="setLang('ru')" data-lang="ru">🇷🇺 Русский</button>
-  <button onclick="setLang('sv')" data-lang="sv">🇸🇪 Svenska</button>
-  <button onclick="setLang('tr')" data-lang="tr">🇹🇷 Türkçe</button>
-  <button onclick="setLang('zh')" data-lang="zh">🇨🇳 中文</button>
+<button onclick="setLang('en')" data-lang="en">🇬🇧 English</button>
+<button onclick="setLang('pt')" data-lang="pt">🇧🇷 Português</button>
+<button onclick="setLang('es')" data-lang="es">🇪🇸 Español</button>
+<button onclick="setLang('fr')" data-lang="fr">🇫🇷 Français</button>
+<button onclick="setLang('de')" data-lang="de">🇩🇪 Deutsch</button>
+<button onclick="setLang('it')" data-lang="it">🇮🇹 Italiano</button>
+<button onclick="setLang('ar')" data-lang="ar">🇸🇦 العربية</button>
+<button onclick="setLang('hi')" data-lang="hi">🇮🇳 हिन्दी</button>
+<button onclick="setLang('ja')" data-lang="ja">🇯🇵 日本語</button>
+<button onclick="setLang('nl')" data-lang="nl">🇳🇱 Nederlands</button>
+<button onclick="setLang('no')" data-lang="no">🇳🇴 Norsk</button>
+<button onclick="setLang('ru')" data-lang="ru">🇷🇺 Русский</button>
+<button onclick="setLang('sv')" data-lang="sv">🇸🇪 Svenska</button>
+<button onclick="setLang('tr')" data-lang="tr">🇹🇷 Türkçe</button>
+<button onclick="setLang('zh')" data-lang="zh">🇨🇳 中文</button>
 </div>
 <main>
-<div class="lang-section" id="lang-en" data-header="Terms of Use · Last updated: May 2026">
-  <div class="section">
-    <div class="highlight"><strong>Summary:</strong> Blue Horizons is a personal wellness app, not a medical service. Premium purchases are handled by Google Play. Your personal wellness data stays on your device; Firebase diagnostics may help us improve reliability.</div>
-    <div class="highlight"><strong>Google Play notice:</strong> Premium purchases, subscriptions, renewals, cancellations and refunds are processed through Google Play. You can manage subscriptions in your Google Play account. These Terms should be read together with our Privacy Policy. <a href="privacy.html">Privacy Policy</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play Terms</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play refunds</a></div>
-  </div>
-  <div class="doc-title">TERMS OF USE - BLUE HORIZONS</div>
+<div class="lang-section" id="lang-en" data-header="Terms of Use · Last updated: May 2026" data-dir="ltr">
+<div class="section">
+<div class="highlight">
+<strong>Summary:</strong> Blue Horizons is a personal wellness app, not a medical service. Premium purchases are handled by Google Play. Your personal wellness data stays on your device; Firebase diagnostics and analytics may help us improve reliability.</div>
+<div class="highlight">
+<strong>Google Play notice:</strong> Premium purchases, subscriptions, renewals, cancellations and refunds are processed through Google Play. You can manage subscriptions in your Google Play account. These Terms should be read together with our Privacy Policy. <a href="privacy-policy.html">Privacy Policy</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play Terms</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play refunds</a>
+</div>
+</div>
+<div class="doc-title">TERMS OF USE - BLUE HORIZONS</div>
 <p class="updated">Last updated: May 2026</p>
-<div class="section"><h2>1. Acceptance</h2>
-<p>By downloading or using Blue Horizons, you agree to these Terms of Use and our Privacy Policy. If you do not agree, please stop using the app and uninstall it.</p>
+<div class="section">
+<h2>1. Acceptance</h2>
+<p>By downloading or using Blue Horizons, you agree to these Terms of Use and our Privacy Policy. If you do not agree, stop using the app and uninstall it.</p>
 </div>
-<div class="section"><h2>2. What the app does</h2>
-<p>Blue Horizons is a personal wellness companion for sleep, reflection and habit building. The app may include sleep sounds, white noise, music, wake-song alarms, mood check-ins, mood history and insights, habit tracking, journaling, reminders, notifications and optional Premium features. The app is for general wellness and personal use only.</p>
+<div class="section">
+<h2>2. What the App Does</h2>
+<p>Blue Horizons is a personal wellness companion for sleep routines, reflection and habit building. The app may include sleep sounds, white noise, music, wake-song alarms, mood check-ins, mood history and personal trends, habit tracking, journaling, reminders, notifications and optional Premium features. The app supports self-reflection and routine building, but it does not guarantee sleep, health, mood or habit outcomes.</p>
 </div>
-<div class="section"><h2>3. Not medical or mental health advice</h2>
-<p>Blue Horizons is not a medical device, mental health service, diagnosis tool or substitute for professional advice. Mood tracking, habit logs, journal prompts, insights and audio content are self-reflection tools, not clinical assessments or treatment plans. If you have concerns about sleep, mental health, substance use or any medical condition, consult a qualified professional.</p>
+<div class="section">
+<h2>3. Not Medical or Mental Health Advice</h2>
+<p>Blue Horizons is not a medical device, mental-health service, diagnosis tool or substitute for professional advice. Mood tracking, habit logs, journal prompts, insights and audio content are self-reflection tools, not clinical assessments or treatment plans. If you have concerns about sleep, mental health, substance use or any medical condition, consult a qualified professional.</p>
 </div>
-<div class="section"><h2>4. Premium, purchases and subscriptions</h2>
-<p>Some features may be limited unless you unlock Premium through Google Play purchases or subscriptions. Google Play processes payments and manages renewals, cancellations and refunds according to your Google Play account and local rules. Subscriptions renew automatically unless cancelled before renewal. If Premium expires, is cancelled or cannot be verified, Premium-only features may become locked again.</p>
+<div class="section">
+<h2>4. Premium, Purchases and Subscriptions</h2>
+<p>Some features may require Premium through Google Play purchases or subscriptions. Premium may include ongoing access to expanded audio content, unlimited habit and journal features, complete mood history, personal trends, equalizer or visualizer options, themes and other premium tools. Monthly and yearly plans are subscriptions that renew automatically unless cancelled before renewal. Lifetime Premium is a one-time non-consumable purchase, not a subscription. Google Play processes payments and manages renewals, cancellations and refunds according to your Google Play account and local rules. If Premium expires, is cancelled, refunded or cannot be verified, Premium-only features may become locked again.</p>
 </div>
-<div class="section"><h2>5. Privacy and data</h2>
-<p>Information you enter, such as name, age, gender, mood logs, habit data and journal entries, is stored locally on your device using encrypted storage where available. Health Connect data, if enabled, is used only to enrich your personal view in the app and is not sent to our servers. Firebase Analytics and Crashlytics may collect app usage, diagnostics and crash data to improve reliability. We do not sell your personal data.</p>
+<div class="section">
+<h2>5. Privacy and Data</h2><p>Information you enter, such as name, age, gender, mood logs, habit data, journal entries, optional journal photos and optional audio notes, is stored on your device. Health Connect data, if enabled, is used only in your personal app views and is not sent to our servers. Google analytics, diagnostics, performance and purchase-event metadata may help improve reliability. Journal content, mood values, note text, photos, audio notes and wellness entry content are not collected by our servers. We do not sell personal data.</p></div>
+<div class="section">
+<h2>6. Audio and Content</h2>
+<p>Audio, visuals and other app content are provided for personal, non-commercial use inside Blue Horizons. You may not copy, record, redistribute, broadcast, resell or use this content outside the app without permission.</p>
 </div>
-<div class="section"><h2>6. Audio and content</h2>
-<p>Audio, visuals and other in-app content are provided for personal, non-commercial use inside Blue Horizons. You may not copy, record, redistribute, broadcast, resell or use this content outside the app without permission.</p>
+<div class="section">
+<h2>7. Notifications and Alarms</h2>
+<p>Reminders, wake-song alarms and notifications depend on device settings, permissions, battery restrictions, network conditions and operating-system behavior. We cannot guarantee exact delivery time.</p>
 </div>
-<div class="section"><h2>7. Notifications and alarms</h2>
-<p>Reminders, wake-song alarms and notifications depend on your device settings, permissions, battery restrictions, network conditions and operating system behavior. We cannot guarantee that any notification or alarm will always arrive at an exact time.</p>
-</div>
-<div class="section"><h2>8. Your responsibilities</h2>
-<p>Use the app lawfully and responsibly. Do not reverse-engineer, decompile, tamper with, abuse, bypass payment controls or interfere with the app. You must be at least 13 years old, or have parental or guardian consent where local law requires it.</p>
-</div>
-<div class="section"><h2>9. Warranty disclaimer</h2>
+<div class="section">
+<h2>8. Your Responsibilities</h2><p>Use the app lawfully and responsibly. Do not reverse-engineer, decompile, tamper with, abuse, bypass payment controls or interfere with the app. You must be at least 13 years old, or the minimum age required in your country or region, whichever is higher. If you are under the age of majority in your country or region, you may use the app only with permission and supervision from a parent or legal guardian.</p></div>
+<div class="section">
+<h2>9. Warranty Disclaimer</h2>
 <p>The app is provided as is and as available, without warranties of any kind. We do not guarantee uninterrupted availability, error-free operation, specific wellness results or that the app will meet your needs.</p>
 </div>
-<div class="section"><h2>10. Limitation of liability</h2>
+<div class="section">
+<h2>10. Limitation of Liability</h2>
 <p>To the maximum extent permitted by law, we are not liable for indirect, incidental, special or consequential damages arising from use of the app, missed notifications or reliance on wellness content.</p>
 </div>
-<div class="section"><h2>11. Changes and contact</h2>
-<p>We may update these Terms from time to time. Continued use after changes means you accept the revised Terms. Contact: support@bluehorizons.app</p>
+<div class="section">
+<h2>11. Changes and Contact</h2>
+<p>We may update these Terms from time to time. Continued use after changes means you accept the revised Terms. Contact: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a>
+</p>
 </div>
 </div>
-<div class="lang-section" id="lang-pt" data-header="Termos de Uso · Última atualização: maio de 2026">
-  <div class="section">
-    <div class="highlight"><strong>Resumo:</strong> Blue Horizons é um app de bem-estar pessoal, não um serviço médico. Compras Premium são gerenciadas pelo Google Play. Seus dados pessoais de bem-estar ficam no dispositivo; diagnósticos do Firebase podem ajudar a melhorar a confiabilidade.</div>
-    <div class="highlight"><strong>Aviso sobre Google Play:</strong> Compras Premium, assinaturas, renovações, cancelamentos e reembolsos são processados pelo Google Play. Você pode gerenciar assinaturas na sua conta Google Play. Estes Termos devem ser lidos junto com a Política de Privacidade. <a href="privacy.html">Política de Privacidade</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Termos do Google Play</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Reembolsos do Google Play</a></div>
-  </div>
-  <div class="doc-title">TERMOS DE USO - BLUE HORIZONS</div>
+<div class="lang-section" id="lang-pt" data-header="Termos de Uso · Última atualização: maio de 2026" data-dir="ltr">
+<div class="section"><div class="highlight"><strong>Resumo:</strong> Blue Horizons é um app de bem-estar pessoal, não um serviço médico. Compras Premium são gerenciadas pelo Google Play. Seus dados pessoais ficam no dispositivo; diagnósticos e análises do Firebase podem melhorar a confiabilidade.</div><div class="highlight"><strong>Aviso do Google Play:</strong> Compras, assinaturas, renovações, cancelamentos e reembolsos Premium são processados pelo Google Play. Você pode gerenciar assinaturas na sua conta Google Play. Estes Termos devem ser lidos com a Política de Privacidade. <a href="privacy-policy.html">Política de Privacidade</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Termos do Google Play</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Reembolsos do Google Play</a></div></div>
+<div class="doc-title">TERMOS DE USO - BLUE HORIZONS</div>
 <p class="updated">Última atualização: maio de 2026</p>
-<div class="section"><h2>1. Aceitação</h2>
-<p>Ao baixar ou usar o Blue Horizons, você concorda com estes Termos de Uso e com a nossa Política de Privacidade. Se não concordar, pare de usar o app e desinstale-o.</p>
-</div>
-<div class="section"><h2>2. O que o app faz</h2>
-<p>Blue Horizons é um companheiro de bem-estar pessoal para sono, reflexão e construção de hábitos. O app pode incluir sons para dormir, ruído branco, músicas, alarme com música, check-ins de humor, histórico e insights de humor, acompanhamento de hábitos, diário, lembretes, notificações e recursos Premium opcionais. O app é destinado apenas a bem-estar geral e uso pessoal.</p>
-</div>
-<div class="section"><h2>3. Não é orientação médica ou de saúde mental</h2>
-<p>Blue Horizons não é dispositivo médico, serviço de saúde mental, ferramenta de diagnóstico nem substituto de orientação profissional. Registro de humor, hábitos, diário, insights e conteúdos de áudio são ferramentas de autorreflexão, não avaliações clínicas nem planos de tratamento. Se você tiver preocupações com sono, saúde mental, uso de substâncias ou qualquer condição médica, consulte um profissional qualificado.</p>
-</div>
-<div class="section"><h2>4. Premium, compras e assinaturas</h2>
-<p>Alguns recursos podem ficar limitados até você desbloquear o Premium por compras ou assinaturas no Google Play. O Google Play processa pagamentos e gerencia renovações, cancelamentos e reembolsos conforme sua conta Google Play e as regras locais. Assinaturas renovam automaticamente salvo cancelamento antes da renovação. Se o Premium expirar, for cancelado ou não puder ser verificado, recursos Premium podem voltar a ficar bloqueados.</p>
-</div>
-<div class="section"><h2>5. Privacidade e dados</h2>
-<p>Informações inseridas por você, como nome, idade, gênero, registros de humor, dados de hábitos e entradas do diário, ficam armazenadas localmente no dispositivo com armazenamento criptografado quando disponível. Dados do Health Connect, se ativados, são usados apenas para enriquecer sua visão pessoal no app e não são enviados aos nossos servidores. Firebase Analytics e Crashlytics podem coletar dados de uso, diagnóstico e falhas para melhorar a confiabilidade. Não vendemos seus dados pessoais.</p>
-</div>
-<div class="section"><h2>6. Áudio e conteúdo</h2>
-<p>Áudios, visuais e outros conteúdos do app são fornecidos para uso pessoal e não comercial dentro do Blue Horizons. Você não pode copiar, gravar, redistribuir, transmitir, revender ou usar esse conteúdo fora do app sem permissão.</p>
-</div>
-<div class="section"><h2>7. Notificações e alarmes</h2>
-<p>Lembretes, alarmes com música e notificações dependem das configurações do dispositivo, permissões, restrições de bateria, rede e comportamento do sistema operacional. Não garantimos que qualquer notificação ou alarme chegue sempre no horário exato.</p>
-</div>
-<div class="section"><h2>8. Suas responsabilidades</h2>
-<p>Use o app de forma legal e responsável. Não faça engenharia reversa, descompile, adultere, abuse, burle controles de pagamento nem interfira no app. Você deve ter pelo menos 13 anos ou consentimento dos responsáveis quando a lei local exigir.</p>
-</div>
-<div class="section"><h2>9. Isenção de garantias</h2>
-<p>O app é fornecido no estado em que se encontra e conforme disponibilidade, sem garantias de qualquer tipo. Não garantimos disponibilidade contínua, operação sem erros, resultados específicos de bem-estar ou adequação às suas necessidades.</p>
-</div>
-<div class="section"><h2>10. Limitação de responsabilidade</h2>
-<p>Na máxima extensão permitida por lei, não somos responsáveis por danos indiretos, incidentais, especiais ou consequenciais decorrentes do uso do app, de notificações não recebidas ou da confiança em conteúdo de bem-estar.</p>
-</div>
-<div class="section"><h2>11. Alterações e contato</h2>
-<p>Podemos atualizar estes Termos periodicamente. O uso contínuo após alterações significa aceitação dos Termos revisados. Contato: support@bluehorizons.app</p>
-</div>
-</div>
-<div class="lang-section" id="lang-es" data-header="Términos de Uso · Última actualización: mayo de 2026">
-  <div class="section">
-    <div class="highlight"><strong>Resumen:</strong> Blue Horizons es una app de bienestar personal, no un servicio médico. Las compras Premium se gestionan mediante Google Play. Tus datos personales de bienestar permanecen en tu dispositivo; los diagnósticos de Firebase pueden ayudarnos a mejorar la fiabilidad.</div>
-    <div class="highlight"><strong>Aviso de Google Play:</strong> Las compras Premium, suscripciones, renovaciones, cancelaciones y reembolsos se procesan mediante Google Play. Puedes gestionar las suscripciones en tu cuenta de Google Play. Estos Términos deben leerse junto con la Política de Privacidad. <a href="privacy.html">Política de Privacidad</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Términos de Google Play</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Reembolsos de Google Play</a></div>
-  </div>
-  <div class="doc-title">TÉRMINOS DE USO - BLUE HORIZONS</div>
+<div class="section"><h2>1. Aceitação</h2><p>Ao baixar ou usar o Blue Horizons, você concorda com estes Termos de Uso e com a Política de Privacidade. Se não concordar, pare de usar o app e desinstale-o.</p></div>
+<div class="section"><h2>2. O que o App Faz</h2><p>O Blue Horizons é um companheiro de bem-estar pessoal para rotinas de sono, reflexão e construção de hábitos. O app pode incluir sons para dormir, ruído branco, música, alarmes com música, registros de humor, histórico e tendências pessoais, hábitos, diário, lembretes, notificações e Premium. O app apoia autorreflexão e criação de rotina, mas não garante resultados de sono, saúde, humor ou hábitos.</p></div>
+<div class="section"><h2>3. Não é Orientação Médica ou de Saúde Mental</h2><p>O Blue Horizons não é dispositivo médico, serviço de saúde mental, ferramenta de diagnóstico nem substituto de orientação profissional. Humor, hábitos, diário, insights e áudio são ferramentas de autorreflexão. Consulte um profissional qualificado.</p></div>
+<div class="section"><h2>4. Premium, Compras e Assinaturas</h2><p>Alguns recursos podem exigir Premium por compras ou assinaturas no Google Play. O Premium pode incluir acesso contínuo a áudio expandido, hábitos e diário ilimitados, histórico completo de humor, tendências pessoais, equalizador, visualizadores, temas e outras ferramentas premium. Planos mensais e anuais são assinaturas que renovam automaticamente salvo cancelamento antes da renovação. Premium vitalício é uma compra única não consumível, não uma assinatura. O Google Play processa pagamentos, renovações, cancelamentos e reembolsos. Se o Premium expirar, for cancelado, reembolsado ou não puder ser verificado, recursos Premium podem voltar a ser bloqueados.</p></div>
+<div class="section"><h2>5. Privacidade e Dados</h2><p>Informações que você insere, como nome, idade, gênero, registros de humor, dados de hábitos, entradas do diário, fotos opcionais e notas de áudio opcionais do diário, ficam no dispositivo. Dados do Health Connect, se ativados, são usados apenas nas suas telas pessoais e não são enviados aos nossos servidores. Metadados de análises, diagnóstico, desempenho e compras podem melhorar a confiabilidade. Conteúdo do diário, valores de humor, notas, fotos, áudios e conteúdo de bem-estar não são coletados pelos nossos servidores. Não vendemos dados pessoais.</p></div>
+<div class="section"><h2>6. Áudio e Conteúdo</h2><p>Áudio, visuais e conteúdo do app são fornecidos para uso pessoal e não comercial dentro do Blue Horizons. Você não pode copiar, gravar, redistribuir, transmitir, revender ou usar fora do app sem permissão.</p></div>
+<div class="section"><h2>7. Notificações e Alarmes</h2><p>Lembretes, alarmes e notificações dependem de configurações, permissões, bateria, rede e sistema operacional. Não garantimos entrega em horário exato.</p></div>
+<div class="section"><h2>8. Suas Responsabilidades</h2><p>Use o app de forma legal e responsável. Não faça engenharia reversa, descompile, adultere, abuse, burle pagamentos ou interfira no app. Você deve ter pelo menos 13 anos, ou a idade mínima exigida no seu país ou região, prevalecendo a maior. Se você for menor de idade no seu país ou região, só poderá usar o app com permissão e supervisão de um pai, mãe ou responsável legal.</p></div>
+<div class="section"><h2>9. Isenção de Garantias</h2><p>O app é fornecido no estado em que se encontra e conforme disponibilidade, sem garantias. Não garantimos disponibilidade contínua, ausência de erros, resultados específicos de bem-estar ou adequação às suas necessidades.</p></div>
+<div class="section"><h2>10. Limitação de Responsabilidade</h2><p>Na máxima extensão permitida por lei, não somos responsáveis por danos indiretos, incidentais, especiais ou consequenciais decorrentes do uso do app, notificações perdidas ou confiança em conteúdo de bem-estar.</p></div>
+<div class="section"><h2>11. Alterações e Contato</h2><p>Podemos atualizar estes Termos. O uso contínuo após alterações significa aceitação. Contato: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-es" data-header="Términos de Uso · Última actualización: mayo de 2026" data-dir="ltr">
+<div class="section"><div class="highlight"><strong>Resumen:</strong> Blue Horizons es una app de bienestar personal, no un servicio médico. Las compras Premium se gestionan mediante Google Play. Tus datos personales permanecen en el dispositivo; diagnósticos y analíticas de Firebase pueden mejorar la fiabilidad.</div><div class="highlight"><strong>Aviso de Google Play:</strong> Las compras, suscripciones, renovaciones, cancelaciones y reembolsos Premium se procesan mediante Google Play. Puedes gestionarlos en tu cuenta de Google Play. Estos Términos deben leerse con la Política de Privacidad. <a href="privacy-policy.html">Política de Privacidad</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Términos de Google Play</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Reembolsos de Google Play</a></div></div>
+<div class="doc-title">TÉRMINOS DE USO - BLUE HORIZONS</div>
 <p class="updated">Última actualización: mayo de 2026</p>
-<div class="section"><h2>1. Aceptación</h2>
-<p>Al descargar o usar Blue Horizons, aceptas estos Términos de Uso y nuestra Política de Privacidad. Si no estás de acuerdo, deja de usar la app y desinstálala.</p>
-</div>
-<div class="section"><h2>2. Qué hace la app</h2>
-<p>Blue Horizons es un compañero de bienestar personal para el sueño, la reflexión y la creación de hábitos. La app puede incluir sonidos para dormir, ruido blanco, música, alarmas con canción, registros de estado de ánimo, historial e insights de ánimo, seguimiento de hábitos, diario, recordatorios, notificaciones y funciones Premium opcionales. La app es solo para bienestar general y uso personal.</p>
-</div>
-<div class="section"><h2>3. No es asesoramiento médico ni de salud mental</h2>
-<p>Blue Horizons no es un dispositivo médico, servicio de salud mental, herramienta de diagnóstico ni sustituto de asesoramiento profesional. El seguimiento del ánimo, los hábitos, el diario, los insights y el audio son herramientas de autorreflexión, no evaluaciones clínicas ni planes de tratamiento. Si tienes preocupaciones sobre sueño, salud mental, consumo de sustancias o cualquier condición médica, consulta a un profesional cualificado.</p>
-</div>
-<div class="section"><h2>4. Premium, compras y suscripciones</h2>
-<p>Algunas funciones pueden estar limitadas hasta que desbloquees Premium mediante compras o suscripciones en Google Play. Google Play procesa los pagos y gestiona renovaciones, cancelaciones y reembolsos según tu cuenta de Google Play y las normas locales. Las suscripciones se renuevan automáticamente salvo que las canceles antes de la renovación. Si Premium caduca, se cancela o no puede verificarse, las funciones Premium pueden volver a bloquearse.</p>
-</div>
-<div class="section"><h2>5. Privacidad y datos</h2>
-<p>La información que introduces, como nombre, edad, género, registros de ánimo, datos de hábitos y entradas del diario, se almacena localmente en tu dispositivo con almacenamiento cifrado cuando está disponible. Los datos de Health Connect, si los activas, se usan solo para enriquecer tu vista personal en la app y no se envían a nuestros servidores. Firebase Analytics y Crashlytics pueden recopilar datos de uso, diagnóstico y fallos para mejorar la fiabilidad. No vendemos tus datos personales.</p>
-</div>
-<div class="section"><h2>6. Audio y contenido</h2>
-<p>El audio, los elementos visuales y otros contenidos de la app se proporcionan para uso personal y no comercial dentro de Blue Horizons. No puedes copiar, grabar, redistribuir, transmitir, revender ni usar este contenido fuera de la app sin permiso.</p>
-</div>
-<div class="section"><h2>7. Notificaciones y alarmas</h2>
-<p>Los recordatorios, alarmas con canción y notificaciones dependen de la configuración del dispositivo, permisos, restricciones de batería, red y comportamiento del sistema operativo. No podemos garantizar que una notificación o alarma llegue siempre a una hora exacta.</p>
-</div>
-<div class="section"><h2>8. Tus responsabilidades</h2>
-<p>Usa la app de forma legal y responsable. No hagas ingeniería inversa, descompiles, alteres, abuses, eludas controles de pago ni interfieras con la app. Debes tener al menos 13 años o consentimiento parental cuando la ley local lo requiera.</p>
-</div>
-<div class="section"><h2>9. Exclusión de garantías</h2>
-<p>La app se proporciona tal cual y según disponibilidad, sin garantías de ningún tipo. No garantizamos disponibilidad ininterrumpida, funcionamiento sin errores, resultados específicos de bienestar ni que la app satisfaga tus necesidades.</p>
-</div>
-<div class="section"><h2>10. Limitación de responsabilidad</h2>
-<p>En la máxima medida permitida por la ley, no somos responsables de daños indirectos, incidentales, especiales o consecuentes derivados del uso de la app, de notificaciones no recibidas o de la confianza en contenido de bienestar.</p>
-</div>
-<div class="section"><h2>11. Cambios y contacto</h2>
-<p>Podemos actualizar estos Términos periódicamente. El uso continuado tras los cambios significa que aceptas los Términos revisados. Contacto: support@bluehorizons.app</p>
-</div>
-</div>
-<div class="lang-section" id="lang-fr" data-header="Conditions d’utilisation · Dernière mise à jour : mai 2026">
-  <div class="section">
-    <div class="highlight"><strong>Résumé:</strong> Blue Horizons est une app de bien-être personnel, pas un service médical. Les achats Premium sont gérés par Google Play. Vos données personnelles de bien-être restent sur votre appareil; les diagnostics Firebase peuvent nous aider à améliorer la fiabilité.</div>
-    <div class="highlight"><strong>Avis Google Play:</strong> Les achats Premium, abonnements, renouvellements, annulations et remboursements sont traités par Google Play. Vous pouvez gérer vos abonnements dans votre compte Google Play. Ces Conditions doivent être lues avec la Politique de confidentialité. <a href="privacy.html">Politique de confidentialité</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Conditions Google Play</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Remboursements Google Play</a></div>
-  </div>
-  <div class="doc-title">CONDITIONS D’UTILISATION - BLUE HORIZONS</div>
+<div class="section"><h2>1. Aceptación</h2><p>Al descargar o usar Blue Horizons, aceptas estos Términos de Uso y la Política de Privacidad. Si no estás de acuerdo, deja de usar la app y desinstálala.</p></div>
+<div class="section"><h2>2. Qué Hace la App</h2><p>Blue Horizons es un compañero de bienestar personal para rutinas de sueño, reflexión y creación de hábitos. La app puede incluir sonidos para dormir, ruido blanco, música, alarmas, registros de ánimo, historial y tendencias personales, hábitos, diario, recordatorios, notificaciones y Premium. La app apoya la autorreflexión y la rutina, pero no garantiza resultados de sueño, salud, ánimo o hábitos.</p></div>
+<div class="section"><h2>3. No es Asesoramiento Médico ni de Salud Mental</h2><p>Blue Horizons no es dispositivo médico, servicio de salud mental, herramienta diagnóstica ni sustituto de asesoramiento profesional. Consulta a un profesional cualificado.</p></div>
+<div class="section"><h2>4. Premium, Compras y Suscripciones</h2><p>Algunas funciones pueden requerir Premium mediante compras o suscripciones en Google Play. Premium puede incluir acceso continuo a audio ampliado, hábitos y diario ilimitados, historial completo de ánimo, tendencias personales, ecualizador, visualizadores, temas y otras herramientas premium. Los planes mensual y anual son suscripciones que se renuevan automáticamente salvo cancelación antes de la renovación. Premium vitalicio es una compra única no consumible, no una suscripción. Google Play procesa pagos, renovaciones, cancelaciones y reembolsos. Si Premium caduca, se cancela, se reembolsa o no puede verificarse, las funciones Premium pueden volver a bloquearse.</p></div>
+<div class="section"><h2>5. Privacidad y Datos</h2><p>La información que introduces, como nombre, edad, género, registros de ánimo, datos de hábitos, entradas del diario, fotos opcionales y notas de audio opcionales del diario, se almacena en tu dispositivo. Los datos de Health Connect, si están activados, se usan solo en tus vistas personales y no se envían a nuestros servidores. Metadatos de análisis, diagnóstico, rendimiento y compra pueden mejorar la fiabilidad. El contenido del diario, valores de ánimo, notas, fotos, audios y contenido de bienestar no son recopilados por nuestros servidores. No vendemos datos personales.</p></div>
+<div class="section"><h2>6. Audio y Contenido</h2><p>Audio, visuales y contenido son para uso personal y no comercial dentro de Blue Horizons. No puedes copiarlos, grabarlos, redistribuirlos, transmitirlos, revenderlos ni usarlos fuera de la app sin permiso.</p></div>
+<div class="section"><h2>7. Notificaciones y Alarmas</h2><p>Recordatorios, alarmas y notificaciones dependen del dispositivo, permisos, batería, red y sistema operativo. No garantizamos entrega exacta.</p></div>
+<div class="section"><h2>8. Tus Responsabilidades</h2><p>Usa la app legal y responsablemente. No hagas ingeniería inversa, descompiles, alteres, abuses, evadas pagos ni interfieras. Debes tener al menos 13 años, o la edad mínima exigida en tu país o región, la que sea mayor. Si eres menor de edad en tu país o región, solo puedes usar la app con permiso y supervisión de tu madre, padre o tutor legal.</p></div>
+<div class="section"><h2>9. Exclusión de Garantías</h2><p>La app se proporciona tal cual y según disponibilidad, sin garantías. No garantizamos disponibilidad continua, funcionamiento sin errores, resultados específicos de bienestar ni adecuación a tus necesidades.</p></div>
+<div class="section"><h2>10. Limitación de Responsabilidad</h2><p>En la máxima medida permitida por la ley, no somos responsables por daños indirectos, incidentales, especiales o consecuentes por uso de la app, notificaciones perdidas o confianza en contenido de bienestar.</p></div>
+<div class="section"><h2>11. Cambios y Contacto</h2><p>Podemos actualizar estos Términos. El uso continuado implica aceptación. Contacto: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-fr" data-header="Conditions d’utilisation · Dernière mise à jour : mai 2026" data-dir="ltr">
+<div class="section"><div class="highlight"><strong>Résumé:</strong> Blue Horizons est une app de bien-être personnel, pas un service médical. Les achats Premium sont gérés par Google Play. Vos données personnelles restent sur l’appareil; les diagnostics et analyses Firebase peuvent améliorer la fiabilité.</div><div class="highlight"><strong>Avis Google Play:</strong> Les achats Premium, abonnements, renouvellements, annulations et remboursements sont traités par Google Play. Vous pouvez gérer les abonnements dans votre compte Google Play. Ces Conditions doivent être lues avec la Politique de confidentialité. <a href="privacy-policy.html">Politique de confidentialité</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Conditions Google Play</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Remboursements Google Play</a>
+</div></div>
+<div class="doc-title">CONDITIONS D’UTILISATION - BLUE HORIZONS</div>
 <p class="updated">Dernière mise à jour : mai 2026</p>
-<div class="section"><h2>1. Acceptation</h2>
-<p>En téléchargeant ou en utilisant Blue Horizons, vous acceptez ces Conditions d’utilisation et notre Politique de confidentialité. Si vous n’êtes pas d’accord, veuillez cesser d’utiliser l’app et la désinstaller.</p>
-</div>
-<div class="section"><h2>2. Rôle de l’app</h2>
-<p>Blue Horizons est un compagnon de bien-être personnel pour le sommeil, la réflexion et la création d’habitudes. L’app peut inclure des sons de sommeil, du bruit blanc, de la musique, des alarmes musicales, des bilans d’humeur, un historique et des insights d’humeur, le suivi d’habitudes, un journal, des rappels, des notifications et des fonctionnalités Premium optionnelles. L’app est destinée uniquement au bien-être général et à un usage personnel.</p>
-</div>
-<div class="section"><h2>3. Pas d’avis médical ni de service de santé mentale</h2>
-<p>Blue Horizons n’est pas un dispositif médical, un service de santé mentale, un outil de diagnostic ni un substitut à un avis professionnel. Le suivi de l’humeur, les habitudes, le journal, les insights et les contenus audio sont des outils d’autoréflexion, pas des évaluations cliniques ni des plans de traitement. Si vous avez des préoccupations liées au sommeil, à la santé mentale, à l’usage de substances ou à toute condition médicale, consultez un professionnel qualifié.</p>
-</div>
-<div class="section"><h2>4. Premium, achats et abonnements</h2>
-<p>Certaines fonctionnalités peuvent être limitées tant que vous n’avez pas débloqué Premium via des achats ou abonnements Google Play. Google Play traite les paiements et gère les renouvellements, annulations et remboursements selon votre compte Google Play et les règles locales. Les abonnements se renouvellent automatiquement sauf annulation avant le renouvellement. Si Premium expire, est annulé ou ne peut pas être vérifié, les fonctionnalités Premium peuvent être de nouveau verrouillées.</p>
-</div>
-<div class="section"><h2>5. Confidentialité et données</h2>
-<p>Les informations que vous saisissez, comme le nom, l’âge, le genre, les journaux d’humeur, les données d’habitudes et les entrées du journal, sont stockées localement sur votre appareil avec un stockage chiffré lorsque disponible. Les données Health Connect, si activées, servent uniquement à enrichir votre vue personnelle dans l’app et ne sont pas envoyées à nos serveurs. Firebase Analytics et Crashlytics peuvent collecter des données d’usage, de diagnostic et de plantage afin d’améliorer la fiabilité. Nous ne vendons pas vos données personnelles.</p>
-</div>
-<div class="section"><h2>6. Audio et contenu</h2>
-<p>Les contenus audio, visuels et autres contenus intégrés sont fournis pour un usage personnel et non commercial dans Blue Horizons. Vous ne pouvez pas copier, enregistrer, redistribuer, diffuser, revendre ni utiliser ces contenus hors de l’app sans autorisation.</p>
-</div>
-<div class="section"><h2>7. Notifications et alarmes</h2>
-<p>Les rappels, alarmes musicales et notifications dépendent des réglages de votre appareil, des autorisations, des restrictions de batterie, du réseau et du comportement du système d’exploitation. Nous ne pouvons pas garantir qu’une notification ou une alarme arrivera toujours à l’heure exacte.</p>
-</div>
-<div class="section"><h2>8. Vos responsabilités</h2>
-<p>Utilisez l’app légalement et de manière responsable. Ne faites pas d’ingénierie inverse, ne décompilez pas, ne modifiez pas, n’abusez pas, ne contournez pas les contrôles de paiement et n’interférez pas avec l’app. Vous devez avoir au moins 13 ans ou disposer du consentement parental lorsque la loi locale l’exige.</p>
-</div>
-<div class="section"><h2>9. Absence de garantie</h2>
-<p>L’app est fournie en l’état et selon disponibilité, sans garantie d’aucune sorte. Nous ne garantissons pas une disponibilité ininterrompue, un fonctionnement sans erreur, des résultats de bien-être spécifiques ni l’adéquation à vos besoins.</p>
-</div>
-<div class="section"><h2>10. Limitation de responsabilité</h2>
-<p>Dans la limite maximale autorisée par la loi, nous ne sommes pas responsables des dommages indirects, accessoires, spéciaux ou consécutifs liés à l’utilisation de l’app, aux notifications manquées ou à la confiance accordée au contenu de bien-être.</p>
-</div>
-<div class="section"><h2>11. Modifications et contact</h2>
-<p>Nous pouvons mettre ces Conditions à jour périodiquement. La poursuite de l’utilisation après modification signifie que vous acceptez les Conditions révisées. Contact : support@bluehorizons.app</p>
-</div>
-</div>
-<div class="lang-section" id="lang-de" data-header="Nutzungsbedingungen · Zuletzt aktualisiert: Mai 2026">
-  <div class="section">
-    <div class="highlight"><strong>Kurzfassung:</strong> Blue Horizons ist eine persönliche Wellness-App, kein medizinischer Dienst. Premium-Käufe werden über Google Play verwaltet. Ihre persönlichen Wellness-Daten bleiben auf Ihrem Gerät; Firebase-Diagnosen können uns helfen, die Zuverlässigkeit zu verbessern.</div>
-    <div class="highlight"><strong>Google-Play-Hinweis:</strong> Premium-Käufe, Abonnements, Verlängerungen, Kündigungen und Erstattungen werden über Google Play verarbeitet. Sie können Abonnements in Ihrem Google-Play-Konto verwalten. Diese Bedingungen sollten zusammen mit der Datenschutzerklärung gelesen werden. <a href="privacy.html">Datenschutzerklärung</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google-Play-Bedingungen</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google-Play-Erstattungen</a></div>
-  </div>
-  <div class="doc-title">NUTZUNGSBEDINGUNGEN - BLUE HORIZONS</div>
+<div class="section"><h2>1. Acceptation</h2><p>En téléchargeant ou en utilisant Blue Horizons, vous acceptez ces Conditions d’utilisation et la Politique de confidentialité. Si vous n’êtes pas d’accord, cessez d’utiliser l’app et désinstallez-la.</p></div>
+<div class="section"><h2>2. Rôle de l’App</h2><p>Blue Horizons est un compagnon personnel de bien-être pour les routines de sommeil, la réflexion et les habitudes. L’app peut inclure sons de sommeil, bruit blanc, musique, alarmes, humeur, historique et tendances personnelles, habitudes, journal, rappels, notifications et Premium. L’app soutient l’autoréflexion et les routines, mais ne garantit pas de résultats de sommeil, de santé, d’humeur ou d’habitudes.</p></div>
+<div class="section"><h2>3. Pas d’Avis Médical ni de Santé Mentale</h2><p>Blue Horizons n’est pas un dispositif médical, un service de santé mentale, un outil de diagnostic ni un substitut à un avis professionnel. Consultez un professionnel qualifié.</p></div>
+<div class="section"><h2>4. Premium, Achats et Abonnements</h2><p>Certaines fonctions peuvent nécessiter Premium via Google Play. Premium peut inclure un accès continu à du contenu audio étendu, des habitudes et un journal illimités, l’historique complet de l’humeur, des tendances personnelles, l’égaliseur, les visualiseurs, les thèmes et d’autres outils premium. Les plans mensuel et annuel sont des abonnements renouvelés automatiquement sauf annulation avant renouvellement. Premium à vie est un achat unique non consommable, pas un abonnement. Google Play traite paiements, renouvellements, annulations et remboursements. Si Premium expire, est annulé, remboursé ou ne peut pas être vérifié, les fonctions Premium peuvent être verrouillées à nouveau.</p></div>
+<div class="section"><h2>5. Confidentialité et Données</h2><p>Les informations que vous saisissez, comme nom, âge, genre, humeur, habitudes, entrées du journal, photos facultatives et notes audio facultatives, sont stockées sur votre appareil. Les données Health Connect, si activées, servent uniquement à vos vues personnelles et ne sont pas envoyées à nos serveurs. Des métadonnées d’analyse, diagnostic, performance et achat peuvent améliorer la fiabilité. Le contenu du journal, les valeurs d’humeur, les notes, photos, audios et contenus de bien-être ne sont pas collectés par nos serveurs. Nous ne vendons pas les données personnelles.</p></div>
+<div class="section"><h2>6. Audio et Contenu</h2><p>Les contenus audio, visuels et autres sont fournis pour un usage personnel non commercial dans Blue Horizons. Vous ne pouvez pas les copier, enregistrer, redistribuer, diffuser, revendre ou utiliser hors de l’app sans permission.</p></div>
+<div class="section"><h2>7. Notifications et Alarmes</h2><p>Les rappels, alarmes et notifications dépendent de l’appareil, des permissions, de la batterie, du réseau et du système. Nous ne garantissons pas une livraison exacte.</p></div>
+<div class="section"><h2>8. Vos Responsabilités</h2><p>Utilisez l’app légalement et de manière responsable. Ne faites pas d’ingénierie inverse, ne décompilez pas, ne modifiez pas, n’abusez pas, ne contournez pas les paiements et n’interférez pas avec l’app. Vous devez avoir au moins 13 ans, ou l’âge minimum requis dans votre pays ou région si celui-ci est plus élevé. Si vous êtes mineur, vous ne pouvez utiliser l’app qu’avec l’autorisation et la supervision d’un parent ou tuteur légal.</p></div>
+<div class="section"><h2>9. Absence de Garantie</h2><p>L’app est fournie telle quelle et selon disponibilité, sans garanties. Nous ne garantissons pas une disponibilité continue, l’absence d’erreurs, des résultats précis de bien-être ou l’adéquation à vos besoins.</p></div>
+<div class="section"><h2>10. Limitation de Responsabilité</h2><p>Dans la mesure permise par la loi, nous ne sommes pas responsables des dommages indirects, accessoires, spéciaux ou consécutifs liés à l’utilisation de l’app, aux notifications manquées ou au contenu de bien-être.</p></div>
+<div class="section"><h2>11. Modifications et Contact</h2><p>Nous pouvons mettre à jour ces Conditions. L’utilisation continue vaut acceptation. Contact : <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-de" data-header="Nutzungsbedingungen · Zuletzt aktualisiert: Mai 2026" data-dir="ltr">
+<div class="section"><div class="highlight"><strong>Kurzfassung:</strong> Blue Horizons ist eine persönliche Wellness-App, kein medizinischer Dienst. Premium-Käufe werden über Google Play verwaltet. Ihre persönlichen Daten bleiben auf dem Gerät; Firebase-Diagnosen und Analysen können die Zuverlässigkeit verbessern.</div><div class="highlight"><strong>Google-Play-Hinweis:</strong> Premium-Käufe, Abonnements, Verlängerungen, Kündigungen und Erstattungen werden über Google Play verarbeitet. Sie können Abonnements in Ihrem Google-Play-Konto verwalten. Diese Bedingungen sollten zusammen mit der Datenschutzerklärung gelesen werden. <a href="privacy-policy.html">Datenschutzerklärung</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google-Play-Bedingungen</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google-Play-Erstattungen</a>
+</div></div>
+<div class="doc-title">NUTZUNGSBEDINGUNGEN - BLUE HORIZONS</div>
 <p class="updated">Zuletzt aktualisiert: Mai 2026</p>
-<div class="section"><h2>1. Zustimmung</h2>
-<p>Durch das Herunterladen oder Nutzen von Blue Horizons stimmen Sie diesen Nutzungsbedingungen und unserer Datenschutzerklärung zu. Wenn Sie nicht einverstanden sind, nutzen Sie die App bitte nicht weiter und deinstallieren Sie sie.</p>
-</div>
-<div class="section"><h2>2. Zweck der App</h2>
-<p>Blue Horizons ist ein persönlicher Wellness-Begleiter für Schlaf, Reflexion und Gewohnheitsaufbau. Die App kann Schlafklänge, weißes Rauschen, Musik, Weckmusik-Alarme, Stimmungs-Check-ins, Stimmungsverlauf und Einblicke, Gewohnheitstracking, Journal, Erinnerungen, Benachrichtigungen und optionale Premium-Funktionen enthalten. Die App ist ausschließlich für allgemeines Wohlbefinden und persönliche Nutzung bestimmt.</p>
-</div>
-<div class="section"><h2>3. Keine medizinische oder psychologische Beratung</h2>
-<p>Blue Horizons ist kein Medizinprodukt, kein psychischer Gesundheitsdienst, kein Diagnosewerkzeug und kein Ersatz für professionelle Beratung. Stimmungstracking, Gewohnheitsprotokolle, Journal, Einblicke und Audioinhalte sind Werkzeuge zur Selbstreflexion, keine klinischen Bewertungen oder Behandlungspläne. Bei Fragen zu Schlaf, psychischer Gesundheit, Substanzgebrauch oder medizinischen Beschwerden wenden Sie sich an qualifiziertes Fachpersonal.</p>
-</div>
-<div class="section"><h2>4. Premium, Käufe und Abonnements</h2>
-<p>Einige Funktionen können eingeschränkt sein, bis Sie Premium über Google-Play-Käufe oder Abonnements freischalten. Google Play verarbeitet Zahlungen und verwaltet Verlängerungen, Kündigungen und Erstattungen gemäß Ihrem Google-Play-Konto und den lokalen Regeln. Abonnements verlängern sich automatisch, sofern sie nicht vor der Verlängerung gekündigt werden. Wenn Premium abläuft, gekündigt wird oder nicht verifiziert werden kann, können Premium-Funktionen wieder gesperrt werden.</p>
-</div>
-<div class="section"><h2>5. Datenschutz und Daten</h2>
-<p>Von Ihnen eingegebene Informationen wie Name, Alter, Geschlecht, Stimmungseinträge, Gewohnheitsdaten und Journaleinträge werden lokal auf Ihrem Gerät gespeichert, soweit verfügbar mit verschlüsseltem Speicher. Health-Connect-Daten werden, falls aktiviert, nur zur Erweiterung Ihrer persönlichen Ansicht in der App genutzt und nicht an unsere Server gesendet. Firebase Analytics und Crashlytics können Nutzungs-, Diagnose- und Absturzdaten erfassen, um die Zuverlässigkeit zu verbessern. Wir verkaufen keine personenbezogenen Daten.</p>
-</div>
-<div class="section"><h2>6. Audio und Inhalte</h2>
-<p>Audio, visuelle Elemente und andere App-Inhalte werden nur zur persönlichen, nicht kommerziellen Nutzung innerhalb von Blue Horizons bereitgestellt. Sie dürfen diese Inhalte ohne Erlaubnis nicht kopieren, aufnehmen, weiterverbreiten, senden, weiterverkaufen oder außerhalb der App verwenden.</p>
-</div>
-<div class="section"><h2>7. Benachrichtigungen und Alarme</h2>
-<p>Erinnerungen, Weckmusik-Alarme und Benachrichtigungen hängen von Geräteeinstellungen, Berechtigungen, Batterieeinschränkungen, Netzwerkbedingungen und dem Verhalten des Betriebssystems ab. Wir können nicht garantieren, dass eine Benachrichtigung oder ein Alarm immer exakt zur geplanten Zeit erscheint.</p>
-</div>
-<div class="section"><h2>8. Ihre Verantwortlichkeiten</h2>
-<p>Nutzen Sie die App rechtmäßig und verantwortungsvoll. Sie dürfen die App nicht zurückentwickeln, dekompilieren, manipulieren, missbrauchen, Zahlungskontrollen umgehen oder stören. Sie müssen mindestens 13 Jahre alt sein oder, falls gesetzlich erforderlich, die Zustimmung eines Elternteils oder Erziehungsberechtigten haben.</p>
-</div>
-<div class="section"><h2>9. Gewährleistungsausschluss</h2>
-<p>Die App wird wie besehen und nach Verfügbarkeit ohne Garantien jeglicher Art bereitgestellt. Wir garantieren keine unterbrechungsfreie Verfügbarkeit, fehlerfreie Funktion, bestimmten Wellness-Ergebnisse oder Eignung für Ihre Bedürfnisse.</p>
-</div>
-<div class="section"><h2>10. Haftungsbeschränkung</h2>
-<p>Soweit gesetzlich zulässig, haften wir nicht für indirekte, beiläufige, besondere oder Folgeschäden aus der Nutzung der App, verpassten Benachrichtigungen oder dem Vertrauen auf Wellness-Inhalte.</p>
-</div>
-<div class="section"><h2>11. Änderungen und Kontakt</h2>
-<p>Wir können diese Bedingungen von Zeit zu Zeit aktualisieren. Die weitere Nutzung nach Änderungen bedeutet, dass Sie die überarbeiteten Bedingungen akzeptieren. Kontakt: support@bluehorizons.app</p>
-</div>
-</div>
-<div class="lang-section" id="lang-it" data-header="Termini di utilizzo · Ultimo aggiornamento: maggio 2026">
-  <div class="section">
-    <div class="highlight"><strong>Riepilogo:</strong> Blue Horizons è un’app di benessere personale, non un servizio medico. Gli acquisti Premium sono gestiti da Google Play. I tuoi dati personali di benessere restano sul dispositivo; la diagnostica Firebase può aiutarci a migliorare l’affidabilità.</div>
-    <div class="highlight"><strong>Avviso Google Play:</strong> Acquisti Premium, abbonamenti, rinnovi, cancellazioni e rimborsi sono gestiti tramite Google Play. Puoi gestire gli abbonamenti nel tuo account Google Play. Questi Termini vanno letti insieme all’Informativa sulla privacy. <a href="privacy.html">Informativa sulla privacy</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Termini Google Play</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Rimborsi Google Play</a></div>
-  </div>
-  <div class="doc-title">TERMINI DI UTILIZZO - BLUE HORIZONS</div>
+<div class="section"><h2>1. Zustimmung</h2><p>Durch Herunterladen oder Nutzung von Blue Horizons stimmen Sie diesen Nutzungsbedingungen und der Datenschutzerklärung zu. Wenn Sie nicht zustimmen, beenden Sie die Nutzung und deinstallieren Sie die App.</p></div>
+<div class="section"><h2>2. Zweck der App</h2><p>Blue Horizons ist ein persönlicher Wellness-Begleiter für Schlafroutinen, Reflexion und Gewohnheiten. Die App kann Schlafklänge, weißes Rauschen, Musik, Alarme, Stimmung, Verlauf und persönliche Trends, Gewohnheiten, Journal, Erinnerungen, Benachrichtigungen und Premium enthalten. Die App unterstützt Selbstreflexion und Routinen, garantiert aber keine Schlaf-, Gesundheits-, Stimmungs- oder Gewohnheitsergebnisse.</p></div>
+<div class="section"><h2>3. Keine Medizinische oder Psychologische Beratung</h2><p>Blue Horizons ist kein Medizinprodukt, kein psychologischer Dienst, kein Diagnosewerkzeug und kein Ersatz für professionelle Beratung. Wenden Sie sich an qualifizierte Fachkräfte.</p></div>
+<div class="section"><h2>4. Premium, Käufe und Abonnements</h2><p>Einige Funktionen können Premium über Google Play erfordern. Premium kann fortlaufenden Zugriff auf erweiterte Audioinhalte, unbegrenzte Gewohnheiten und Journaleinträge, vollständigen Stimmungsverlauf, persönliche Trends, Equalizer, Visualizer, Designs und andere Premium-Tools enthalten. Monats- und Jahrespläne sind Abonnements, die sich automatisch verlängern, sofern sie nicht vor der Verlängerung gekündigt werden. Lifetime Premium ist ein einmaliger nicht verbrauchbarer Kauf, kein Abonnement. Google Play verarbeitet Zahlungen, Verlängerungen, Kündigungen und Erstattungen. Wenn Premium abläuft, gekündigt, erstattet oder nicht verifiziert werden kann, können Premium-Funktionen wieder gesperrt werden.</p></div>
+<div class="section"><h2>5. Datenschutz und Daten</h2><p>Informationen, die Sie eingeben, wie Name, Alter, Geschlecht, Stimmungseinträge, Gewohnheitsdaten, Journaleinträge, optionale Journalfotos und optionale Audionotizen, werden auf Ihrem Gerät gespeichert. Health-Connect-Daten werden, falls aktiviert, nur in Ihren persönlichen App-Ansichten verwendet und nicht an unsere Server gesendet. Analyse-, Diagnose-, Leistungs- und Kaufmetadaten können die Zuverlässigkeit verbessern. Journalinhalte, Stimmungswerte, Notizen, Fotos, Audios und Wellness-Inhalte werden von unseren Servern nicht erfasst. Wir verkaufen keine personenbezogenen Daten.</p></div>
+<div class="section"><h2>6. Audio und Inhalte</h2><p>Audio, visuelle Inhalte und sonstige App-Inhalte sind für persönliche, nicht kommerzielle Nutzung in Blue Horizons bestimmt. Sie dürfen sie ohne Erlaubnis nicht kopieren, aufnehmen, weitergeben, senden, weiterverkaufen oder außerhalb der App nutzen.</p></div>
+<div class="section"><h2>7. Benachrichtigungen und Alarme</h2><p>Erinnerungen, Alarme und Benachrichtigungen hängen von Gerät, Berechtigungen, Akku, Netzwerk und Betriebssystem ab. Exakte Zustellung wird nicht garantiert.</p></div>
+<div class="section"><h2>8. Ihre Verantwortlichkeiten</h2><p>Nutzen Sie die App rechtmäßig und verantwortungsvoll. Reverse Engineering, Dekompilieren, Manipulation, Missbrauch, Umgehung von Zahlungen oder Störung der App sind untersagt. Sie müssen mindestens 13 Jahre alt sein oder das in Ihrem Land oder Ihrer Region höhere Mindestalter erreicht haben. Minderjährige dürfen die App nur mit Erlaubnis und Aufsicht eines Elternteils oder gesetzlichen Vertreters nutzen.</p></div>
+<div class="section"><h2>9. Gewährleistungsausschluss</h2><p>Die App wird wie besehen und nach Verfügbarkeit ohne Gewährleistungen bereitgestellt. Wir garantieren keine ununterbrochene Verfügbarkeit, Fehlerfreiheit, bestimmte Wellness-Ergebnisse oder Eignung für Ihre Bedürfnisse.</p></div>
+<div class="section"><h2>10. Haftungsbeschränkung</h2><p>Soweit gesetzlich zulässig, haften wir nicht für indirekte, beiläufige, besondere oder Folgeschäden aus Nutzung, verpassten Benachrichtigungen oder Vertrauen auf Wellness-Inhalte.</p></div>
+<div class="section"><h2>11. Änderungen und Kontakt</h2><p>Wir können diese Bedingungen aktualisieren. Weitere Nutzung bedeutet Zustimmung. Kontakt: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-it" data-header="Termini di utilizzo · Ultimo aggiornamento: maggio 2026" data-dir="ltr">
+<div class="section"><div class="highlight"><strong>Sintesi:</strong> Blue Horizons è un’app di benessere personale, non un servizio medico. Gli acquisti Premium sono gestiti da Google Play. I dati personali restano sul dispositivo; diagnostica e analisi Firebase possono migliorare l’affidabilità.</div><div class="highlight"><strong>Avviso Google Play:</strong> Acquisti Premium, abbonamenti, rinnovi, cancellazioni e rimborsi sono gestiti da Google Play. Puoi gestire gli abbonamenti nel tuo account Google Play. Questi Termini vanno letti con l’Informativa sulla privacy. <a href="privacy-policy.html">Informativa sulla privacy</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Termini Google Play</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Rimborsi Google Play</a>
+</div></div>
+<div class="doc-title">TERMINI DI UTILIZZO - BLUE HORIZONS</div>
 <p class="updated">Ultimo aggiornamento: maggio 2026</p>
-<div class="section"><p>Scaricando o usando Blue Horizons, accetti questi Termini di utilizzo e la nostra Informativa sulla privacy. Blue Horizons è un compagno di benessere personale per sonno, riflessione e abitudini: può includere suoni per dormire, rumore bianco, musica, sveglie musicali, check-in dell’umore, storico e insight dell’umore, tracciamento delle abitudini, diario, promemoria, notifiche e funzioni Premium opzionali.</p></div>
-<div class="section"><p>Blue Horizons non è un dispositivo medico, un servizio di salute mentale, uno strumento diagnostico o un sostituto del parere professionale. Umore, abitudini, diario, insight e audio sono strumenti di autoriflessione, non valutazioni cliniche o piani di trattamento. Per dubbi su sonno, salute mentale, uso di sostanze o condizioni mediche, consulta un professionista qualificato.</p></div>
-<div class="section"><p>Alcune funzioni possono richiedere Premium tramite acquisti o abbonamenti Google Play. Google Play elabora i pagamenti e gestisce rinnovi, cancellazioni e rimborsi. Gli abbonamenti si rinnovano automaticamente salvo cancellazione prima del rinnovo. Se Premium scade, viene annullato o non può essere verificato, le funzioni Premium possono tornare bloccate.</p></div>
-<div class="section"><p>I dati inseriti, come nome, età, genere, registri dell’umore, abitudini e diario, sono archiviati localmente sul dispositivo con memoria cifrata quando disponibile. I dati Health Connect, se attivati, servono solo ad arricchire la tua vista personale nell’app e non vengono inviati ai nostri server. Firebase Analytics e Crashlytics possono raccogliere dati d’uso, diagnostica e crash per migliorare l’affidabilità. Non vendiamo i tuoi dati personali.</p></div>
-<div class="section"><p>Audio, elementi visivi e contenuti dell’app sono concessi solo per uso personale e non commerciale dentro Blue Horizons. Non puoi copiarli, registrarli, ridistribuirli, trasmetterli, rivenderli o usarli fuori dall’app senza autorizzazione. Promemoria, sveglie e notifiche dipendono da dispositivo, permessi, batteria, rete e sistema operativo; non garantiamo consegna sempre esatta.</p></div>
-<div class="section"><p>Usa l’app in modo legale e responsabile. Non effettuare reverse engineering, decompilazione, manomissione, abuso, aggiramento dei pagamenti o interferenze con l’app. Devi avere almeno 13 anni o il consenso dei genitori quando richiesto dalla legge locale.</p></div>
-<div class="section"><p>L’app è fornita così com’è e secondo disponibilità, senza garanzie. Nella misura massima consentita dalla legge, non siamo responsabili per danni indiretti, incidentali, speciali o consequenziali derivanti dall’uso dell’app, da notifiche mancate o dall’affidamento sui contenuti di benessere. Possiamo aggiornare questi Termini; l’uso continuato implica accettazione. Contatto: support@bluehorizons.app</p></div>
-</div>
-<div class="lang-section" id="lang-ar" data-header="شروط الاستخدام · آخر تحديث: مايو 2026">
-  <div class="section">
-    <div class="highlight"><strong>ملخص:</strong> Blue Horizons تطبيق رفاهية شخصي وليس خدمة طبية. تتم إدارة مشتريات Premium عبر Google Play. تبقى بيانات الرفاهية الشخصية على جهازك؛ وقد تساعدنا تشخيصات Firebase في تحسين الموثوقية.</div>
-    <div class="highlight"><strong>إشعار Google Play:</strong> تتم معالجة مشتريات Premium والاشتراكات والتجديدات والإلغاءات واسترداد الأموال عبر Google Play. يمكنك إدارة الاشتراكات في حساب Google Play. يجب قراءة هذه الشروط مع سياسة الخصوصية. <a href="privacy.html">سياسة الخصوصية</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">شروط Google Play</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">استرداد أموال Google Play</a></div>
-  </div>
-  <div class="doc-title">شروط الاستخدام - BLUE HORIZONS</div>
+<div class="section"><h2>1. Accettazione</h2><p>Scaricando o usando Blue Horizons, accetti questi Termini di utilizzo e l’Informativa sulla privacy. Se non accetti, smetti di usare l’app e disinstallala.</p></div>
+<div class="section"><h2>2. Cosa Fa l’App</h2><p>Blue Horizons è un’app personale per il benessere dedicata a routine del sonno, riflessione e abitudini. Può includere suoni per dormire, rumore bianco, musica, sveglie musicali, check-in dell’umore, storico e trend personali, abitudini, diario, promemoria, notifiche e Premium. L’app supporta autoriflessione e routine, ma non garantisce risultati su sonno, salute, umore o abitudini.</p></div>
+<div class="section"><h2>3. Nessun Parere Medico o di Salute Mentale</h2><p>Blue Horizons non è un dispositivo medico, servizio di salute mentale, strumento diagnostico o sostituto di parere professionale. Consulta un professionista qualificato.</p></div>
+<div class="section"><h2>4. Premium, Acquisti e Abbonamenti</h2><p>Alcune funzioni possono richiedere Premium tramite acquisti o abbonamenti Google Play. Premium può includere accesso continuo a contenuti audio ampliati, abitudini e diario illimitati, storico completo dell’umore, trend personali, equalizzatore, visualizzatori, temi e altri strumenti premium. I piani mensile e annuale sono abbonamenti che si rinnovano automaticamente salvo cancellazione prima del rinnovo. Lifetime Premium è un acquisto unico non consumabile, non un abbonamento. Google Play elabora pagamenti, rinnovi, cancellazioni e rimborsi. Se Premium scade, viene annullato, rimborsato o non può essere verificato, le funzioni Premium possono tornare bloccate.</p></div>
+<div class="section"><h2>5. Privacy e Dati</h2><p>Le informazioni che inserisci, come nome, età, genere, registri dell’umore, dati sulle abitudini, voci del diario, foto opzionali e note audio opzionali, sono archiviate sul dispositivo. I dati Health Connect, se attivi, sono usati solo nelle viste personali dell’app e non sono inviati ai nostri server. Metadati di analisi, diagnosi, prestazioni e acquisto possono migliorare l’affidabilità. Contenuti del diario, valori dell’umore, note, foto, audio e contenuti di benessere non sono raccolti dai nostri server. Non vendiamo dati personali.</p></div>
+<div class="section"><h2>6. Audio e Contenuti</h2><p>Audio, visuali e contenuti sono per uso personale non commerciale in Blue Horizons. Non puoi copiarli, registrarli, ridistribuirli, trasmetterli, rivenderli o usarli fuori dall’app senza permesso.</p></div>
+<div class="section"><h2>7. Notifiche e Sveglie</h2><p>Promemoria, sveglie e notifiche dipendono da dispositivo, permessi, batteria, rete e sistema operativo. Non garantiamo consegna esatta.</p></div>
+<div class="section"><h2>8. Le Tue Responsabilità</h2><p>Usa l’app in modo legale e responsabile. Non effettuare reverse engineering, decompilazione, manomissione, abuso, aggiramento dei pagamenti o interferenze. Devi avere almeno 13 anni, o l’età minima richiesta nel tuo Paese o regione se superiore. Se sei minorenne, puoi usare l’app solo con il permesso e la supervisione di un genitore o tutore legale.</p></div>
+<div class="section"><h2>9. Esclusione di Garanzie</h2><p>L’app è fornita così com’è e secondo disponibilità, senza garanzie. Non garantiamo disponibilità continua, assenza di errori, risultati specifici di benessere o idoneità alle tue esigenze.</p></div>
+<div class="section"><h2>10. Limitazione di Responsabilità</h2><p>Nei limiti di legge, non siamo responsabili per danni indiretti, incidentali, speciali o consequenziali dall’uso dell’app, notifiche mancate o contenuti di benessere.</p></div>
+<div class="section"><h2>11. Modifiche e Contatto</h2><p>Possiamo aggiornare questi Termini. L’uso continuato implica accettazione. Contatto: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-ar" data-header="شروط الاستخدام · آخر تحديث: مايو 2026" data-dir="rtl">
+<div class="section"><div class="highlight"><strong>ملخص:</strong> Blue Horizons تطبيق رفاهية شخصي وليس خدمة طبية. تتم إدارة مشتريات Premium عبر Google Play. تبقى بياناتك الشخصية على الجهاز؛ وقد تساعد تشخيصات وتحليلات Firebase في تحسين الموثوقية.</div><div class="highlight"><strong>إشعار Google Play:</strong> تتم معالجة مشتريات Premium والاشتراكات والتجديدات والإلغاءات واسترداد الأموال عبر Google Play. يمكنك إدارة الاشتراكات في حساب Google Play. يجب قراءة هذه الشروط مع سياسة الخصوصية. <a href="privacy-policy.html">سياسة الخصوصية</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">شروط Google Play</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">استرداد أموال Google Play</a>
+</div></div>
+<div class="doc-title">شروط الاستخدام - BLUE HORIZONS</div>
 <p class="updated">آخر تحديث: مايو 2026</p>
-<div class="section"><p>بتنزيل Blue Horizons أو استخدامه، فإنك توافق على شروط الاستخدام هذه وعلى سياسة الخصوصية الخاصة بنا. Blue Horizons هو تطبيق رفاهية شخصي للنوم والتأمل وبناء العادات. قد يتضمن التطبيق أصوات نوم، ضوضاء بيضاء، موسيقى، منبهات بأغنية للاستيقاظ، تسجيلات للمزاج، سجل المزاج والرؤى، تتبع العادات، اليوميات، التذكيرات، الإشعارات وميزات Premium اختيارية.</p></div>
-<div class="section"><p>Blue Horizons ليس جهازًا طبيًا أو خدمة صحة نفسية أو أداة تشخيص أو بديلًا عن الاستشارة المهنية. المزاج، العادات، اليوميات، الرؤى والمحتوى الصوتي أدوات للتأمل الذاتي وليست تقييمات سريرية أو خطط علاج. إذا كانت لديك مخاوف بشأن النوم أو الصحة النفسية أو استخدام المواد أو أي حالة طبية، فاستشر مختصًا مؤهلًا.</p></div>
-<div class="section"><p>قد تتطلب بعض الميزات Premium من خلال مشتريات أو اشتراكات Google Play. يتولى Google Play معالجة المدفوعات وإدارة التجديدات والإلغاءات واسترداد الأموال وفقًا لحسابك في Google Play والقواعد المحلية. تتجدد الاشتراكات تلقائيًا ما لم يتم إلغاؤها قبل التجديد. إذا انتهت صلاحية Premium أو أُلغيت أو تعذر التحقق منها، فقد تُقفل ميزات Premium مرة أخرى.</p></div>
-<div class="section"><p>تُخزَّن المعلومات التي تدخلها، مثل الاسم والعمر والجنس وسجلات المزاج وبيانات العادات ومداخل اليوميات، محليًا على جهازك باستخدام تخزين مشفر عند توفره. تُستخدم بيانات Health Connect، إذا تم تفعيلها، فقط لإثراء عرضك الشخصي داخل التطبيق ولا تُرسل إلى خوادمنا. قد تجمع Firebase Analytics وCrashlytics بيانات الاستخدام والتشخيص والأعطال لتحسين الموثوقية. نحن لا نبيع بياناتك الشخصية.</p></div>
-<div class="section"><p>الصوت والمرئيات والمحتوى الآخر داخل التطبيق مخصص للاستخدام الشخصي غير التجاري داخل Blue Horizons فقط. لا يجوز نسخ هذا المحتوى أو تسجيله أو إعادة توزيعه أو بثه أو إعادة بيعه أو استخدامه خارج التطبيق دون إذن. تعتمد التذكيرات والمنبهات والإشعارات على إعدادات الجهاز والأذونات والبطارية والشبكة ونظام التشغيل؛ ولا نضمن وصولها دائمًا في وقت دقيق.</p></div>
-<div class="section"><p>استخدم التطبيق بشكل قانوني ومسؤول. لا يجوز إجراء هندسة عكسية أو فك ترجمة أو العبث بالتطبيق أو إساءة استخدامه أو تجاوز ضوابط الدفع أو التدخل في عمله. يجب أن يكون عمرك 13 عامًا على الأقل أو لديك موافقة الوالدين/الوصي عندما يتطلب القانون المحلي ذلك.</p></div>
-<div class="section"><p>يُقدَّم التطبيق كما هو وحسب التوفر، دون أي ضمانات. إلى أقصى حد يسمح به القانون، لا نتحمل مسؤولية الأضرار غير المباشرة أو العرضية أو الخاصة أو التبعية الناتجة عن استخدام التطبيق أو الإشعارات الفائتة أو الاعتماد على محتوى الرفاهية. قد نحدث هذه الشروط؛ ويعني الاستمرار في الاستخدام قبول الشروط المعدلة. التواصل: support@bluehorizons.app</p></div>
-</div>
-<div class="lang-section" id="lang-hi" data-header="उपयोग की शर्तें · अंतिम अपडेट: मई 2026">
-  <div class="section">
-    <div class="highlight"><strong>सारांश:</strong> Blue Horizons एक व्यक्तिगत वेलनेस ऐप है, चिकित्सा सेवा नहीं। Premium खरीद Google Play द्वारा प्रबंधित होती है। आपका व्यक्तिगत वेलनेस डेटा आपके डिवाइस पर रहता है; Firebase diagnostics विश्वसनीयता सुधारने में मदद कर सकते हैं।</div>
-    <div class="highlight"><strong>Google Play सूचना:</strong> Premium खरीद, सदस्यताएँ, नवीनीकरण, रद्दीकरण और रिफंड Google Play के माध्यम से संसाधित होते हैं। आप अपने Google Play खाते में सदस्यताएँ प्रबंधित कर सकते हैं। इन शर्तों को गोपनीयता नीति के साथ पढ़ा जाना चाहिए। <a href="privacy.html">गोपनीयता नीति</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play शर्तें</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play रिफंड</a></div>
-  </div>
-  <div class="doc-title">उपयोग की शर्तें - BLUE HORIZONS</div>
+<div class="section"><h2>١. القبول</h2><p>بتنزيل Blue Horizons أو استخدامه، فإنك توافق على شروط الاستخدام وسياسة الخصوصية. إذا لم توافق، فتوقف عن استخدام التطبيق وأزله.</p></div>
+<div class="section"><h2>٢. ما يفعله التطبيق</h2><p>Blue Horizons تطبيق رفاهية شخصي لروتين النوم والتأمل وبناء العادات. قد يتضمن أصوات نوم، ضوضاء بيضاء، موسيقى، منبهات، سجلات مزاج، سجل المزاج والاتجاهات الشخصية، العادات، اليوميات، التذكيرات، الإشعارات وميزات Premium. يدعم التطبيق التأمل الذاتي والروتين، لكنه لا يضمن نتائج للنوم أو الصحة أو المزاج أو العادات.</p></div>
+<div class="section"><h2>٣. ليس نصيحة طبية أو نفسية</h2><p>Blue Horizons ليس جهازًا طبيًا أو خدمة صحة نفسية أو أداة تشخيص أو بديلًا عن الاستشارة المهنية. استشر مختصًا مؤهلًا.</p></div>
+<div class="section"><h2>٤. Premium والمشتريات والاشتراكات</h2><p>قد تتطلب بعض الميزات Premium من خلال مشتريات أو اشتراكات Google Play. قد يشمل Premium وصولًا مستمرًا إلى محتوى صوتي موسع، عادات ويوميات غير محدودة، سجل مزاج كامل، اتجاهات شخصية، معادل صوت، مرئيات، سمات وأدوات premium أخرى. الخطط الشهرية والسنوية اشتراكات تتجدد تلقائيًا ما لم تُلغ قبل التجديد. Premium مدى الحياة هو شراء لمرة واحدة غير قابل للاستهلاك، وليس اشتراكًا. يعالج Google Play المدفوعات والتجديدات والإلغاءات واسترداد الأموال. إذا انتهت صلاحية Premium أو أُلغي أو رُدّ أو تعذر التحقق منه، فقد تُقفل ميزات Premium مرة أخرى.</p></div>
+<div class="section"><h2>٥. الخصوصية والبيانات</h2><p>المعلومات التي تدخلها، مثل الاسم والعمر والجنس وسجلات المزاج وبيانات العادات وإدخالات اليوميات والصور الاختيارية وملاحظات الصوت الاختيارية، تُخزن على جهازك. تُستخدم بيانات Health Connect، إن فُعّلت، فقط في شاشاتك الشخصية ولا تُرسل إلى خوادمنا. قد تساعد بيانات التحليلات والتشخيص والأداء والشراء في تحسين الموثوقية. لا تجمع خوادمنا محتوى اليوميات أو قيم المزاج أو الملاحظات أو الصور أو الصوتيات أو محتوى الرفاهية. لا نبيع البيانات الشخصية.</p></div>
+<div class="section"><h2>٦. الصوت والمحتوى</h2><p>الصوت والمرئيات والمحتوى الآخر مخصص للاستخدام الشخصي غير التجاري داخل Blue Horizons. لا يجوز نسخه أو تسجيله أو إعادة توزيعه أو بثه أو بيعه أو استخدامه خارج التطبيق دون إذن.</p></div>
+<div class="section"><h2>٧. الإشعارات والمنبهات</h2><p>تعتمد التذكيرات والمنبهات والإشعارات على الجهاز والأذونات والبطارية والشبكة والنظام. لا نضمن التسليم في وقت دقيق.</p></div>
+<div class="section"><h2>٨. مسؤولياتك</h2><p>استخدم التطبيق قانونيًا وبمسؤولية. لا يجوز عكس هندسته أو فك ترجمته أو العبث به أو إساءة استخدامه أو تجاوز المدفوعات أو تعطيله. يجب أن يكون عمرك 13 عامًا على الأقل، أو الحد الأدنى الأعلى المطلوب في بلدك أو منطقتك. إذا كنت قاصرًا، فلا يجوز استخدام التطبيق إلا بإذن وإشراف أحد الوالدين أو الوصي القانوني.</p></div>
+<div class="section"><h2>٩. إخلاء المسؤولية عن الضمان</h2><p>يُقدَّم التطبيق كما هو وحسب التوفر، من دون أي ضمانات. لا نضمن التوفر المستمر أو الخلو من الأخطاء أو نتائج رفاهية محددة أو ملاءمته لاحتياجاتك.</p></div>
+<div class="section"><h2>١٠. تحديد المسؤولية</h2><p>إلى الحد الذي يسمح به القانون، لا نتحمل مسؤولية الأضرار غير المباشرة أو العرضية أو الخاصة أو التبعية الناتجة عن الاستخدام أو الإشعارات الفائتة أو الاعتماد على محتوى العافية.</p></div>
+<div class="section"><h2>١١. التغييرات والتواصل</h2><p>قد نحدث هذه الشروط. استمرار الاستخدام يعني القبول. التواصل: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-hi" data-header="उपयोग की शर्तें · अंतिम अपडेट: मई 2026" data-dir="ltr">
+<div class="section"><div class="highlight"><strong>सारांश:</strong> Blue Horizons एक व्यक्तिगत वेलनेस ऐप है, चिकित्सा सेवा नहीं। Premium खरीद Google Play द्वारा प्रबंधित होती है। आपका निजी डेटा डिवाइस पर रहता है; Firebase diagnostics और analytics विश्वसनीयता सुधार सकते हैं।</div><div class="highlight"><strong>Google Play सूचना:</strong> Premium खरीद, सदस्यताएँ, नवीनीकरण, रद्दीकरण और रिफंड Google Play से संसाधित होते हैं। आप इन्हें अपने Google Play खाते में प्रबंधित कर सकते हैं। इन शर्तों को गोपनीयता नीति के साथ पढ़ें। <a href="privacy-policy.html">गोपनीयता नीति</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play शर्तें</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play रिफंड</a>
+</div></div>
+<div class="doc-title">उपयोग की शर्तें - BLUE HORIZONS</div>
 <p class="updated">अंतिम अपडेट: मई 2026</p>
-<div class="section"><p>Blue Horizons डाउनलोड या उपयोग करके, आप इन उपयोग की शर्तों और हमारी गोपनीयता नीति से सहमत होते हैं। Blue Horizons नींद, आत्मचिंतन और आदत बनाने के लिए एक व्यक्तिगत वेलनेस ऐप है। ऐप में नींद की ध्वनियाँ, व्हाइट नॉइज़, संगीत, वेक-सॉन्ग अलार्म, मूड चेक-इन, मूड इतिहास और इनसाइट, आदत ट्रैकिंग, जर्नल, रिमाइंडर, नोटिफिकेशन और वैकल्पिक Premium सुविधाएँ शामिल हो सकती हैं।</p></div>
-<div class="section"><p>Blue Horizons कोई चिकित्सा उपकरण, मानसिक स्वास्थ्य सेवा, निदान उपकरण या पेशेवर सलाह का विकल्प नहीं है। मूड, आदतें, जर्नल, इनसाइट और ऑडियो सामग्री आत्मचिंतन के साधन हैं, नैदानिक मूल्यांकन या उपचार योजना नहीं। नींद, मानसिक स्वास्थ्य, पदार्थ उपयोग या किसी चिकित्सा स्थिति को लेकर चिंता हो तो योग्य पेशेवर से सलाह लें।</p></div>
-<div class="section"><p>कुछ सुविधाओं के लिए Google Play खरीद या सदस्यता के माध्यम से Premium की आवश्यकता हो सकती है। भुगतान, नवीनीकरण, रद्दीकरण और रिफंड Google Play द्वारा आपके Google Play खाते और स्थानीय नियमों के अनुसार प्रबंधित किए जाते हैं। सदस्यताएँ नवीनीकरण से पहले रद्द न करने पर अपने आप नवीनीकृत होती हैं। यदि Premium समाप्त, रद्द या सत्यापित नहीं हो पाता, तो Premium सुविधाएँ फिर से लॉक हो सकती हैं।</p></div>
-<div class="section"><p>आपके द्वारा दर्ज जानकारी, जैसे नाम, आयु, लिंग, मूड लॉग, आदत डेटा और जर्नल प्रविष्टियाँ, उपलब्ध होने पर एन्क्रिप्टेड स्टोरेज के साथ आपके डिवाइस पर स्थानीय रूप से संग्रहीत होती हैं। Health Connect डेटा, यदि सक्षम है, केवल ऐप में आपके व्यक्तिगत दृश्य को बेहतर बनाने के लिए उपयोग होता है और हमारे सर्वर पर नहीं भेजा जाता। Firebase Analytics और Crashlytics विश्वसनीयता सुधारने के लिए उपयोग, डायग्नोस्टिक और क्रैश डेटा एकत्र कर सकते हैं। हम आपका व्यक्तिगत डेटा नहीं बेचते।</p></div>
-<div class="section"><p>ऑडियो, दृश्य और अन्य ऐप सामग्री Blue Horizons के भीतर केवल व्यक्तिगत, गैर-व्यावसायिक उपयोग के लिए है। बिना अनुमति इन्हें कॉपी, रिकॉर्ड, पुनर्वितरित, प्रसारित, पुनर्विक्रय या ऐप के बाहर उपयोग नहीं किया जा सकता। रिमाइंडर, अलार्म और नोटिफिकेशन डिवाइस सेटिंग, अनुमतियों, बैटरी, नेटवर्क और ऑपरेटिंग सिस्टम पर निर्भर करते हैं; हम सटीक समय पर डिलीवरी की गारंटी नहीं देते।</p></div>
-<div class="section"><p>ऐप का उपयोग कानूनी और जिम्मेदार तरीके से करें। रिवर्स इंजीनियरिंग, डीकंपाइलिंग, छेड़छाड़, दुरुपयोग, भुगतान नियंत्रणों को बायपास करना या ऐप में हस्तक्षेप करना निषिद्ध है। आपकी आयु कम से कम 13 वर्ष होनी चाहिए या जहाँ स्थानीय कानून मांगता है वहाँ माता-पिता/अभिभावक की सहमति होनी चाहिए।</p></div>
-<div class="section"><p>ऐप जैसा है और उपलब्धता के आधार पर, बिना किसी वारंटी के प्रदान किया जाता है। कानून द्वारा अनुमत अधिकतम सीमा तक, ऐप के उपयोग, छूटे नोटिफिकेशन या वेलनेस सामग्री पर निर्भरता से होने वाले अप्रत्यक्ष, आकस्मिक, विशेष या परिणामी नुकसान के लिए हम जिम्मेदार नहीं हैं। हम इन शर्तों को अपडेट कर सकते हैं; उपयोग जारी रखना स्वीकृति माना जाएगा। संपर्क: support@bluehorizons.app</p></div>
-</div>
-<div class="lang-section" id="lang-ja" data-header="利用規約 · 最終更新日: 2026年5月">
-  <div class="section">
-    <div class="highlight"><strong>概要:</strong> Blue Horizonsは個人向けウェルネスアプリであり、医療サービスではありません。Premium購入はGoogle Playによって管理されます。個人のウェルネスデータは端末内に保存され、Firebase診断は信頼性向上に利用される場合があります。</div>
-    <div class="highlight"><strong>Google Playに関するお知らせ:</strong> Premium購入、サブスクリプション、更新、キャンセル、返金はGoogle Playを通じて処理されます。サブスクリプションはGoogle Playアカウントで管理できます。本規約はプライバシーポリシーとあわせてお読みください。 <a href="privacy.html">プライバシーポリシー</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play 利用規約</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play 返金</a></div>
-  </div>
-  <div class="doc-title">利用規約 - BLUE HORIZONS</div>
+<div class="section"><h2>1. स्वीकृति</h2><p>Blue Horizons डाउनलोड या उपयोग करके आप इन उपयोग की शर्तों और गोपनीयता नीति से सहमत होते हैं। असहमत होने पर ऐप का उपयोग बंद करें और uninstall करें।</p></div>
+<div class="section"><h2>2. ऐप क्या करता है</h2><p>Blue Horizons नींद की दिनचर्या, आत्मचिंतन और आदत निर्माण के लिए एक व्यक्तिगत wellness ऐप है। ऐप में नींद की ध्वनियाँ, व्हाइट नॉइज़, संगीत, अलार्म, मूड चेक-इन, मूड इतिहास और व्यक्तिगत रुझान, आदतें, जर्नल, रिमाइंडर, नोटिफिकेशन और Premium शामिल हो सकते हैं। ऐप आत्मचिंतन और दिनचर्या में सहायता करता है, लेकिन नींद, स्वास्थ्य, मूड या आदतों के परिणामों की गारंटी नहीं देता।</p></div>
+<div class="section"><h2>3. चिकित्सा या मानसिक स्वास्थ्य सलाह नहीं</h2><p>Blue Horizons medical device, mental-health service, diagnosis tool या professional advice का substitute नहीं है। Qualified professional से सलाह लें।</p></div>
+<div class="section"><h2>4. Premium, खरीदारी और सदस्यताएँ</h2><p>कुछ सुविधाओं के लिए Google Play खरीद या सदस्यता के माध्यम से Premium की आवश्यकता हो सकती है। Premium में विस्तारित ऑडियो सामग्री, असीमित आदतें और जर्नल, पूरा मूड इतिहास, व्यक्तिगत रुझान, इक्वलाइज़र, विज़ुअलाइज़र, थीम और अन्य premium टूल का निरंतर एक्सेस शामिल हो सकता है। मासिक और वार्षिक प्लान सदस्यताएँ हैं जो नवीनीकरण से पहले रद्द न करने पर अपने आप नवीनीकृत होती हैं। Lifetime Premium एक बार की non-consumable खरीद है, सदस्यता नहीं। Google Play भुगतान, नवीनीकरण, रद्दीकरण और रिफंड संभालता है। यदि Premium समाप्त, रद्द, रिफंड या सत्यापित नहीं हो पाता, तो Premium सुविधाएँ फिर से लॉक हो सकती हैं।</p></div>
+<div class="section"><h2>5. गोपनीयता और डेटा</h2><p>आप जो information enter करते हैं, जैसे name, age, gender, mood logs, habit data, journal entries, optional journal photos और optional audio notes, वह आपके device पर stored रहती है। Health Connect data enabled होने पर केवल आपकी personal app views में उपयोग होता है और हमारे servers पर नहीं भेजा जाता। Analytics, diagnostics, performance और purchase-event metadata reliability सुधार सकते हैं। Journal content, mood values, note text, photos, audio notes और wellness entry content हमारे servers द्वारा collect नहीं किए जाते। हम personal data नहीं बेचते।</p></div>
+<div class="section"><h2>6. ऑडियो और सामग्री</h2><p>Audio, visuals और content Blue Horizons में personal, non-commercial use के लिए हैं। इन्हें बिना अनुमति copy, record, redistribute, broadcast, resell या app के बाहर use नहीं कर सकते।</p></div>
+<div class="section"><h2>7. नोटिफिकेशन और अलार्म</h2><p>Reminders, alarms और notifications device settings, permissions, battery, network और OS पर निर्भर हैं। Exact delivery guaranteed नहीं है।</p></div>
+<div class="section"><h2>8. आपकी जिम्मेदारियाँ</h2><p>App को कानूनी और जिम्मेदारी से उपयोग करें। Reverse engineering, decompile, tamper, abuse, payment bypass या interference न करें। आपकी आयु कम से कम 13 वर्ष होनी चाहिए, या आपके देश/क्षेत्र में आवश्यक न्यूनतम आयु इससे अधिक हो तो वह आयु होनी चाहिए। यदि आप नाबालिग हैं, तो parent या legal guardian की अनुमति और देखरेख में ही app उपयोग करें।</p></div>
+<div class="section"><h2>9. वारंटी अस्वीकरण</h2><p>ऐप जैसा है और उपलब्धता के आधार पर दिया जाता है, बिना किसी वारंटी के। हम निरंतर उपलब्धता, त्रुटि-रहित संचालन, विशिष्ट wellness परिणाम या आपकी ज़रूरतों के अनुकूलता की गारंटी नहीं देते।</p></div>
+<div class="section"><h2>10. दायित्व की सीमा</h2><p>कानून द्वारा अनुमत सीमा तक, app use, missed notifications या wellness content पर reliance से indirect, incidental, special या consequential damages के लिए हम जिम्मेदार नहीं हैं।</p></div>
+<div class="section"><h2>11. बदलाव और संपर्क</h2><p>हम Terms update कर सकते हैं। Continued use acceptance माना जाएगा। संपर्क: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-ja" data-header="利用規約 · 最終更新日: 2026年5月" data-dir="ltr">
+<div class="section"><div class="highlight"><strong>概要:</strong> Blue Horizonsは個人向けウェルネスアプリであり、医療サービスではありません。Premium購入はGoogle Playで管理されます。個人データは端末に残り、Firebase診断と分析は信頼性向上に利用される場合があります。</div><div class="highlight"><strong>Google Playに関するお知らせ:</strong> Premium購入、サブスクリプション、更新、キャンセル、返金はGoogle Playを通じて処理されます。Google Playアカウントで管理できます。本規約はプライバシーポリシーとあわせてお読みください。 <a href="privacy-policy.html">プライバシーポリシー</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play 利用規約</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play 返金</a>
+</div></div>
+<div class="doc-title">利用規約 - BLUE HORIZONS</div>
 <p class="updated">最終更新日: 2026年5月</p>
-<div class="section"><p>Blue Horizonsをダウンロードまたは使用することで、本利用規約およびプライバシーポリシーに同意したものとみなされます。Blue Horizonsは、睡眠、振り返り、習慣づくりを支援する個人向けウェルネスアプリです。睡眠サウンド、ホワイトノイズ、音楽、目覚まし音楽、気分チェックイン、気分履歴とインサイト、習慣トラッキング、ジャーナル、リマインダー、通知、任意のPremium機能を含む場合があります。</p></div>
-<div class="section"><p>Blue Horizonsは医療機器、メンタルヘルスサービス、診断ツール、または専門的助言の代替ではありません。気分、習慣、ジャーナル、インサイト、音声コンテンツは自己理解のためのツールであり、臨床評価や治療計画ではありません。睡眠、メンタルヘルス、物質使用、その他の健康状態に不安がある場合は、資格を持つ専門家に相談してください。</p></div>
-<div class="section"><p>一部の機能は、Google Playでの購入またはサブスクリプションによりPremiumを有効化する必要があります。支払い、更新、キャンセル、返金はGoogle Playが処理し、Google Playアカウントおよび地域の規則に従います。サブスクリプションは更新前にキャンセルしない限り自動更新されます。Premiumが期限切れ、キャンセル、または確認できない場合、Premium機能は再びロックされることがあります。</p></div>
-<div class="section"><p>氏名、年齢、性別、気分ログ、習慣データ、ジャーナル入力など、ユーザーが入力した情報は、利用可能な場合は暗号化されたストレージを用いて端末内に保存されます。Health Connectデータを有効にした場合、アプリ内の個人表示を充実させる目的にのみ使用され、当社サーバーには送信されません。Firebase AnalyticsおよびCrashlyticsは、信頼性向上のために使用状況、診断、クラッシュデータを収集する場合があります。当社は個人データを販売しません。</p></div>
-<div class="section"><p>音声、ビジュアル、その他のアプリ内コンテンツは、Blue Horizons内での個人的かつ非商用の利用に限り提供されます。許可なくコピー、録音、再配布、配信、再販売、またはアプリ外で使用することはできません。リマインダー、アラーム、通知は端末設定、権限、バッテリー、ネットワーク、OSの動作に依存し、正確な時刻での配信は保証されません。</p></div>
-<div class="section"><p>アプリは合法かつ責任を持って使用してください。リバースエンジニアリング、逆コンパイル、改ざん、不正利用、支払い制御の回避、アプリへの干渉は禁止されています。13歳以上であること、または地域法で求められる場合は保護者の同意が必要です。</p></div>
-<div class="section"><p>アプリは現状有姿かつ利用可能な範囲で提供され、いかなる保証もありません。法律で認められる最大限の範囲で、アプリの使用、通知の未着、ウェルネスコンテンツへの依存に起因する間接的、付随的、特別または結果的損害について責任を負いません。当社は本規約を更新する場合があり、継続利用は同意を意味します。連絡先: support@bluehorizons.app</p></div>
-</div>
-<div class="lang-section" id="lang-nl" data-header="Gebruiksvoorwaarden · Laatst bijgewerkt: mei 2026">
-  <div class="section">
-    <div class="highlight"><strong>Samenvatting:</strong> Blue Horizons is een persoonlijke welzijnsapp, geen medische dienst. Premium-aankopen worden beheerd via Google Play. Je persoonlijke welzijnsgegevens blijven op je apparaat; Firebase-diagnostiek kan helpen de betrouwbaarheid te verbeteren.</div>
-    <div class="highlight"><strong>Google Play-melding:</strong> Premium-aankopen, abonnementen, verlengingen, annuleringen en terugbetalingen worden verwerkt via Google Play. Je kunt abonnementen beheren in je Google Play-account. Lees deze voorwaarden samen met het Privacybeleid. <a href="privacy.html">Privacybeleid</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play-voorwaarden</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play-terugbetalingen</a></div>
-  </div>
-  <div class="doc-title">GEBRUIKSVOORWAARDEN - BLUE HORIZONS</div>
+<div class="section"><h2>1. 同意</h2><p>Blue Horizonsをダウンロードまたは使用すると、本利用規約とプライバシーポリシーに同意したものとみなされます。同意しない場合は使用を停止し、アンインストールしてください。</p></div>
+<div class="section"><h2>2. アプリの内容</h2><p>Blue Horizonsは、睡眠ルーティン、振り返り、習慣づくりのための個人向けウェルネスアプリです。睡眠サウンド、ホワイトノイズ、音楽、アラーム、気分チェックイン、気分履歴と個人トレンド、習慣、ジャーナル、リマインダー、通知、Premium機能を含む場合があります。本アプリは自己理解とルーティンを支援しますが、睡眠、健康、気分、習慣の結果を保証するものではありません。</p></div>
+<div class="section"><h2>3. 医療またはメンタルヘルス助言ではありません</h2><p>Blue Horizonsは医療機器、メンタルヘルスサービス、診断ツール、専門的助言の代替ではありません。資格を持つ専門家に相談してください。</p></div>
+<div class="section"><h2>4. Premium、購入、サブスクリプション</h2><p>一部の機能は、Google Playでの購入またはサブスクリプションによりPremiumを有効化する必要があります。Premiumには、拡張オーディオ、無制限の習慣とジャーナル、完全な気分履歴、個人トレンド、イコライザー、ビジュアライザー、テーマ、その他のpremiumツールへの継続アクセスが含まれる場合があります。月額および年額プランは、更新前にキャンセルしない限り自動更新されるサブスクリプションです。Lifetime Premiumは一度きりの非消耗型購入であり、サブスクリプションではありません。Google Playが支払い、更新、キャンセル、返金を処理します。Premiumが期限切れ、キャンセル、返金、または確認できない場合、Premium機能は再びロックされることがあります。</p></div>
+<div class="section"><h2>5. プライバシーとデータ</h2><p>名前、年齢、性別、気分ログ、習慣データ、ジャーナル、任意のジャーナル写真と音声メモなど、あなたが入力する情報は端末に保存されます。Health Connectデータを有効にした場合、個人のアプリ画面でのみ使用され、当社サーバーへ送信されません。分析、診断、性能、購入イベントメタデータは信頼性向上に役立つ場合があります。ジャーナル内容、気分値、メモ本文、写真、音声メモ、ウェルネス入力内容は当社サーバーにより収集されません。個人データを販売しません。</p></div>
+<div class="section"><h2>6. 音声とコンテンツ</h2><p>音声、ビジュアル、その他コンテンツはBlue Horizons内での個人的・非商用利用のために提供されます。許可なくコピー、録音、再配布、配信、再販売、アプリ外利用はできません。</p></div>
+<div class="section"><h2>7. 通知とアラーム</h2><p>リマインダー、アラーム、通知は端末設定、権限、バッテリー、ネットワーク、OSに依存します。正確な配信は保証しません。</p></div>
+<div class="section"><h2>8. お客様の責任</h2><p>アプリを合法的かつ責任を持って使用してください。リバースエンジニアリング、逆コンパイル、改ざん、悪用、支払い回避、妨害は禁止です。13歳以上、またはお住まいの国や地域でより高い最低年齢が定められている場合はその年齢以上である必要があります。未成年の場合は、親または法定保護者の許可と監督のもとでのみ使用できます。</p></div>
+<div class="section"><h2>9. 保証の否認</h2><p>アプリは現状有姿かつ利用可能な範囲で提供され、保証はありません。継続利用、無エラー、特定のウェルネス結果、またはニーズへの適合性を保証しません。</p></div>
+<div class="section"><h2>10. 責任の制限</h2><p>法で許される最大限において、アプリ利用、通知不達、ウェルネス内容への依存から生じる間接、付随、特別、結果的損害について責任を負いません。</p></div>
+<div class="section"><h2>11. 変更とお問い合わせ</h2><p>本規約を更新する場合があります。継続利用は同意を意味します。お問い合わせ: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-nl" data-header="Gebruiksvoorwaarden · Laatst bijgewerkt: mei 2026" data-dir="ltr">
+<div class="section"><div class="highlight"><strong>Samenvatting:</strong> Blue Horizons is een persoonlijke wellnessapp, geen medische dienst. Premium-aankopen worden beheerd door Google Play. Persoonlijke gegevens blijven op het apparaat; Firebase-diagnostiek en analytics kunnen betrouwbaarheid verbeteren.</div><div class="highlight"><strong>Google Play-melding:</strong> Premium-aankopen, abonnementen, verlengingen, annuleringen en terugbetalingen worden verwerkt via Google Play. U kunt abonnementen beheren in uw Google Play-account. Deze voorwaarden horen bij het Privacybeleid. <a href="privacy-policy.html">Privacybeleid</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play-voorwaarden</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play-terugbetalingen</a>
+</div></div>
+<div class="doc-title">GEBRUIKSVOORWAARDEN - BLUE HORIZONS</div>
 <p class="updated">Laatst bijgewerkt: mei 2026</p>
-<div class="section"><p>Door Blue Horizons te downloaden of te gebruiken, ga je akkoord met deze Gebruiksvoorwaarden en ons Privacybeleid. Blue Horizons is een persoonlijke welzijnsapp voor slaap, reflectie en gewoontevorming. De app kan slaapgeluiden, witte ruis, muziek, wekkerliedjes, stemmingscheck-ins, stemmingsoverzicht en inzichten, gewoonte-tracking, dagboek, herinneringen, meldingen en optionele Premium-functies bevatten.</p></div>
-<div class="section"><p>Blue Horizons is geen medisch hulpmiddel, geestelijkegezondheidsdienst, diagnose-instrument of vervanging voor professioneel advies. Stemming, gewoonten, dagboek, inzichten en audio zijn hulpmiddelen voor zelfreflectie, geen klinische beoordelingen of behandelplannen. Raadpleeg een gekwalificeerde professional bij zorgen over slaap, mentale gezondheid, middelengebruik of medische klachten.</p></div>
-<div class="section"><p>Sommige functies kunnen Premium vereisen via Google Play-aankopen of abonnementen. Google Play verwerkt betalingen en beheert verlengingen, annuleringen en terugbetalingen. Abonnementen worden automatisch verlengd tenzij je vóór de verlenging annuleert. Als Premium verloopt, wordt geannuleerd of niet kan worden geverifieerd, kunnen Premium-functies opnieuw worden vergrendeld.</p></div>
-<div class="section"><p>Gegevens die je invoert, zoals naam, leeftijd, gender, stemmingslogs, gewoontegegevens en dagboekitems, worden lokaal op je apparaat opgeslagen met versleutelde opslag waar beschikbaar. Health Connect-gegevens, indien ingeschakeld, worden alleen gebruikt om je persoonlijke weergave in de app te verrijken en worden niet naar onze servers gestuurd. Firebase Analytics en Crashlytics kunnen gebruiks-, diagnose- en crashgegevens verzamelen om de betrouwbaarheid te verbeteren. Wij verkopen je persoonlijke gegevens niet.</p></div>
-<div class="section"><p>Audio, visuals en andere app-content zijn alleen bedoeld voor persoonlijk, niet-commercieel gebruik binnen Blue Horizons. Je mag deze content niet kopiëren, opnemen, herverdelen, uitzenden, doorverkopen of buiten de app gebruiken zonder toestemming. Herinneringen, alarmen en meldingen zijn afhankelijk van apparaatinstellingen, toestemmingen, batterij, netwerk en besturingssysteem; exacte levering wordt niet gegarandeerd.</p></div>
-<div class="section"><p>Gebruik de app wettig en verantwoordelijk. Reverse-engineering, decompileren, manipuleren, misbruik, omzeilen van betaalcontroles of verstoring van de app is niet toegestaan. Je moet ten minste 13 jaar zijn of ouderlijke toestemming hebben waar de lokale wet dat vereist.</p></div>
-<div class="section"><p>De app wordt geleverd zoals hij is en zoals beschikbaar, zonder garanties. Voor zover wettelijk toegestaan zijn wij niet aansprakelijk voor indirecte, incidentele, speciale of gevolgschade door gebruik van de app, gemiste meldingen of vertrouwen op welzijnscontent. We kunnen deze voorwaarden bijwerken; verder gebruik betekent acceptatie. Contact: support@bluehorizons.app</p></div>
-</div>
-<div class="lang-section" id="lang-no" data-header="Bruksvilkår · Sist oppdatert: mai 2026">
-  <div class="section">
-    <div class="highlight"><strong>Sammendrag:</strong> Blue Horizons er en personlig velværeapp, ikke en medisinsk tjeneste. Premium-kjøp håndteres av Google Play. Dine personlige velværedata blir på enheten; Firebase-diagnostikk kan hjelpe oss å forbedre påliteligheten.</div>
-    <div class="highlight"><strong>Google Play-varsel:</strong> Premium-kjøp, abonnementer, fornyelser, kanselleringer og refusjoner behandles via Google Play. Du kan administrere abonnementer i Google Play-kontoen din. Disse vilkårene bør leses sammen med personvernerklæringen. <a href="privacy.html">Personvernerklæring</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play-vilkår</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play-refusjoner</a></div>
-  </div>
-  <div class="doc-title">BRUKSVILKÅR - BLUE HORIZONS</div>
+<div class="section"><h2>1. Acceptatie</h2><p>Door Blue Horizons te downloaden of te gebruiken, gaat u akkoord met deze Gebruiksvoorwaarden en het Privacybeleid. Als u niet akkoord gaat, stop dan met gebruik en verwijder de app.</p></div>
+<div class="section"><h2>2. Wat de App Doet</h2><p>Blue Horizons is een persoonlijke welzijnsapp voor slaaproutines, reflectie en gewoontevorming. De app kan slaapgeluiden, witte ruis, muziek, alarmen, stemmingscheck-ins, stemmingsoverzicht en persoonlijke trends, gewoonten, dagboek, herinneringen, meldingen en Premium bevatten. De app ondersteunt zelfreflectie en routines, maar garandeert geen resultaten voor slaap, gezondheid, stemming of gewoonten.</p></div>
+<div class="section"><h2>3. Geen Medisch of Geestelijk Gezondheidsadvies</h2><p>Blue Horizons is geen medisch hulpmiddel, geestelijke gezondheidsdienst, diagnosetool of vervanging voor professioneel advies. Raadpleeg een gekwalificeerde professional.</p></div>
+<div class="section"><h2>4. Premium, Aankopen en Abonnementen</h2><p>Sommige functies kunnen Premium vereisen via Google Play-aankopen of abonnementen. Premium kan doorlopende toegang bieden tot uitgebreide audio, onbeperkte gewoonten en dagboek, volledige stemmingsoverzicht, persoonlijke trends, equalizer, visualizers, thema’s en andere premium tools. Maand- en jaarplannen zijn abonnementen die automatisch worden verlengd tenzij je vóór verlenging annuleert. Lifetime Premium is een eenmalige niet-verbruikbare aankoop, geen abonnement. Google Play verwerkt betalingen, verlengingen, annuleringen en terugbetalingen. Als Premium verloopt, wordt geannuleerd, terugbetaald of niet kan worden geverifieerd, kunnen Premium-functies opnieuw worden vergrendeld.</p></div>
+<div class="section"><h2>5. Privacy en Gegevens</h2><p>Informatie die u invoert, zoals naam, leeftijd, geslacht, stemmingslogs, gewoontegegevens, dagboekitems, optionele dagboekfoto’s en optionele audionotities, wordt op uw apparaat opgeslagen. Health Connect-gegevens worden, indien ingeschakeld, alleen gebruikt in uw persoonlijke appweergaven en niet naar onze servers gestuurd. Analyse-, diagnose-, prestatie- en aankoopmetadata kunnen betrouwbaarheid verbeteren. Dagboekinhoud, stemmingswaarden, notitietekst, foto’s, audio en welzijnscontent worden niet door onze servers verzameld. We verkopen geen persoonlijke gegevens.</p></div>
+<div class="section"><h2>6. Audio en Content</h2><p>Audio, visuals en content zijn voor persoonlijk, niet-commercieel gebruik binnen Blue Horizons. U mag ze niet kopiëren, opnemen, verspreiden, uitzenden, doorverkopen of buiten de app gebruiken zonder toestemming.</p></div>
+<div class="section"><h2>7. Meldingen en Alarmen</h2><p>Herinneringen, alarmen en meldingen hangen af van apparaat, machtigingen, batterij, netwerk en besturingssysteem. Exacte levering wordt niet gegarandeerd.</p></div>
+<div class="section"><h2>8. Uw Verantwoordelijkheden</h2><p>Gebruik de app rechtmatig en verantwoordelijk. Reverse-engineering, decompileren, manipuleren, misbruik, betalingscontroles omzeilen of de app verstoren is verboden. U moet minstens 13 jaar zijn, of de hogere minimumleeftijd die geldt in uw land of regio. Minderjarigen mogen de app alleen gebruiken met toestemming en toezicht van een ouder of wettelijke voogd.</p></div>
+<div class="section"><h2>9. Garantie-uitsluiting</h2><p>De app wordt geleverd zoals deze is en beschikbaar is, zonder garanties. We garanderen geen ononderbroken beschikbaarheid, foutloze werking, specifieke welzijnsresultaten of geschiktheid voor je behoeften.</p></div>
+<div class="section"><h2>10. Beperking van Aansprakelijkheid</h2><p>Voor zover wettelijk toegestaan zijn wij niet aansprakelijk voor indirecte, incidentele, speciale of gevolgschade door gebruik, gemiste meldingen of vertrouwen op welzijnscontent.</p></div>
+<div class="section"><h2>11. Wijzigingen en Contact</h2><p>Wij kunnen deze voorwaarden bijwerken. Voortgezet gebruik betekent acceptatie. Contact: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-no" data-header="Brukervilkår · Sist oppdatert: mai 2026" data-dir="ltr">
+<div class="section"><div class="highlight"><strong>Sammendrag:</strong> Blue Horizons er en personlig velværeapp, ikke en medisinsk tjeneste. Premium-kjøp håndteres av Google Play. Personlige data blir på enheten; Firebase-diagnostikk og analyser kan forbedre påliteligheten.</div><div class="highlight"><strong>Google Play-varsel:</strong> Premium-kjøp, abonnementer, fornyelser, kanselleringer og refusjoner behandles av Google Play. Du kan administrere abonnementer i Google Play-kontoen din. Disse vilkårene bør leses sammen med personvernerklæringen. <a href="privacy-policy.html">Personvernerklæring</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play-vilkår</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play-refusjoner</a>
+</div></div>
+<div class="doc-title">BRUKERVILKÅR - BLUE HORIZONS</div>
 <p class="updated">Sist oppdatert: mai 2026</p>
-<div class="section"><p>Ved å laste ned eller bruke Blue Horizons godtar du disse Bruksvilkårene og vår Personvernerklæring. Blue Horizons er en personlig velværeapp for søvn, refleksjon og vaner. Appen kan inneholde søvnlyder, hvit støy, musikk, vekkesangalarmer, humørsjekker, humørhistorikk og innsikt, vanesporing, dagbok, påminnelser, varsler og valgfrie Premium-funksjoner.</p></div>
-<div class="section"><p>Blue Horizons er ikke medisinsk utstyr, en psykisk helsetjeneste, et diagnoseverktøy eller en erstatning for profesjonell rådgivning. Humør, vaner, dagbok, innsikt og lyd er verktøy for selvrefleksjon, ikke kliniske vurderinger eller behandlingsplaner. Kontakt kvalifisert fagperson ved bekymringer om søvn, psykisk helse, rusbruk eller medisinske tilstander.</p></div>
-<div class="section"><p>Noen funksjoner kan kreve Premium via kjøp eller abonnementer i Google Play. Google Play behandler betalinger og håndterer fornyelser, kanselleringer og refusjoner. Abonnementer fornyes automatisk med mindre de kanselleres før fornyelse. Hvis Premium utløper, kanselleres eller ikke kan verifiseres, kan Premium-funksjoner låses igjen.</p></div>
-<div class="section"><p>Informasjon du oppgir, som navn, alder, kjønn, humørlogger, vanedata og dagbokinnlegg, lagres lokalt på enheten med kryptert lagring der det er tilgjengelig. Health Connect-data, hvis aktivert, brukes bare til å berike din personlige visning i appen og sendes ikke til våre servere. Firebase Analytics og Crashlytics kan samle inn bruks-, diagnose- og krasjdata for å forbedre påliteligheten. Vi selger ikke personopplysningene dine.</p></div>
-<div class="section"><p>Lyd, visuelt innhold og annet appinnhold er kun for personlig, ikke-kommersiell bruk i Blue Horizons. Du kan ikke kopiere, ta opp, distribuere, kringkaste, videreselge eller bruke innholdet utenfor appen uten tillatelse. Påminnelser, alarmer og varsler avhenger av enhetsinnstillinger, tillatelser, batteri, nettverk og operativsystem; nøyaktig levering garanteres ikke.</p></div>
-<div class="section"><p>Bruk appen lovlig og ansvarlig. Du må ikke reversutvikle, dekompilere, manipulere, misbruke, omgå betalingskontroller eller forstyrre appen. Du må være minst 13 år eller ha foresattes samtykke der lokal lov krever det.</p></div>
-<div class="section"><p>Appen leveres som den er og etter tilgjengelighet, uten garantier. I den grad loven tillater det, er vi ikke ansvarlige for indirekte, tilfeldige, særlige eller følgeskader fra bruk av appen, tapte varsler eller tillit til velværeinnhold. Vi kan oppdatere vilkårene; fortsatt bruk betyr aksept. Kontakt: support@bluehorizons.app</p></div>
-</div>
-<div class="lang-section" id="lang-ru" data-header="Условия использования · Последнее обновление: май 2026 г.">
-  <div class="section">
-    <div class="highlight"><strong>Кратко:</strong> Blue Horizons — персональное wellness-приложение, а не медицинская служба. Покупки Premium управляются через Google Play. Ваши личные wellness-данные остаются на устройстве; диагностика Firebase может помогать улучшать надежность.</div>
-    <div class="highlight"><strong>Уведомление Google Play:</strong> Покупки Premium, подписки, продления, отмены и возвраты обрабатываются через Google Play. Управлять подписками можно в аккаунте Google Play. Эти Условия следует читать вместе с Политикой конфиденциальности. <a href="privacy.html">Политика конфиденциальности</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Условия Google Play</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Возвраты Google Play</a></div>
-  </div>
-  <div class="doc-title">УСЛОВИЯ ИСПОЛЬЗОВАНИЯ - BLUE HORIZONS</div>
+<div class="section"><h2>1. Aksept</h2><p>Ved å laste ned eller bruke Blue Horizons godtar du disse brukervilkårene og personvernerklæringen. Hvis du ikke godtar, stopp bruken og avinstaller appen.</p></div>
+<div class="section"><h2>2. Hva Appen Gjør</h2><p>Blue Horizons er en personlig velværeapp for søvnrutiner, refleksjon og vaner. Appen kan inneholde søvnlyder, hvit støy, musikk, alarmer, humørregistrering, humørhistorikk og personlige trender, vaner, dagbok, påminnelser, varsler og Premium. Appen støtter selvrefleksjon og rutiner, men garanterer ikke resultater for søvn, helse, humør eller vaner.</p></div>
+<div class="section"><h2>3. Ikke Medisinsk eller Psykisk Helseråd</h2><p>Blue Horizons er ikke medisinsk utstyr, psykisk helsetjeneste, diagnoseverktøy eller erstatning for profesjonell rådgivning. Rådfør deg med kvalifisert fagperson.</p></div>
+<div class="section"><h2>4. Premium, Kjøp og Abonnementer</h2><p>Noen funksjoner kan kreve Premium via Google Play-kjøp eller abonnementer. Premium kan inkludere løpende tilgang til utvidet lydinnhold, ubegrensede vaner og dagbok, full humørhistorikk, personlige trender, equalizer, visualizers, temaer og andre premiumverktøy. Månedlige og årlige planer er abonnementer som fornyes automatisk med mindre de kanselleres før fornyelse. Lifetime Premium er et engangskjøp som ikke kan forbrukes, ikke et abonnement. Google Play behandler betalinger, fornyelser, kanselleringer og refusjoner. Hvis Premium utløper, kanselleres, refunderes eller ikke kan verifiseres, kan Premium-funksjoner låses igjen.</p></div>
+<div class="section"><h2>5. Personvern og Data</h2><p>Informasjon du oppgir, som navn, alder, kjønn, humørlogger, vanedata, dagbokinnlegg, valgfrie dagbokbilder og valgfrie lydnotater, lagres på enheten. Health Connect-data brukes, hvis aktivert, bare i personlige appvisninger og sendes ikke til serverne våre. Analyse-, diagnose-, ytelses- og kjøpsmetadata kan forbedre påliteligheten. Dagbokinnhold, humørverdier, notattekst, bilder, lyd og velværeinnhold samles ikke inn av serverne våre. Vi selger ikke persondata.</p></div>
+<div class="section"><h2>6. Lyd og Innhold</h2><p>Lyd, visuelle elementer og innhold er for personlig, ikke-kommersiell bruk i Blue Horizons. Du kan ikke kopiere, ta opp, distribuere, kringkaste, videreselge eller bruke utenfor appen uten tillatelse.</p></div>
+<div class="section"><h2>7. Varsler og Alarmer</h2><p>Påminnelser, alarmer og varsler avhenger av enhet, tillatelser, batteri, nettverk og operativsystem. Nøyaktig levering garanteres ikke.</p></div>
+<div class="section"><h2>8. Dine Ansvar</h2><p>Bruk appen lovlig og ansvarlig. Ikke reverser, dekompiler, manipuler, misbruk, omgå betalingskontroller eller forstyrr appen. Du må være minst 13 år, eller den høyere minstealderen som kreves i landet eller regionen din. Mindreårige kan bare bruke appen med tillatelse og tilsyn fra forelder eller verge.</p></div>
+<div class="section"><h2>9. Garantifraskrivelse</h2><p>Appen leveres som den er og etter tilgjengelighet, uten garantier. Vi garanterer ikke uavbrutt tilgjengelighet, feilfri drift, spesifikke velværeresultater eller egnethet for dine behov.</p></div>
+<div class="section"><h2>10. Ansvarsbegrensning</h2><p>I den grad loven tillater, er vi ikke ansvarlige for indirekte, tilfeldige, spesielle eller følgeskader fra bruk, tapte varsler eller tillit til velværeinnhold.</p></div>
+<div class="section"><h2>11. Endringer og Kontakt</h2><p>Vi kan oppdatere vilkårene. Fortsatt bruk betyr aksept. Kontakt: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-ru" data-header="Условия использования · Последнее обновление: май 2026 г." data-dir="ltr">
+<div class="section"><div class="highlight"><strong>Краткое изложение:</strong> Blue Horizons — персональное wellness-приложение, а не медицинская служба. Premium-покупки обрабатываются Google Play. Персональные данные остаются на устройстве; диагностика и аналитика Firebase могут улучшать надежность.</div><div class="highlight"><strong>Уведомление Google Play:</strong> Premium-покупки, подписки, продления, отмены и возвраты обрабатываются через Google Play. Подписками можно управлять в аккаунте Google Play. Эти Условия следует читать вместе с Политикой конфиденциальности. <a href="privacy-policy.html">Политика конфиденциальности</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Условия Google Play</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Возвраты Google Play</a>
+</div></div>
+<div class="doc-title">УСЛОВИЯ ИСПОЛЬЗОВАНИЯ - BLUE HORIZONS</div>
 <p class="updated">Последнее обновление: май 2026 г.</p>
-<div class="section"><p>Загружая или используя Blue Horizons, вы соглашаетесь с настоящими Условиями использования и нашей Политикой конфиденциальности. Blue Horizons — персональное приложение для сна, саморефлексии и формирования привычек. Приложение может включать звуки для сна, белый шум, музыку, будильники с мелодией, отметки настроения, историю и инсайты настроения, отслеживание привычек, дневник, напоминания, уведомления и дополнительные Premium-функции.</p></div>
-<div class="section"><p>Blue Horizons не является медицинским устройством, службой психического здоровья, диагностическим инструментом или заменой профессиональной консультации. Настроение, привычки, дневник, инсайты и аудио являются инструментами саморефлексии, а не клиническими оценками или планами лечения. При вопросах о сне, психическом здоровье, употреблении веществ или любом медицинском состоянии обратитесь к квалифицированному специалисту.</p></div>
-<div class="section"><p>Некоторые функции могут требовать Premium через покупки или подписки Google Play. Google Play обрабатывает платежи и управляет продлениями, отменами и возвратами согласно вашему аккаунту Google Play и местным правилам. Подписки продлеваются автоматически, если не отменены до продления. Если Premium истек, отменен или не может быть подтвержден, Premium-функции могут снова заблокироваться.</p></div>
-<div class="section"><p>Введенная вами информация, включая имя, возраст, пол, записи настроения, данные привычек и дневник, хранится локально на устройстве с шифрованным хранением, где это доступно. Данные Health Connect, если включены, используются только для улучшения вашего личного представления в приложении и не отправляются на наши серверы. Firebase Analytics и Crashlytics могут собирать данные использования, диагностики и сбоев для повышения надежности. Мы не продаем ваши персональные данные.</p></div>
-<div class="section"><p>Аудио, визуальные материалы и другой контент приложения предоставляются только для личного некоммерческого использования внутри Blue Horizons. Запрещено копировать, записывать, распространять, транслировать, перепродавать или использовать этот контент вне приложения без разрешения. Напоминания, будильники и уведомления зависят от настроек устройства, разрешений, батареи, сети и ОС; точная доставка не гарантируется.</p></div>
-<div class="section"><p>Используйте приложение законно и ответственно. Запрещены обратная разработка, декомпиляция, вмешательство, злоупотребление, обход платежных ограничений или нарушение работы приложения. Вам должно быть не менее 13 лет либо требуется согласие родителей/опекуна, если этого требует местное законодательство.</p></div>
-<div class="section"><p>Приложение предоставляется как есть и по мере доступности, без каких-либо гарантий. В максимально разрешенной законом степени мы не несем ответственности за косвенные, случайные, специальные или последующие убытки, связанные с использованием приложения, пропущенными уведомлениями или доверием к wellness-контенту. Мы можем обновлять Условия; продолжение использования означает согласие. Контакт: support@bluehorizons.app</p></div>
-</div>
-<div class="lang-section" id="lang-sv" data-header="Användarvillkor · Senast uppdaterad: maj 2026">
-  <div class="section">
-    <div class="highlight"><strong>Sammanfattning:</strong> Blue Horizons är en personlig välmåendeapp, inte en medicinsk tjänst. Premium-köp hanteras av Google Play. Dina personliga välmåendedata stannar på enheten; Firebase-diagnostik kan hjälpa oss att förbättra tillförlitligheten.</div>
-    <div class="highlight"><strong>Google Play-meddelande:</strong> Premium-köp, prenumerationer, förnyelser, uppsägningar och återbetalningar hanteras via Google Play. Du kan hantera prenumerationer i ditt Google Play-konto. Dessa villkor bör läsas tillsammans med Integritetspolicyn. <a href="privacy.html">Integritetspolicy</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play-villkor</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play-återbetalningar</a></div>
-  </div>
-  <div class="doc-title">ANVÄNDARVILLKOR - BLUE HORIZONS</div>
+<div class="section"><h2>1. Принятие</h2><p>Скачивая или используя Blue Horizons, вы соглашаетесь с Условиями использования и Политикой конфиденциальности. Если вы не согласны, прекратите использование и удалите приложение.</p></div>
+<div class="section"><h2>2. Что Делает Приложение</h2><p>Blue Horizons — персональное wellness-приложение для рутин сна, самоанализа и привычек. Приложение может включать звуки для сна, белый шум, музыку, будильники, отметки настроения, историю настроения и личные тренды, привычки, дневник, напоминания, уведомления и Premium. Приложение поддерживает самоанализ и рутины, но не гарантирует результаты сна, здоровья, настроения или привычек.</p></div>
+<div class="section"><h2>3. Не Медицинская или Психологическая Консультация</h2><p>Blue Horizons не является медицинским устройством, службой психического здоровья, диагностическим инструментом или заменой профессиональной консультации. Обратитесь к квалифицированному специалисту.</p></div>
+<div class="section"><h2>4. Premium, Покупки и Подписки</h2><p>Некоторые функции могут требовать Premium через покупки или подписки Google Play. Premium может включать постоянный доступ к расширенному аудиоконтенту, неограниченным привычкам и дневнику, полной истории настроения, личным трендам, эквалайзеру, визуализаторам, темам и другим premium-инструментам. Месячные и годовые планы являются подписками, которые автоматически продлеваются, если не отменены до продления. Lifetime Premium — это единовременная непотребляемая покупка, не подписка. Google Play обрабатывает платежи, продления, отмены и возвраты. Если Premium истечет, будет отменен, возвращен или не сможет быть проверен, функции Premium могут снова заблокироваться.</p></div>
+<div class="section"><h2>5. Конфиденциальность и Данные</h2><p>Информация, которую вы вводите, например имя, возраст, пол, записи настроения, данные привычек, записи дневника, дополнительные фотографии и аудиозаметки дневника, хранится на вашем устройстве. Данные Health Connect, если включены, используются только в ваших личных экранах приложения и не отправляются на наши серверы. Метаданные аналитики, диагностики, производительности и покупок могут улучшать надежность. Содержимое дневника, значения настроения, текст заметок, фотографии, аудио и wellness-контент не собираются нашими серверами. Мы не продаем персональные данные.</p></div>
+<div class="section"><h2>6. Аудио и Контент</h2><p>Аудио, визуальные материалы и контент предназначены для личного некоммерческого использования в Blue Horizons. Нельзя копировать, записывать, распространять, транслировать, перепродавать или использовать вне приложения без разрешения.</p></div>
+<div class="section"><h2>7. Уведомления и Будильники</h2><p>Напоминания, будильники и уведомления зависят от устройства, разрешений, батареи, сети и ОС. Точная доставка не гарантируется.</p></div>
+<div class="section"><h2>8. Ваши Обязанности</h2><p>Используйте приложение законно и ответственно. Запрещены обратная разработка, декомпиляция, вмешательство, злоупотребление, обход платежей или нарушение работы приложения. Вам должно быть не менее 13 лет либо вы должны достичь более высокого минимального возраста, требуемого в вашей стране или регионе. Несовершеннолетние могут использовать приложение только с разрешения и под присмотром родителя или законного представителя.</p></div>
+<div class="section"><h2>9. Отказ от Гарантий</h2><p>Приложение предоставляется как есть и по доступности, без гарантий. Мы не гарантируем непрерывную доступность, отсутствие ошибок, конкретные wellness-результаты или соответствие вашим потребностям.</p></div>
+<div class="section"><h2>10. Ограничение Ответственности</h2><p>В максимально разрешенной законом степени мы не отвечаем за косвенные, случайные, специальные или последующие убытки от использования, пропущенных уведомлений или доверия wellness-контенту.</p></div>
+<div class="section"><h2>11. Изменения и Контакт</h2><p>Мы можем обновлять Условия. Продолжение использования означает согласие. Контакт: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-sv" data-header="Användarvillkor · Senast uppdaterad: maj 2026" data-dir="ltr">
+<div class="section"><div class="highlight"><strong>Sammanfattning:</strong> Blue Horizons är en personlig välmåendeapp, inte en medicinsk tjänst. Premium-köp hanteras av Google Play. Personliga data stannar på enheten; Firebase-diagnostik och analyser kan förbättra tillförlitligheten.</div><div class="highlight"><strong>Google Play-meddelande:</strong> Premium-köp, prenumerationer, förnyelser, uppsägningar och återbetalningar hanteras via Google Play. Du kan hantera prenumerationer i ditt Google Play-konto. Dessa villkor bör läsas med Integritetspolicyn. <a href="privacy-policy.html">Integritetspolicy</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play-villkor</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play-återbetalningar</a>
+</div></div>
+<div class="doc-title">ANVÄNDARVILLKOR - BLUE HORIZONS</div>
 <p class="updated">Senast uppdaterad: maj 2026</p>
-<div class="section"><p>Genom att ladda ned eller använda Blue Horizons godkänner du dessa Användarvillkor och vår Integritetspolicy. Blue Horizons är en personlig välmåendekompanjon för sömn, reflektion och vanor. Appen kan innehålla sömnljud, vitt brus, musik, väckningsmusik, humörincheckningar, humörhistorik och insikter, vanespårning, dagbok, påminnelser, aviseringar och valfria Premium-funktioner.</p></div>
-<div class="section"><p>Blue Horizons är inte en medicinsk produkt, mentalvårdstjänst, diagnosverktyg eller ersättning för professionell rådgivning. Humör, vanor, dagbok, insikter och ljud är verktyg för självreflektion, inte kliniska bedömningar eller behandlingsplaner. Kontakta kvalificerad vårdpersonal vid oro kring sömn, mental hälsa, substansbruk eller medicinska tillstånd.</p></div>
-<div class="section"><p>Vissa funktioner kan kräva Premium via köp eller prenumerationer i Google Play. Google Play behandlar betalningar och hanterar förnyelser, uppsägningar och återbetalningar. Prenumerationer förnyas automatiskt om de inte sägs upp före förnyelsen. Om Premium löper ut, sägs upp eller inte kan verifieras kan Premium-funktioner låsas igen.</p></div>
-<div class="section"><p>Information du anger, som namn, ålder, kön, humörloggar, vanedata och dagboksinlägg, lagras lokalt på din enhet med krypterad lagring där det är tillgängligt. Health Connect-data, om aktiverad, används endast för att förbättra din personliga vy i appen och skickas inte till våra servrar. Firebase Analytics och Crashlytics kan samla in användnings-, diagnostik- och kraschdata för att förbättra tillförlitligheten. Vi säljer inte dina personuppgifter.</p></div>
-<div class="section"><p>Ljud, visuellt material och annat appinnehåll är endast för personlig, icke-kommersiell användning i Blue Horizons. Du får inte kopiera, spela in, distribuera, sända, sälja vidare eller använda innehållet utanför appen utan tillstånd. Påminnelser, alarm och aviseringar beror på enhetsinställningar, behörigheter, batteri, nätverk och operativsystem; exakt leverans garanteras inte.</p></div>
-<div class="section"><p>Använd appen lagligt och ansvarsfullt. Du får inte bakåtkompilera, dekompilera, manipulera, missbruka, kringgå betalningskontroller eller störa appen. Du måste vara minst 13 år eller ha vårdnadshavares samtycke där lokal lag kräver det.</p></div>
-<div class="section"><p>Appen tillhandahålls i befintligt skick och i mån av tillgänglighet, utan garantier. I den utsträckning lagen tillåter ansvarar vi inte för indirekta, tillfälliga, särskilda eller följdskador från användning av appen, missade aviseringar eller tillit till välmåendeinnehåll. Vi kan uppdatera villkoren; fortsatt användning innebär acceptans. Kontakt: support@bluehorizons.app</p></div>
-</div>
-<div class="lang-section" id="lang-tr" data-header="Kullanım Koşulları · Son güncelleme: Mayıs 2026">
-  <div class="section">
-    <div class="highlight"><strong>Özet:</strong> Blue Horizons kişisel bir iyi oluş uygulamasıdır, tıbbi hizmet değildir. Premium satın alımları Google Play tarafından yönetilir. Kişisel iyi oluş verilerin cihazında kalır; Firebase tanılama güvenilirliği artırmamıza yardımcı olabilir.</div>
-    <div class="highlight"><strong>Google Play bildirimi:</strong> Premium satın alımları, abonelikler, yenilemeler, iptaller ve geri ödemeler Google Play üzerinden işlenir. Abonelikleri Google Play hesabında yönetebilirsin. Bu Koşullar Gizlilik Politikası ile birlikte okunmalıdır. <a href="privacy.html">Gizlilik Politikası</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play Koşulları</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play geri ödemeleri</a></div>
-  </div>
-  <div class="doc-title">KULLANIM KOŞULLARI - BLUE HORIZONS</div>
+<div class="section"><h2>1. Godkännande</h2><p>Genom att ladda ner eller använda Blue Horizons godkänner du dessa Användarvillkor och Integritetspolicyn. Om du inte godkänner, sluta använda appen och avinstallera den.</p></div>
+<div class="section"><h2>2. Vad Appen Gör</h2><p>Blue Horizons är en personlig välmåendeapp för sömnrutiner, reflektion och vanor. Appen kan innehålla sömnljud, vitt brus, musik, alarm, humörincheckningar, humörhistorik och personliga trender, vanor, dagbok, påminnelser, aviseringar och Premium. Appen stödjer självreflektion och rutiner, men garanterar inte resultat för sömn, hälsa, humör eller vanor.</p></div>
+<div class="section"><h2>3. Inte Medicinsk eller Psykisk Hälsorådgivning</h2><p>Blue Horizons är inte en medicinsk produkt, mentalvårdstjänst, diagnosverktyg eller ersättning för professionell rådgivning. Kontakta kvalificerad personal.</p></div>
+<div class="section"><h2>4. Premium, Köp och Prenumerationer</h2><p>Vissa funktioner kan kräva Premium via köp eller prenumerationer i Google Play. Premium kan inkludera löpande åtkomst till utökat ljudinnehåll, obegränsade vanor och dagbok, fullständig humörhistorik, personliga trender, equalizer, visualiseringar, teman och andra premiumverktyg. Månads- och årsplaner är prenumerationer som förnyas automatiskt om de inte sägs upp före förnyelse. Lifetime Premium är ett engångsköp som inte förbrukas, inte en prenumeration. Google Play behandlar betalningar, förnyelser, uppsägningar och återbetalningar. Om Premium löper ut, sägs upp, återbetalas eller inte kan verifieras kan Premium-funktioner låsas igen.</p></div>
+<div class="section"><h2>5. Integritet och Data</h2><p>Information du anger, som namn, ålder, kön, humörloggar, vanedata, dagboksinlägg, valfria dagboksfoton och valfria ljudanteckningar, lagras på din enhet. Health Connect-data används, om aktiverat, endast i dina personliga appvyer och skickas inte till våra servrar. Analys-, diagnostik-, prestanda- och köpmetadata kan förbättra tillförlitligheten. Dagboksinnehåll, humörvärden, anteckningstext, foton, ljud och välmåendeinnehåll samlas inte in av våra servrar. Vi säljer inte persondata.</p></div>
+<div class="section"><h2>6. Ljud och Innehåll</h2><p>Ljud, visuellt material och innehåll är för personlig, icke-kommersiell användning i Blue Horizons. Du får inte kopiera, spela in, distribuera, sända, sälja vidare eller använda utanför appen utan tillstånd.</p></div>
+<div class="section"><h2>7. Aviseringar och Alarm</h2><p>Påminnelser, alarm och aviseringar beror på enhet, behörigheter, batteri, nätverk och operativsystem. Exakt leverans garanteras inte.</p></div>
+<div class="section"><h2>8. Ditt Ansvar</h2><p>Använd appen lagligt och ansvarsfullt. Du får inte reverse-engineera, dekompilera, manipulera, missbruka, kringgå betalningar eller störa appen. Du måste vara minst 13 år, eller den högre minimiålder som krävs i ditt land eller din region. Om du är minderårig får du endast använda appen med tillstånd och tillsyn av förälder eller vårdnadshavare.</p></div>
+<div class="section"><h2>9. Garantifriskrivning</h2><p>Appen tillhandahålls i befintligt skick och efter tillgänglighet, utan garantier. Vi garanterar inte oavbruten tillgänglighet, felfri funktion, specifika välmåenderesultat eller lämplighet för dina behov.</p></div>
+<div class="section"><h2>10. Ansvarsbegränsning</h2><p>I den utsträckning lagen tillåter ansvarar vi inte för indirekta, tillfälliga, särskilda eller följdskador från användning, missade aviseringar eller tillit till välmåendeinnehåll.</p></div>
+<div class="section"><h2>11. Ändringar och Kontakt</h2><p>Vi kan uppdatera villkoren. Fortsatt användning betyder godkännande. Kontakt: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-tr" data-header="Kullanım Koşulları · Son güncelleme: Mayıs 2026" data-dir="ltr">
+<div class="section"><div class="highlight"><strong>Özet:</strong> Blue Horizons kişisel bir iyi oluş uygulamasıdır, tıbbi hizmet değildir. Premium satın alımları Google Play tarafından yönetilir. Kişisel veriler cihazda kalır; Firebase tanılama ve analizleri güvenilirliği artırabilir.</div><div class="highlight"><strong>Google Play bildirimi:</strong> Premium satın alımları, abonelikler, yenilemeler, iptaller ve geri ödemeler Google Play üzerinden işlenir. Abonelikleri Google Play hesabında yönetebilirsiniz. Bu Koşullar Gizlilik Politikası ile birlikte okunmalıdır. <a href="privacy-policy.html">Gizlilik Politikası</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play Koşulları</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play geri ödemeleri</a>
+</div></div>
+<div class="doc-title">KULLANIM KOŞULLARI - BLUE HORIZONS</div>
 <p class="updated">Son güncelleme: Mayıs 2026</p>
-<div class="section"><p>Blue Horizons’ı indirerek veya kullanarak bu Kullanım Koşulları’nı ve Gizlilik Politikamızı kabul etmiş olursun. Blue Horizons uyku, öz değerlendirme ve alışkanlık geliştirme için kişisel bir iyi oluş uygulamasıdır. Uygulama uyku sesleri, beyaz gürültü, müzik, uyanma şarkısı alarmları, ruh hali kontrolleri, ruh hali geçmişi ve içgörüleri, alışkanlık takibi, günlük, hatırlatıcılar, bildirimler ve isteğe bağlı Premium özellikler içerebilir.</p></div>
-<div class="section"><p>Blue Horizons tıbbi cihaz, ruh sağlığı hizmeti, tanı aracı veya profesyonel tavsiye yerine geçen bir hizmet değildir. Ruh hali, alışkanlıklar, günlük, içgörüler ve ses içerikleri öz değerlendirme araçlarıdır; klinik değerlendirme veya tedavi planı değildir. Uyku, ruh sağlığı, madde kullanımı veya herhangi bir tıbbi durum hakkında endişen varsa nitelikli bir uzmana danış.</p></div>
-<div class="section"><p>Bazı özellikler Google Play satın alımları veya abonelikleriyle Premium gerektirebilir. Ödemeleri Google Play işler; yenileme, iptal ve geri ödemeler Google Play hesabın ve yerel kurallar kapsamında yönetilir. Abonelikler yenilemeden önce iptal edilmezse otomatik yenilenir. Premium süresi biterse, iptal edilirse veya doğrulanamazsa Premium özellikler tekrar kilitlenebilir.</p></div>
-<div class="section"><p>Girdiğin ad, yaş, cinsiyet, ruh hali kayıtları, alışkanlık verileri ve günlük girişleri gibi bilgiler cihazında, mevcut olduğunda şifreli depolamayla yerel olarak saklanır. Health Connect verileri etkinleştirilirse yalnızca uygulamadaki kişisel görünümünü zenginleştirmek için kullanılır ve sunucularımıza gönderilmez. Firebase Analytics ve Crashlytics güvenilirliği artırmak için kullanım, tanılama ve çökme verileri toplayabilir. Kişisel verilerini satmayız.</p></div>
-<div class="section"><p>Ses, görsel ve diğer uygulama içerikleri Blue Horizons içinde kişisel ve ticari olmayan kullanım içindir. Bu içerikleri izinsiz kopyalayamaz, kaydedemez, yeniden dağıtamaz, yayınlayamaz, yeniden satamaz veya uygulama dışında kullanamazsın. Hatırlatıcılar, alarmlar ve bildirimler cihaz ayarlarına, izinlere, bataryaya, ağa ve işletim sistemine bağlıdır; her zaman tam saatinde teslim garanti edilmez.</p></div>
-<div class="section"><p>Uygulamayı yasal ve sorumlu şekilde kullan. Tersine mühendislik, kaynak koda dönüştürme, kurcalama, kötüye kullanım, ödeme kontrollerini aşma veya uygulamaya müdahale yasaktır. En az 13 yaşında olmalı veya yerel yasalar gerektiriyorsa ebeveyn/vasi onayına sahip olmalısın.</p></div>
-<div class="section"><p>Uygulama olduğu gibi ve mevcut olduğu ölçüde, hiçbir garanti olmadan sunulur. Yasaların izin verdiği azami ölçüde, uygulamanın kullanımı, kaçırılan bildirimler veya iyi oluş içeriklerine güvenilmesi nedeniyle oluşan dolaylı, arızi, özel veya sonuçsal zararlardan sorumlu değiliz. Bu Koşulları güncelleyebiliriz; kullanmaya devam etmen kabul anlamına gelir. İletişim: support@bluehorizons.app</p></div>
-</div>
-<div class="lang-section" id="lang-zh" data-header="使用条款 · 最后更新：2026年5月">
-  <div class="section">
-    <div class="highlight"><strong>摘要:</strong> Blue Horizons 是个人健康应用，不是医疗服务。Premium 购买由 Google Play 管理。你的个人健康数据保留在设备上；Firebase 诊断可能帮助我们提升可靠性。</div>
-    <div class="highlight"><strong>Google Play 说明:</strong> Premium 购买、订阅、续订、取消和退款均通过 Google Play 处理。你可以在 Google Play 帐号中管理订阅。本条款应与隐私政策一并阅读。 <a href="privacy.html">隐私政策</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play 条款</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play 退款</a></div>
-  </div>
-  <div class="doc-title">使用条款 - BLUE HORIZONS</div>
+<div class="section"><h2>1. Kabul</h2><p>Blue Horizons’ı indirerek veya kullanarak bu Kullanım Koşulları’nı ve Gizlilik Politikası’nı kabul edersiniz. Kabul etmiyorsanız kullanmayı bırakın ve uygulamayı kaldırın.</p></div>
+<div class="section"><h2>2. Uygulama Ne Yapar</h2><p>Blue Horizons uyku rutinleri, öz değerlendirme ve alışkanlıklar için kişisel bir iyi oluş uygulamasıdır. Uyku sesleri, beyaz gürültü, müzik, alarmlar, ruh hali kayıtları, ruh hali geçmişi ve kişisel trendler, alışkanlıklar, günlük, hatırlatıcılar, bildirimler ve Premium içerebilir. Uygulama öz değerlendirme ve rutinleri destekler, ancak uyku, sağlık, ruh hali veya alışkanlık sonuçlarını garanti etmez.</p></div>
+<div class="section"><h2>3. Tıbbi veya Ruh Sağlığı Tavsiyesi Değildir</h2><p>Blue Horizons tıbbi cihaz, ruh sağlığı hizmeti, tanı aracı veya profesyonel tavsiye yerine geçmez. Nitelikli uzmana danışın.</p></div>
+<div class="section"><h2>4. Premium, Satın Almalar ve Abonelikler</h2><p>Bazı özellikler Google Play satın alımları veya abonelikleriyle Premium gerektirebilir. Premium; genişletilmiş ses içeriği, sınırsız alışkanlık ve günlük, tam ruh hali geçmişi, kişisel trendler, equalizer, görselleştiriciler, temalar ve diğer premium araçlara sürekli erişim içerebilir. Aylık ve yıllık planlar yenilemeden önce iptal edilmezse otomatik yenilenen aboneliklerdir. Lifetime Premium tek seferlik, tüketilemeyen bir satın almadır; abonelik değildir. Google Play ödemeleri, yenilemeleri, iptalleri ve geri ödemeleri işler. Premium sona ererse, iptal edilirse, iade edilirse veya doğrulanamazsa Premium özellikler tekrar kilitlenebilir.</p></div>
+<div class="section"><h2>5. Gizlilik ve Veri</h2><p>Ad, yaş, cinsiyet, ruh hali kayıtları, alışkanlık verileri, günlük kayıtları, isteğe bağlı günlük fotoğrafları ve isteğe bağlı ses notları gibi girdiğiniz bilgiler cihazınızda saklanır. Health Connect verileri etkinse yalnızca kişisel uygulama görünümlerinizde kullanılır ve sunucularımıza gönderilmez. Analiz, tanılama, performans ve satın alma metadatası güvenilirliği artırabilir. Günlük içeriği, ruh hali değerleri, not metni, fotoğraflar, sesler ve iyi oluş içeriği sunucularımız tarafından toplanmaz. Kişisel verileri satmayız.</p></div>
+<div class="section"><h2>6. Ses ve İçerik</h2><p>Ses, görseller ve içerik Blue Horizons içinde kişisel ve ticari olmayan kullanım içindir. İzin olmadan kopyalayamaz, kaydedemez, dağıtamaz, yayınlayamaz, yeniden satamaz veya uygulama dışında kullanamazsınız.</p></div>
+<div class="section"><h2>7. Bildirimler ve Alarmlar</h2><p>Hatırlatıcılar, alarmlar ve bildirimler cihaz, izinler, pil, ağ ve işletim sistemine bağlıdır. Tam zamanında teslim garanti edilmez.</p></div>
+<div class="section"><h2>8. Sorumluluklarınız</h2><p>Uygulamayı yasal ve sorumlu şekilde kullanın. Tersine mühendislik, derleme çözme, kurcalama, kötüye kullanım, ödeme kontrollerini aşma veya uygulamaya müdahale etmeyin. En az 13 yaşında veya ülkenizde/bölgenizde gerekli daha yüksek asgari yaşta olmalısınız. Reşit değilseniz uygulamayı yalnızca ebeveyn veya yasal vasinin izni ve gözetimiyle kullanabilirsiniz.</p></div>
+<div class="section"><h2>9. Garanti Reddi</h2><p>Uygulama olduğu gibi ve mevcut olduğu ölçüde sunulur, garanti yoktur. Sürekli kullanılabilirlik, hatasız çalışma, belirli iyi oluş sonuçları veya ihtiyaçlarınıza uygunluk garanti edilmez.</p></div>
+<div class="section"><h2>10. Sorumluluk Sınırlaması</h2><p>Yasanın izin verdiği ölçüde kullanım, kaçırılan bildirimler veya iyi oluş içeriğine güven nedeniyle dolaylı, arızi, özel veya sonuçsal zararlardan sorumlu değiliz.</p></div>
+<div class="section"><h2>11. Değişiklikler ve İletişim</h2><p>Bu Koşulları güncelleyebiliriz. Kullanıma devam etmek kabul anlamına gelir. İletişim: <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div><div class="lang-section" id="lang-zh" data-header="使用条款 · 最后更新：2026年5月" data-dir="ltr">
+<div class="section"><div class="highlight"><strong>摘要:</strong> Blue Horizons 是个人健康应用，不是医疗服务。Premium 购买由 Google Play 管理。个人数据保留在设备上；Firebase 诊断和分析可能帮助提升可靠性。</div><div class="highlight"><strong>Google Play 说明:</strong> Premium 购买、订阅、续订、取消和退款均通过 Google Play 处理。你可以在 Google Play 帐号中管理订阅。本条款应与隐私政策一并阅读。 <a href="privacy-policy.html">隐私政策</a> · <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play 条款</a> · <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play 退款</a>
+</div></div>
+<div class="doc-title">使用条款 - BLUE HORIZONS</div>
 <p class="updated">最后更新：2026年5月</p>
-<div class="section"><p>下载或使用 Blue Horizons，即表示你同意本使用条款和我们的隐私政策。Blue Horizons 是一款用于睡眠、反思和习惯养成的个人健康陪伴应用。应用可能包含睡眠声音、白噪音、音乐、唤醒音乐闹钟、情绪记录、情绪历史和洞察、习惯追踪、日记、提醒、通知以及可选 Premium 功能。</p></div>
-<div class="section"><p>Blue Horizons 不是医疗设备、心理健康服务、诊断工具，也不能替代专业建议。情绪、习惯、日记、洞察和音频内容只是自我反思工具，不是临床评估或治疗计划。如你对睡眠、心理健康、物质使用或任何医疗状况有疑问，请咨询合格专业人士。</p></div>
-<div class="section"><p>部分功能可能需要通过 Google Play 购买或订阅解锁 Premium。Google Play 处理付款，并根据你的 Google Play 帐号和当地规则管理续订、取消和退款。订阅会自动续订，除非你在续订前取消。如果 Premium 到期、取消或无法验证，Premium 功能可能会再次锁定。</p></div>
-<div class="section"><p>你输入的信息，例如姓名、年龄、性别、情绪记录、习惯数据和日记条目，会在可用时使用加密存储保存在你的设备本地。若启用 Health Connect 数据，它仅用于丰富你在应用中的个人视图，不会发送到我们的服务器。Firebase Analytics 和 Crashlytics 可能会收集使用、诊断和崩溃数据，以提升可靠性。我们不会出售你的个人数据。</p></div>
-<div class="section"><p>音频、视觉和其他应用内容仅供在 Blue Horizons 内个人、非商业使用。未经许可，不得复制、录制、再分发、广播、转售或在应用外使用这些内容。提醒、闹钟和通知取决于设备设置、权限、电池、网络和操作系统行为；我们无法保证始终在准确时间送达。</p></div>
-<div class="section"><p>请合法、负责任地使用应用。不得对应用进行逆向工程、反编译、篡改、滥用、绕过支付控制或干扰应用运行。你必须年满13岁，或在当地法律要求时获得父母/监护人同意。</p></div>
-<div class="section"><p>应用按现状和可用状态提供，不作任何保证。在法律允许的最大范围内，我们不对因使用应用、错过通知或依赖健康内容而产生的间接、附带、特殊或后果性损害负责。我们可能更新本条款；继续使用即表示接受修订条款。联系方式：support@bluehorizons.app</p></div>
-</div>
-</main>
+<div class="section"><h2>1. 接受</h2><p>下载或使用 Blue Horizons 即表示您同意本使用条款和隐私政策。如果不同意，请停止使用并卸载应用。</p></div>
+<div class="section"><h2>2. 应用功能</h2><p>Blue Horizons 是用于睡眠习惯、反思和习惯养成的个人健康应用。应用可能包括睡眠声音、白噪音、音乐、闹钟、情绪记录、情绪历史和个人趋势、习惯、日记、提醒、通知和 Premium。应用支持自我反思和日常习惯，但不保证睡眠、健康、情绪或习惯结果。</p></div>
+<div class="section"><h2>3. 非医疗或心理健康建议</h2><p>Blue Horizons 不是医疗设备、心理健康服务、诊断工具，也不能替代专业建议。请咨询合格专业人士。</p></div>
+<div class="section"><h2>4. Premium、购买和订阅</h2><p>部分功能可能需要通过 Google Play 购买或订阅 Premium。Premium 可能包括持续访问扩展音频内容、无限习惯和日记、完整心情历史、个人趋势、均衡器、可视化、主题和其他 premium 工具。月度和年度计划是订阅，除非在续订前取消，否则会自动续订。Lifetime Premium 是一次性非消耗型购买，不是订阅。Google Play 处理付款、续订、取消和退款。如果 Premium 过期、取消、退款或无法验证，Premium 功能可能会再次锁定。</p></div>
+<div class="section"><h2>5. 隐私和数据</h2><p>你输入的信息，例如姓名、年龄、性别、心情日志、习惯数据、日记条目、可选日记照片和可选音频笔记，会存储在你的设备上。Health Connect 数据如启用，仅用于你的个人应用页面，不会发送到我们的服务器。分析、诊断、性能和购买事件元数据可能用于提升可靠性。日记内容、心情值、笔记文本、照片、音频和健康习惯内容不会由我们的服务器收集。我们不会出售个人数据。</p></div>
+<div class="section"><h2>6. 音频和内容</h2><p>音频、视觉和内容仅供在 Blue Horizons 内个人、非商业使用。未经许可，不得复制、录制、再分发、广播、转售或在应用外使用。</p></div>
+<div class="section"><h2>7. 通知和闹钟</h2><p>提醒、闹钟和通知取决于设备、权限、电池、网络和操作系统。无法保证准确送达时间。</p></div>
+<div class="section"><h2>8. 您的责任</h2><p>请合法、负责任地使用本应用。不得逆向工程、反编译、篡改、滥用、绕过付款控制或干扰应用。你必须年满 13 岁，或达到你所在国家或地区要求的更高最低年龄。如果你在所在国家或地区属于未成年人，只能在父母或法定监护人许可和监督下使用本应用。</p></div>
+<div class="section"><h2>9. 免责声明</h2><p>应用按现状和可用状态提供，不作任何保证。我们不保证持续可用、无错误运行、特定健康结果或满足你的需求。</p></div>
+<div class="section"><h2>10. 责任限制</h2><p>在法律允许范围内，我们不对因使用应用、错过通知或依赖健康内容产生的间接、附带、特殊或后果性损害负责。</p></div>
+<div class="section"><h2>11. 变更和联系</h2><p>我们可能更新本条款。继续使用即表示接受。联系方式：<a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a></p></div>
+</div></main>
 <footer>
-  <p>Blue Horizons · <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a> · <a href="privacy.html">Privacy Policy</a> · Last updated May 2026</p>
+<p>Blue Horizons · <a href="mailto:support@bluehorizons.app">support@bluehorizons.app</a> · May 2026</p>
 </footer>
-<script>
-  const LANGS = ['en', 'pt', 'es', 'fr', 'de', 'it', 'ar', 'hi', 'ja', 'nl', 'no', 'ru', 'sv', 'tr', 'zh'];
-  function setLang(code) {
-    LANGS.forEach(l => {
-      document.getElementById('lang-' + l).classList.remove('visible');
-      document.querySelector('[data-lang="' + l + '"]').classList.remove('active');
-    });
-    const section = document.getElementById('lang-' + code);
-    section.classList.add('visible');
-    document.querySelector('[data-lang="' + code + '"]').classList.add('active');
-    document.documentElement.lang = code;
-    document.body.classList.toggle('rtl', code === 'ar');
-    document.getElementById('header-sub').textContent = section.dataset.header;
-    try { localStorage.setItem('blue-horizons-terms-lang', code); } catch (e) {}
-  }
-  function detectLang() {
-    try {
-      const saved = localStorage.getItem('blue-horizons-terms-lang');
-      if (saved && LANGS.includes(saved)) return saved;
-    } catch (e) {}
-    const nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-    if (nav.startsWith('pt')) return 'pt';
-    if (nav.startsWith('es')) return 'es';
-    if (nav.startsWith('fr')) return 'fr';
-    if (nav.startsWith('de')) return 'de';
-    if (nav.startsWith('it')) return 'it';
-    if (nav.startsWith('ar')) return 'ar';
-    if (nav.startsWith('hi')) return 'hi';
-    if (nav.startsWith('ja')) return 'ja';
-    if (nav.startsWith('nl')) return 'nl';
-    if (nav.startsWith('no') || nav.startsWith('nb')) return 'no';
-    if (nav.startsWith('ru')) return 'ru';
-    if (nav.startsWith('sv')) return 'sv';
-    if (nav.startsWith('tr')) return 'tr';
-    if (nav.startsWith('zh')) return 'zh';
-    return 'en';
-  }
-  setLang(detectLang());
-</script>
+<script>const LANGS=["en","pt","es","fr","de","it","ar","hi","ja","nl","no","ru","sv","tr","zh"];function setLang(code){LANGS.forEach(l=>{document.getElementById('lang-'+l).classList.remove('visible');document.querySelector('[data-lang="'+l+'"]').classList.remove('active')});const s=document.getElementById('lang-'+code);s.classList.add('visible');document.querySelector('[data-lang="'+code+'"]').classList.add('active');document.documentElement.lang=code;document.body.classList.toggle('rtl',s.dataset.dir==='rtl');document.getElementById('header-sub').textContent=s.dataset.header;try{localStorage.setItem('blue-horizons-legal-lang-v2',code)}catch(e){}}function detectLang(){try{const params=new URLSearchParams(location.search);const requested=params.get('lang');if(requested&&LANGS.includes(requested))return requested}catch(e){}try{const saved=localStorage.getItem('blue-horizons-legal-lang-v2');if(saved&&LANGS.includes(saved)&&saved!=='en')return saved}catch(e){}const nav=(navigator.language||'').slice(0,2).toLowerCase();if(nav&&LANGS.includes(nav)&&nav!=='en')return nav;return 'pt'}setLang(detectLang());</script>
 </body>
 </html>
