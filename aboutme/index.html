@@ -1,0 +1,772 @@
+<title>Daniel Luz Alves</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #10121a;
+    --bg-grid: #171a24;
+    --surface: #181b26;
+    --surface-2: #1f2330;
+    --border: #2b2f3e;
+    --border-soft: #22252f;
+    --ink: #ecebf2;
+    --ink-dim: #c6c6d4;
+    --muted: #8c90a6;
+    --muted-2: #5f6377;
+    --violet: #9385ff;
+    --violet-dim: #6c5ce0;
+    --violet-wash: rgba(147, 133, 255, 0.14);
+    --violet-glow: rgba(147, 133, 255, 0.35);
+    --amber: #ff9a5c;
+    --amber-dim: #e0722f;
+    --amber-wash: rgba(255, 154, 92, 0.14);
+    --green: #6fd88f;
+
+    --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "Cascadia Code", Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background-color: var(--bg);
+    background-image:
+      radial-gradient(900px 500px at 85% -10%, var(--violet-wash), transparent 60%),
+      radial-gradient(700px 420px at 5% 15%, var(--amber-wash), transparent 55%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0% 0%, 0% 0%;
+    animation: bgDrift 26s ease-in-out infinite alternate;
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @keyframes bgDrift {
+    0%   { background-position: 0% 0%, 0% 0%; }
+    100% { background-position: -6% 5%, 6% -4%; }
+  }
+  @keyframes fadeBlink { 50% { opacity: 0; } }
+  @keyframes livePulse {
+    0%   { box-shadow: 0 0 0 0 rgba(111, 216, 143, 0.55); }
+    70%  { box-shadow: 0 0 0 7px rgba(111, 216, 143, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(111, 216, 143, 0); }
+  }
+
+  ::selection { background: var(--violet-dim); color: #fff; }
+
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--violet); outline-offset: 3px; border-radius: 4px; }
+
+  img { max-width: 100%; display: block; }
+
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 700; text-wrap: balance; margin: 0; }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
+  .prose { max-width: 700px; }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 14px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--amber);
+    box-shadow: 0 0 0 3px var(--amber-wash);
+  }
+
+  /* ---------- scroll reveal + stagger ---------- */
+  .reveal {
+    opacity: 0; transform: translateY(16px);
+    transition: opacity .6s cubic-bezier(.2,.7,.2,1), transform .6s cubic-bezier(.2,.7,.2,1);
+  }
+  .reveal.in-view { opacity: 1; transform: none; }
+
+  .stagger-child {
+    opacity: 0; transform: translateY(14px);
+    transition: opacity .5s cubic-bezier(.2,.7,.2,1), transform .5s cubic-bezier(.2,.7,.2,1),
+                border-color .25s ease, box-shadow .25s ease, background-color .25s ease;
+  }
+  .stagger-child.in-view { opacity: 1; transform: none; }
+  .stagger-child:nth-child(1) { transition-delay: 0ms; }
+  .stagger-child:nth-child(2) { transition-delay: 70ms; }
+  .stagger-child:nth-child(3) { transition-delay: 140ms; }
+  .stagger-child:nth-child(4) { transition-delay: 210ms; }
+  .stagger-child:nth-child(5) { transition-delay: 280ms; }
+  .stagger-child:nth-child(6) { transition-delay: 350ms; }
+
+  @media (prefers-reduced-motion: reduce) {
+    body { animation: none; }
+    .reveal, .stagger-child { opacity: 1; transform: none; transition: none; }
+    .cursor, .live-dot { animation: none; }
+    * { scroll-behavior: auto !important; }
+  }
+
+  /* ---------- top bar ---------- */
+  .topbar {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(16, 18, 26, 0.82);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .topbar-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 28px;
+    max-width: 1080px; margin: 0 auto;
+  }
+  .brand {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--ink);
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .brand .dot {
+    width: 8px; height: 8px; border-radius: 2px; background: var(--violet);
+    transform: rotate(45deg); transition: transform .4s ease, background-color .4s ease;
+  }
+  .brand:hover .dot { transform: rotate(225deg); background: var(--amber); }
+  .navlinks { display: flex; gap: 24px; font-size: 13.5px; }
+  .navlinks a {
+    position: relative; text-decoration: none; color: var(--muted); font-family: var(--font-mono);
+    padding-bottom: 3px; transition: color .15s ease;
+  }
+  .navlinks a::after {
+    content: ""; position: absolute; left: 0; right: 100%; bottom: -1px; height: 1px;
+    background: var(--violet); transition: right .25s ease;
+  }
+  .navlinks a:hover { color: var(--ink); }
+  .navlinks a:hover::after { right: 0; }
+  @media (max-width: 700px) { .navlinks { display: none; } }
+
+  section { padding: 76px 0; border-bottom: 1px solid var(--border-soft); }
+  section:last-of-type { border-bottom: none; }
+
+  /* ---------- hero ---------- */
+  .hero { padding-top: 64px; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(240px, 0.7fr);
+    gap: 56px;
+    align-items: start;
+  }
+  @media (max-width: 800px) { .hero-grid { grid-template-columns: 1fr; } }
+
+  .hero h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: 1.05; letter-spacing: -0.01em; }
+  .hero .role {
+    font-family: var(--font-mono);
+    color: var(--violet);
+    font-size: 15px;
+    margin-top: 16px;
+  }
+  .cursor { display: inline-block; margin-left: 2px; color: var(--amber); animation: fadeBlink 1s steps(1) infinite; }
+  .hero p.thesis { color: var(--ink-dim); font-size: 17px; margin-top: 20px; max-width: 56ch; }
+
+  .link-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 9px 16px; border-radius: 8px;
+    font-family: var(--font-mono); font-size: 13px; font-weight: 500;
+    text-decoration: none; border: 1px solid var(--border);
+    color: var(--ink-dim); background: var(--surface);
+    transition: border-color .15s ease, color .15s ease, transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover { border-color: var(--violet); color: var(--ink); transform: translateY(-2px); box-shadow: 0 10px 22px -14px var(--violet-glow); }
+  .btn.primary { background: var(--violet); border-color: var(--violet); color: #100c26; font-weight: 600; }
+  .btn.primary:hover { background: #a396ff; border-color: #a396ff; box-shadow: 0 10px 26px -10px var(--violet-glow); }
+
+  .stat-stack { display: flex; flex-direction: column; gap: 12px; }
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+  }
+  .stat-card:hover { border-color: var(--violet); transform: translateY(-2px); box-shadow: 0 14px 30px -18px var(--violet-glow); }
+  .stat-card .num {
+    font-family: var(--font-mono); font-weight: 600; font-size: 22px;
+    color: var(--ink); font-variant-numeric: tabular-nums;
+  }
+  .stat-card .label { font-size: 12.5px; color: var(--muted); text-align: right; max-width: 16ch; }
+
+  /* ---------- experience (release log) ---------- */
+  .timeline { display: flex; flex-direction: column; }
+  .release {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 24px;
+    padding: 26px 0;
+    border-top: 1px solid var(--border-soft);
+    border-radius: 10px;
+  }
+  .release:first-of-type { border-top: none; padding-top: 8px; }
+  .release:hover { background: var(--surface); box-shadow: inset 0 0 0 1px var(--border-soft); }
+  .release .tag {
+    font-family: var(--font-mono); font-size: 13px; color: var(--amber);
+    padding-top: 3px; padding-left: 12px;
+  }
+  .release .tag .current { display: inline-flex; align-items: center; gap: 6px; color: var(--green); }
+  .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); animation: livePulse 2s infinite; }
+  .release-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; }
+  .release-head .company { font-family: var(--font-display); font-weight: 700; font-size: 19px; }
+  .release-head .role { color: var(--ink-dim); font-size: 15px; }
+  .release-meta { font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); margin-top: 4px; }
+  .release ul { margin: 12px 0 0; padding-left: 18px; color: var(--ink-dim); font-size: 14.5px; }
+  .release li { margin: 5px 0; }
+  .release .apps-built { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .pill {
+    font-family: var(--font-mono); font-size: 11.5px; color: var(--muted);
+    border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px;
+    transition: border-color .2s ease, color .2s ease;
+  }
+  .pill:hover { border-color: var(--amber); color: var(--ink-dim); }
+
+  .foundations {
+    margin-top: 8px; padding: 18px 20px;
+    background: var(--surface); border: 1px solid var(--border-soft); border-radius: 12px;
+    font-size: 14px; color: var(--muted);
+  }
+  .foundations strong { color: var(--ink-dim); font-weight: 600; }
+  .foundations .frow { display: flex; flex-wrap: wrap; gap: 6px 10px; padding: 5px 0; }
+  .foundations .frow + .frow { border-top: 1px dashed var(--border-soft); }
+  .foundations .fyear { font-family: var(--font-mono); color: var(--muted-2); min-width: 74px; }
+
+  /* ---------- apps ---------- */
+  .app-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 700px) { .app-grid { grid-template-columns: 1fr; } }
+  .app-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+    padding: 22px; display: flex; flex-direction: column; gap: 14px;
+    transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+  }
+  .app-card:hover { transform: translateY(-5px); border-color: var(--violet); box-shadow: 0 18px 36px -18px var(--violet-glow); }
+  .app-card .app-head { display: flex; gap: 14px; align-items: center; }
+  .app-icon {
+    width: 56px; height: 56px; border-radius: 14px; object-fit: cover;
+    border: 1px solid var(--border-soft); background: var(--surface-2);
+    transition: transform .3s ease;
+  }
+  .app-card:hover .app-icon { transform: scale(1.08) rotate(-3deg); }
+  .app-card h3 { font-size: 18px; }
+  .app-card .genre {
+    font-family: var(--font-mono); font-size: 11.5px; color: var(--amber);
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .app-card p { color: var(--ink-dim); font-size: 14px; margin: 0; }
+  .app-card .app-foot { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
+  .app-card .modes { display: flex; flex-wrap: wrap; gap: 6px; }
+
+  /* ---------- oss list ---------- */
+  .repo-list { display: flex; flex-direction: column; }
+  .repo {
+    display: flex; align-items: baseline; gap: 14px;
+    padding: 14px 14px; margin: 0 -14px; border-top: 1px solid var(--border-soft);
+    border-radius: 10px;
+  }
+  .repo:first-child { border-top: none; }
+  .repo:hover { background: var(--surface); }
+  .lang-dot {
+    width: 9px; height: 9px; border-radius: 50%; flex: none; margin-top: 6px;
+    transition: transform .2s ease;
+  }
+  .repo:hover .lang-dot { transform: scale(1.5); }
+  .repo-body { flex: 1; min-width: 0; }
+  .repo-name { font-family: var(--font-mono); font-size: 14.5px; color: var(--ink); text-decoration: none; }
+  .repo-name:hover { color: var(--violet); }
+  .repo-desc { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
+  .repo-meta { font-family: var(--font-mono); font-size: 12px; color: var(--muted-2); white-space: nowrap; }
+  .star { color: var(--amber); }
+
+  /* ---------- writing ---------- */
+  .article-list { display: flex; flex-direction: column; }
+  .article {
+    display: flex; gap: 20px; padding: 16px 14px; margin: 0 -14px;
+    border-top: 1px solid var(--border-soft); border-radius: 10px;
+    text-decoration: none; color: inherit;
+    transition: background-color .2s ease, padding-left .2s ease;
+  }
+  .article:first-child { border-top: none; }
+  .article:hover { background: var(--surface); padding-left: 20px; }
+  .article-date {
+    font-family: var(--font-mono); font-size: 12.5px; color: var(--muted-2);
+    width: 88px; flex: none; padding-top: 3px;
+  }
+  .article-title { font-size: 15.5px; color: var(--ink-dim); transition: color .15s ease; }
+  .article:hover .article-title { color: var(--violet); }
+
+  /* ---------- stack (gradle-styled code block) ---------- */
+  .code-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    overflow: hidden;
+  }
+  .code-card .code-head {
+    display: flex; align-items: center; gap: 8px;
+    padding: 12px 18px; border-bottom: 1px solid var(--border-soft);
+    font-family: var(--font-mono); font-size: 12.5px; color: var(--muted);
+  }
+  .code-head .traffic { display: flex; gap: 6px; }
+  .code-head .traffic span { width: 9px; height: 9px; border-radius: 50%; background: var(--border); }
+  pre.code-body {
+    margin: 0; padding: 22px 24px; overflow-x: auto;
+    font-family: var(--font-mono); font-size: 13.5px; line-height: 1.9;
+  }
+  .tok-kw { color: var(--violet); }
+  .tok-str { color: var(--amber); }
+  .tok-cm { color: var(--muted-2); font-style: italic; }
+  .tok-fn { color: #7fd6c4; }
+
+  /* ---------- education + languages ---------- */
+  .bg-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; }
+  @media (max-width: 700px) { .bg-grid { grid-template-columns: 1fr; } }
+  .edu-item { padding: 16px 14px; margin: 0 -14px; border-top: 1px solid var(--border-soft); border-radius: 10px; transition: background-color .2s ease; }
+  .edu-item:first-child { border-top: none; padding-top: 0; }
+  .edu-item:hover { background: var(--surface); }
+  .edu-item .degree { font-weight: 600; font-size: 15px; }
+  .edu-item .school { color: var(--violet); font-size: 13.5px; margin-top: 3px; }
+  .edu-item .when { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-top: 3px; }
+
+  .lang-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; }
+  .lang-row .name { font-size: 14.5px; }
+  .lang-row .level { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); margin-left: 8px; }
+  .meter { display: flex; gap: 4px; }
+  .meter span { width: 16px; height: 6px; border-radius: 3px; background: var(--border); transition: background-color .3s ease, transform .3s ease; }
+  .meter span.on { background: var(--violet); }
+  .lang-row:hover .meter span.on { background: var(--amber); transform: scaleY(1.3); }
+
+  /* ---------- footer ---------- */
+  footer { padding: 60px 0 48px; }
+  .foot-grid { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+  .foot-copy { color: var(--muted-2); font-size: 12.5px; font-family: var(--font-mono); }
+  .foot-links { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  h2.section-title { font-size: clamp(1.5rem, 3vw, 1.9rem); margin-top: 6px; }
+  .section-head { margin-bottom: 38px; }
+</style>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top"><span class="dot"></span>daniel.alves</a>
+    <nav class="navlinks">
+      <a href="#education">education</a>
+      <a href="#experience">experience</a>
+      <a href="#writing">writing</a>
+      <a href="#apps">apps</a>
+      <a href="#oss">oss</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">~/whoami</p>
+        <h1>Daniel Luz Alves</h1>
+        <p class="role">Android Engineer @ PicPay — Kotlin, Jetpack Compose, on-device AI<span class="cursor">_</span></p>
+        <p class="thesis">
+          Nearly a decade shipping native Android apps for fintech, streaming, loyalty
+          and education products across Brazil and New Zealand. Currently modernizing
+          PicPay's app architecture and pursuing an MBA in Data Science &amp; AI, with a
+          focus on running LLMs directly on-device. Outside the day job, I design and
+          ship my own games on Google Play.
+        </p>
+        <div class="link-row">
+          <a class="btn primary" href="https://github.com/lluzalves" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn" href="https://linkedin.com/in/daniel-luz-9984ba114/?locale=pt" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn" href="https://medium.com/@spparks_" target="_blank" rel="noopener">Medium ↗</a>
+          <a class="btn" href="https://stackoverflow.com/users/4480460/daniel" target="_blank" rel="noopener">Stack Overflow ↗</a>
+          <a class="btn" href="mailto:danielluz.alves@outlook.com">Email</a>
+        </div>
+      </div>
+
+      <div class="stat-stack">
+        <div class="stat-card stagger-child"><span class="num"><span class="count" data-prefix="~" data-target="9" data-suffix=" yrs">~9 yrs</span></span><span class="label">native Android development</span></div>
+        <div class="stat-card stagger-child"><span class="num"><span class="count" data-prefix="" data-target="3" data-suffix="">3</span></span><span class="label">countries worked in — BR · NZ · remote</span></div>
+        <div class="stat-card stagger-child"><span class="num"><span class="count" data-prefix="" data-target="2" data-suffix="">2</span></span><span class="label">games shipped solo on Google Play</span></div>
+        <div class="stat-card stagger-child"><span class="num"><span class="count" data-prefix="" data-target="153" data-suffix="">153</span></span><span class="label">Stack Overflow reputation, 9k reached</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-head reveal">
+      <p class="eyebrow">~/education</p>
+      <h2 class="section-title">Education &amp; languages</h2>
+    </div>
+
+    <div class="bg-grid">
+      <div>
+        <div class="edu-item stagger-child">
+          <div class="degree">MBA, Computer Software Engineering — Data Science, AI &amp; Analytics</div>
+          <div class="school">USP / Esalq</div>
+          <div class="when">2023 — 2028 · in progress</div>
+        </div>
+        <div class="edu-item stagger-child">
+          <div class="degree">Associate's Degree, Systems Analysis and Development</div>
+          <div class="school">Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP)</div>
+          <div class="when">2013 — 2016</div>
+        </div>
+        <div class="edu-item stagger-child">
+          <div class="degree">Research project — Software-Defined Networking</div>
+          <div class="school">Distributed Operating Systems &amp; Network Infrastructure, IFSP</div>
+          <div class="when">2016</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="lang-row">
+          <span class="name">English</span>
+          <span class="meter">
+            <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span>
+          </span>
+          <span class="level">C1</span>
+        </div>
+        <div class="lang-row">
+          <span class="name">German</span>
+          <span class="meter">
+            <span class="on"></span><span></span><span></span><span></span><span></span>
+          </span>
+          <span class="level">A1</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head reveal">
+      <p class="eyebrow">~/experience</p>
+      <h2 class="section-title">Release history</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="release stagger-child">
+        <div class="tag">v6.0<br><span class="current"><span class="live-dot"></span>current</span></div>
+        <div>
+          <div class="release-head"><span class="company">PicPay</span><span class="role">Android Engineer</span></div>
+          <div class="release-meta">06/2025 — Present · Brazil</div>
+          <ul>
+            <li>Implemented build improvements and maintained CI/CD pipelines for the Android app.</li>
+            <li>Modernized the core application architecture with Jetpack, Kotlin Coroutines and Koin.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="release stagger-child">
+        <div class="tag">v5.0</div>
+        <div>
+          <div class="release-head"><span class="company">Alphero</span><span class="role">Senior Android Developer</span></div>
+          <div class="release-meta">11/2023 — 04/2025 · Wellington, New Zealand</div>
+          <ul>
+            <li>Delivered a portfolio of native Android apps across loyalty, streaming and education.</li>
+          </ul>
+          <div class="apps-built">
+            <span class="pill">Flybuys — loyalty &amp; rewards</span>
+            <span class="pill">TVNZ+ — video streaming</span>
+            <span class="pill">Drive Go — interactive education</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="release stagger-child">
+        <div class="tag">v4.0</div>
+        <div>
+          <div class="release-head"><span class="company">Itaú Unibanco</span><span class="role">Android Developer</span></div>
+          <div class="release-meta">04/2020 — 10/2023 · São Paulo, Brazil</div>
+          <ul>
+            <li>Multi-disciplinary team building a fast-paced financial-sector mobile app.</li>
+            <li>Extensive use of Android Jetpack, Clean Architecture and Agile practices.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="release stagger-child">
+        <div class="tag">v3.0</div>
+        <div>
+          <div class="release-head"><span class="company">everis</span><span class="role">Solutions Analyst — Mobile Developer</span></div>
+          <div class="release-meta">09/2018 — 03/2020 · São Paulo, Brazil</div>
+          <ul>
+            <li>Built cutting-edge Android apps for the drink/brewing sector with architects, engineers and product.</li>
+            <li>WorkManager, Navigation, LiveData, Room, ViewModel, Futures, Retrofit, RxJava/RxAndroid.</li>
+            <li>Clean architecture with MVP, MVI and MVVM; Salesforce Mobile SDK integration for auth, storage and sync.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="release stagger-child">
+        <div class="tag">v2.0</div>
+        <div>
+          <div class="release-head"><span class="company">Top Information</span><span class="role">Android Developer</span></div>
+          <div class="release-meta">12/2017 — 09/2018 · São Paulo, Brazil</div>
+          <ul>
+            <li>Delivered a secure financial Android app in Java with the Salesforce Mobile SDK, fast-paced cycles.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="release stagger-child">
+        <div class="tag">v1.0</div>
+        <div>
+          <div class="foundations">
+            <strong>Foundations — internships, 2013–2017</strong>
+            <div class="frow"><span class="fyear">2016–17</span> IBM — CIO Intern · impact analysis, support and process automation, built an internal automation framework.</div>
+            <div class="frow"><span class="fyear">2015–16</span> Venturus — Java/Android Developer Intern · shipped a mobile feature, built a Java test-automation framework, Scrum.</div>
+            <div class="frow"><span class="fyear">2014–15</span> SIDI (Samsung) — Software Test Intern · mobile testing, sanity testing, bug validation, lab testing with Agilent.</div>
+            <div class="frow"><span class="fyear">2013–14</span> Prefeitura de Bragança Paulista — IT Intern · CentOS server implementation, Linux/Windows support, Digital City project.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="writing">
+    <div class="section-head reveal">
+      <p class="eyebrow">~/writing — medium.com/@spparks_</p>
+      <h2 class="section-title">Notes on Kotlin &amp; Android</h2>
+    </div>
+
+    <div class="article-list">
+      <a class="article stagger-child" href="https://medium.com/@spparks_" target="_blank" rel="noopener">
+        <span class="article-date">May 2026</span>
+        <span class="article-title">Stop Letting AI Go Off-Script: Building a Context-Governed Workflow</span>
+      </a>
+      <a class="article stagger-child" href="https://medium.com/@spparks_" target="_blank" rel="noopener">
+        <span class="article-date">Jan 2026</span>
+        <span class="article-title">Koin: Scaling Your Project with Annotations, KSP and Navigation 3</span>
+      </a>
+      <a class="article stagger-child" href="https://medium.com/@spparks_" target="_blank" rel="noopener">
+        <span class="article-date">Dec 2024</span>
+        <span class="article-title">Android AGSL — Enhance Your Compose Components with Shaders</span>
+      </a>
+      <a class="article stagger-child" href="https://medium.com/@spparks_" target="_blank" rel="noopener">
+        <span class="article-date">Dec 2024</span>
+        <span class="article-title">Kotlin for Statistics 101: A Foundational Path to Insightful Analysis</span>
+      </a>
+      <a class="article stagger-child" href="https://medium.com/@spparks_" target="_blank" rel="noopener">
+        <span class="article-date">Mar 2024</span>
+        <span class="article-title">KMP — Implementing the Expected/Actual Mechanism</span>
+      </a>
+      <a class="article stagger-child" href="https://medium.com/@spparks_" target="_blank" rel="noopener">
+        <span class="article-date">Jul 2023</span>
+        <span class="article-title">Android WorkManager — Overview and Implementation</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="apps">
+    <div class="section-head reveal">
+      <p class="eyebrow">~/apps</p>
+      <h2 class="section-title">Shipped solo, on Google Play</h2>
+    </div>
+
+    <div class="app-grid">
+      <div class="app-card stagger-child">
+        <div class="app-head">
+          <img class="app-icon" src="https://play-lh.googleusercontent.com/E-owdOv9J7OG4pF7LW1fyyFH3zpGSJu7o-zHZI1eK2gKEVIsgyUn7rprPxEkh4r_qOuBVdDtilS9UPVgLswuTw=s256" alt="RaceXRZ 1000 icon" />
+          <div>
+            <h3>RaceXRZ 1000</h3>
+            <span class="genre">Arcade · endless racer</span>
+          </div>
+        </div>
+        <p>A neon endless racer — dodge rival cars, obstacles and oil slicks, chain
+          near-misses for a 2x multiplier, and climb the ranks from Drifter to Legend
+          across 7 tiers.</p>
+        <div class="app-foot">
+          <div class="modes"><span class="pill">nitro boosts</span><span class="pill">boss fights</span><span class="pill">leaderboard</span></div>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.dlasoftware.racexrz2" target="_blank" rel="noopener">Install ↗</a>
+        </div>
+      </div>
+
+      <div class="app-card stagger-child">
+        <div class="app-head">
+          <img class="app-icon" src="https://play-lh.googleusercontent.com/lKvQODRa6DpxeLKwA3S70Fn1OIVu-2eI-c-5HdFVTk1VLq7WjpCDaOSWsHBSTdbxYN4quhdYQdXlvC2uvbmk=s256" alt="Tess Area icon" />
+          <div>
+            <h3>Tess Area</h3>
+            <span class="genre">Puzzle · brain training</span>
+          </div>
+        </div>
+        <p>Four puzzle modes in one game — rectangular logic, colour stacking, memory
+          sequencing and rhythm puzzles — with a campaign, a survival mode and 40
+          unlockable achievements.</p>
+        <div class="app-foot">
+          <div class="modes"><span class="pill">campaign</span><span class="pill">survival</span><span class="pill">smart hints</span></div>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.dlasoftwarebr.tessarea" target="_blank" rel="noopener">Install ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="oss">
+    <div class="section-head reveal">
+      <p class="eyebrow">~/oss — github.com/lluzalves</p>
+      <h2 class="section-title">Open source &amp; experiments</h2>
+    </div>
+
+    <div class="repo-list">
+      <div class="repo stagger-child">
+        <span class="lang-dot" style="background:#9385ff"></span>
+        <div class="repo-body">
+          <a class="repo-name" href="https://github.com/lluzalves/kmpapp" target="_blank" rel="noopener">kmpapp</a>
+          <div class="repo-desc">Implementing Kotlin Multiplatform's expected/actual mechanism.</div>
+        </div>
+        <span class="repo-meta">Kotlin</span>
+      </div>
+      <div class="repo stagger-child">
+        <span class="lang-dot" style="background:#9385ff"></span>
+        <div class="repo-body">
+          <a class="repo-name" href="https://github.com/lluzalves/card_compose_with_agsl_shaders" target="_blank" rel="noopener">card_compose_with_agsl_shaders</a>
+          <div class="repo-desc">Tutorial: enhancing a Jetpack Compose component with AGSL shaders.</div>
+        </div>
+        <span class="repo-meta">Kotlin · <span class="star">★</span> 1</span>
+      </div>
+      <div class="repo stagger-child">
+        <span class="lang-dot" style="background:#9385ff"></span>
+        <div class="repo-body">
+          <a class="repo-name" href="https://github.com/lluzalves/docApp" target="_blank" rel="noopener">docApp</a>
+          <div class="repo-desc">Android client app for the slim_rest_api backend below.</div>
+        </div>
+        <span class="repo-meta">Kotlin · <span class="star">★</span> 1</span>
+      </div>
+      <div class="repo stagger-child">
+        <span class="lang-dot" style="background:#8993be"></span>
+        <div class="repo-body">
+          <a class="repo-name" href="https://github.com/lluzalves/slim_rest_api" target="_blank" rel="noopener">slim_rest_api</a>
+          <div class="repo-desc">Document REST API used by docApp.</div>
+        </div>
+        <span class="repo-meta">PHP</span>
+      </div>
+      <div class="repo stagger-child">
+        <span class="lang-dot" style="background:#ff9a5c"></span>
+        <div class="repo-body">
+          <a class="repo-name" href="https://github.com/lluzalves/web_ifsp" target="_blank" rel="noopener">web_ifsp</a>
+          <div class="repo-desc">Web application to consume the doc API.</div>
+        </div>
+        <span class="repo-meta">HTML</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="section-head reveal">
+      <p class="eyebrow">~/stack</p>
+      <h2 class="section-title">build.gradle.kts</h2>
+    </div>
+
+    <div class="code-card reveal">
+      <div class="code-head">
+        <span class="traffic"><span></span><span></span><span></span></span>
+        dependencies
+      </div>
+      <pre class="code-body"><span class="tok-cm">// language &amp; UI</span>
+<span class="tok-fn">implementation</span>(<span class="tok-str">"kotlin"</span>)          <span class="tok-cm">// + Kotlin Multiplatform</span>
+<span class="tok-fn">implementation</span>(<span class="tok-str">"jetpack-compose"</span>)
+<span class="tok-fn">implementation</span>(<span class="tok-str">"coroutines"</span>)
+<span class="tok-fn">implementation</span>(<span class="tok-str">"koin"</span>)             <span class="tok-cm">// dependency injection</span>
+
+<span class="tok-cm">// architecture</span>
+<span class="tok-fn">implementation</span>(<span class="tok-str">"clean-architecture"</span>)
+<span class="tok-fn">implementation</span>(<span class="tok-str">"mvvm-mvi-mvp"</span>)
+<span class="tok-fn">implementation</span>(<span class="tok-str">"navigation"</span>)
+<span class="tok-fn">implementation</span>(<span class="tok-str">"workmanager"</span>)
+<span class="tok-fn">implementation</span>(<span class="tok-str">"room"</span>)
+
+<span class="tok-cm">// networking</span>
+<span class="tok-fn">implementation</span>(<span class="tok-str">"retrofit"</span>)
+<span class="tok-fn">implementation</span>(<span class="tok-str">"rxjava-rxandroid"</span>)
+<span class="tok-fn">implementation</span>(<span class="tok-str">"salesforce-mobile-sdk"</span>)
+
+<span class="tok-cm">// tooling &amp; quality</span>
+<span class="tok-fn">implementation</span>(<span class="tok-str">"ci-cd"</span>)
+<span class="tok-fn">testImplementation</span>(<span class="tok-str">"unit-testing"</span>)
+
+<span class="tok-cm">// currently exploring</span>
+<span class="tok-fn">implementation</span>(<span class="tok-str">"on-device-llm"</span>) <span class="tok-kw">// MBA focus: Data Science &amp; AI</span></pre>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">~/contact</p>
+      <h2 class="section-title">Let's talk Android</h2>
+    </div>
+    <div class="foot-grid">
+      <div class="foot-links">
+        <a class="btn primary" href="mailto:danielluz.alves@outlook.com">danielluz.alves@outlook.com</a>
+        <a class="btn" href="https://github.com/lluzalves" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/daniel-luz-9984ba114/?locale=pt" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://medium.com/@spparks_" target="_blank" rel="noopener">Medium</a>
+        <a class="btn" href="https://stackoverflow.com/users/4480460/daniel" target="_blank" rel="noopener">Stack Overflow</a>
+        <a class="btn" href="https://play.google.com/store/apps/developer?id=Daniel+L.+A." target="_blank" rel="noopener">Google Play</a>
+      </div>
+      <div class="foot-copy">Brazil · UTC−3 · © 2026 Daniel Luz Alves</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var revealEls = document.querySelectorAll('.reveal, .stagger-child');
+
+  if (reduced || !('IntersectionObserver' in window)) {
+    revealEls.forEach(function (el) { el.classList.add('in-view'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function (el) { io.observe(el); });
+  }
+
+  if (!reduced && 'IntersectionObserver' in window) {
+    var counted = new WeakSet();
+    var countIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting || counted.has(entry.target)) return;
+        counted.add(entry.target);
+        var el = entry.target;
+        var target = parseFloat(el.getAttribute('data-target'));
+        var prefix = el.getAttribute('data-prefix') || '';
+        var suffix = el.getAttribute('data-suffix') || '';
+        var start = null;
+        var dur = 1000;
+        function tick(ts) {
+          if (start === null) start = ts;
+          var p = Math.min(1, (ts - start) / dur);
+          var eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = prefix + Math.round(target * eased) + suffix;
+          if (p < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.6 });
+    document.querySelectorAll('.count[data-target]').forEach(function (el) { countIO.observe(el); });
+  }
+})();
+</script>
